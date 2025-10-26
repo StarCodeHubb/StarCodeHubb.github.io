@@ -1,64 +1,105 @@
+/* === ESTILO GENERAL === */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f9fafc;
-  color: #333;
+  background-color: #02041A;
+  color: #FFFFFF;
+  line-height: 1.6;
 }
 
+/* === ENCABEZADO === */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #004aad;
-  color: white;
+  background: linear-gradient(90deg, #02041A, #050C2A);
+  border-bottom: 2px solid #00CFFF;
   padding: 15px 40px;
+  box-shadow: 0 0 20px rgba(0, 207, 255, 0.3);
 }
 
 header .logo {
-  height: 50px;
+  height: 60px;
 }
 
+/* === NAVEGACIÓN === */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
 
 nav a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-  text-decoration: underline;
+  color: #00CFFF;
+  text-shadow: 0 0 8px #00CFFF;
 }
 
+/* === SECCIÓN PRINCIPAL === */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #007bff, #00bcd4);
-  color: white;
+  padding: 100px 20px;
+  background: radial-gradient(circle at center, #0A0E2E, #02041A);
+  color: #FFFFFF;
   border-radius: 10px;
-  margin: 40px;
+  margin: 40px auto;
+  width: 80%;
+  box-shadow: 0 0 30px rgba(164, 92, 255, 0.3);
 }
 
+.hero h1 {
+  font-size: 2.8rem;
+  color: #A45CFF;
+  text-shadow: 0 0 10px rgba(164, 92, 255, 0.6);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #E0E0E0;
+  margin-bottom: 25px;
+}
+
+/* === BOTONES === */
 .btn {
-  background: white;
-  color: #007bff;
-  padding: 10px 20px;
-  border-radius: 8px;
+  background: linear-gradient(90deg, #A45CFF, #00CFFF);
+  color: #FFFFFF;
+  padding: 12px 25px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00CFFF;
+}
+
+/* === CONTENIDO GENERAL === */
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #A45CFF;
+}
+
+/* === PIE DE PÁGINA === */
 footer {
   text-align: center;
   padding: 20px;
-  background: #222;
-  color: white;
-  margin-top: 40px;
+  background: #050C2A;
+  border-top: 1px solid #00CFFF;
+  color: #FFFFFF;
+  box-shadow: 0 -5px 20px rgba(164, 92, 255, 0.3);
 }
