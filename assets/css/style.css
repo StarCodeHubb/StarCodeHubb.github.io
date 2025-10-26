@@ -1,105 +1,94 @@
+/* === PALETA FUTURISTA === */
+:root {
+  --fondo: #02041A;
+  --brillo-violeta: #A45CFF;
+  --brillo-azul: #00CFFF;
+  --texto-blanco: #FFFFFF;
+  --detalle-azul: #4BA3F7;
+}
+
 /* === ESTILO GENERAL === */
 body {
+  background-color: var(--fondo);
+  color: var(--texto-blanco);
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #02041A;
-  color: #FFFFFF;
-  line-height: 1.6;
+  padding: 0;
 }
 
 /* === ENCABEZADO === */
 header {
+  background: linear-gradient(90deg, var(--brillo-violeta), var(--brillo-azul));
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #02041A, #050C2A);
-  border-bottom: 2px solid #00CFFF;
-  padding: 15px 40px;
-  box-shadow: 0 0 20px rgba(0, 207, 255, 0.3);
 }
 
 header .logo {
   height: 60px;
 }
 
-/* === NAVEGACIÓN === */
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: 0;
-  padding: 0;
 }
 
-nav a {
-  color: #FFFFFF;
+nav ul li a {
+  color: var(--texto-blanco);
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-  color: #00CFFF;
-  text-shadow: 0 0 8px #00CFFF;
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--detalle-azul);
 }
 
-/* === SECCIÓN PRINCIPAL === */
+/* === HERO === */
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background: radial-gradient(circle at center, #0A0E2E, #02041A);
-  color: #FFFFFF;
-  border-radius: 10px;
-  margin: 40px auto;
-  width: 80%;
-  box-shadow: 0 0 30px rgba(164, 92, 255, 0.3);
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, var(--brillo-violeta) 0%, var(--fondo) 80%);
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  color: #A45CFF;
-  text-shadow: 0 0 10px rgba(164, 92, 255, 0.6);
+  font-size: 3em;
+  color: var(--texto-blanco);
+  text-shadow: 0 0 15px var(--brillo-azul);
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #E0E0E0;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  color: var(--detalle-azul);
+  font-size: 1.2em;
 }
 
-/* === BOTONES === */
 .btn {
-  background: linear-gradient(90deg, #A45CFF, #00CFFF);
-  color: #FFFFFF;
+  display: inline-block;
+  margin-top: 25px;
   padding: 12px 25px;
-  border-radius: 10px;
+  background: linear-gradient(90deg, var(--brillo-violeta), var(--brillo-azul));
+  color: var(--texto-blanco);
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #00CFFF;
+  box-shadow: 0 0 15px var(--brillo-azul);
 }
 
-/* === CONTENIDO GENERAL === */
-main {
-  padding: 40px;
-  text-align: center;
-}
-
-h1, h2 {
-  color: #A45CFF;
-}
-
-/* === PIE DE PÁGINA === */
+/* === FOOTER === */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #050C2A;
-  border-top: 1px solid #00CFFF;
-  color: #FFFFFF;
-  box-shadow: 0 -5px 20px rgba(164, 92, 255, 0.3);
+  padding: 15px 0;
+  background-color: #010314;
+  color: var(--detalle-azul);
+  font-size: 0.9em;
 }
