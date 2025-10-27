@@ -1,0 +1,238 @@
+/* === BASE GENERAL === */
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #050b12;
+  color: #e6f1ff;
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #01060a, #051d2e);
+  padding: 15px 30px;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 55px;
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+}
+
+header nav a {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: 0.3s ease;
+  text-shadow:
+    0 0 5px #00e0ff,
+    0 0 15px #00e0ff,
+    0 0 25px rgba(0, 224, 255, 0.6);
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #fff;
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 30px #00ffff,
+    0 0 60px #00ffff;
+}
+
+/* === HERO CON IMAGEN CLARA Y TEXTO BRILLANTE === */
+.hero-curso {
+  position: relative;
+  min-height: 60vh;
+  background: url("assets/img/C+.png") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  border-bottom: 2px solid rgba(0, 224, 255, 0.4);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* 🔥 Eliminamos el oscurecimiento */
+.hero-curso::before {
+  content: none;
+}
+
+.hero-curso h1,
+.hero-curso p {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Texto con efecto neón más brillante === */
+.hero-curso h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow:
+    0 0 10px #00eaff,
+    0 0 25px #00eaff,
+    0 0 45px #00eaff,
+    0 0 90px #00eaff;
+  margin-bottom: 15px;
+}
+
+.hero-curso p {
+  font-size: 1.3rem;
+  color: #eaffff;
+  max-width: 800px;
+  margin: 10px auto 0;
+  text-shadow:
+    0 0 8px #00eaff,
+    0 0 18px #00eaff,
+    0 0 35px #00eaff;
+  line-height: 1.6;
+}
+
+/* === SECCIONES DE MÓDULO === */
+.modulo {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 80px 25px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1.5px solid rgba(0, 224, 255, 0.25);
+  border-bottom: 1.5px solid rgba(0, 224, 255, 0.25);
+  transition: background 0.6s ease;
+}
+
+/* Fondos oscuros alternados */
+.modulo:nth-child(odd) {
+  background: linear-gradient(180deg, #08121b 0%, #0c1b2a 100%);
+}
+.modulo:nth-child(even) {
+  background: linear-gradient(180deg, #0c1b2a 0%, #11283c 100%);
+}
+
+.modulo h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  color: #b7e6ff;
+  text-shadow:
+    0 0 15px rgba(0, 224, 255, 0.4),
+    0 0 30px rgba(0, 224, 255, 0.15);
+}
+
+/* === RECURSOS (Botones: Teoría, Ejemplos, Quiz) === */
+.recursos {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn-recurso {
+  display: inline-block;
+  background: #0a1620;
+  color: #b3e6f5;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1.5px solid #00aaff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.25);
+}
+
+.btn-recurso:hover {
+  background: #00aaff;
+  color: #06131f;
+  transform: scale(1.05);
+  box-shadow:
+    0 0 25px rgba(0, 170, 255, 0.7),
+    0 0 40px rgba(0, 170, 255, 0.4);
+}
+
+/* === SUBSECCIONES (Teoría, Ejemplos, Quiz) === */
+.subseccion {
+  margin-top: 60px;
+  padding: 30px 20px;
+  max-width: 900px;
+  background: rgba(10, 25, 40, 0.8);
+  border: 1.5px solid rgba(0, 224, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 224, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subseccion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 224, 255, 0.3);
+}
+
+.subseccion h3 {
+  font-size: 1.6rem;
+  color: #aeeaff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0, 224, 255, 0.3);
+}
+
+.subseccion p {
+  color: #a7b9c7;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #030a11;
+  color: #00e0ff;
+  box-shadow: 0 -2px 25px rgba(0, 224, 255, 0.15);
+  font-size: 0.95rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero-curso {
+    padding: 70px 15px;
+  }
+  .hero-curso h1 {
+    font-size: 2.2rem;
+  }
+  .hero-curso p {
+    font-size: 1.1rem;
+  }
+  .modulo h2 {
+    font-size: 1.8rem;
+  }
+  .btn-recurso {
+    width: 90%;
+  }
+  .subseccion {
+    padding: 20px;
+  }
+}
