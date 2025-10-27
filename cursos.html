@@ -7,35 +7,59 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    <img src="assets/img/logofondo.png" alt="Logo CodeSpace Hub" class="logo">
+    <img src="assets/img/logofondo.png" alt="Logo" class="logo">
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="cursos.html" class="active">Cursos</a></li>
-        <li><a href="quizzes.html">Quizzes</a></li>
-        <li><a href="sobre.html">Sobre Nosotros</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main>
-    <section class="hero">
-      <h1>Nuestros Cursos</h1>
-      <p>Aquí encontrarás cursos gratuitos sobre programación, lógica y más.</p>
-      <a href="#cursos-lista" class="btn">Ver lista de cursos</a>
+    <!-- HERO SOLO PARA CURSOS -->
+    <section class="hero hero-cursos">
+      <h1>💻 Nuestros Cursos 💻</h1>
+      <p>Aprende programación de manera práctica y divertida con nuestros cursos gratuitos.</p>
+      <p>🚀 Desarrolla tu pensamiento lógico, resuelve retos reales y descubre el poder de crear con la tecnología.</p>
+      <p>🌍 ¡Aprende, crea y comparte conocimiento!</p>
     </section>
 
-    <section id="cursos-lista" class="contenido">
-      <h2>Curso destacado</h2>
-      <p>Introducción a HTML y CSS — Aprende a crear páginas web desde cero con ejercicios prácticos.</p>
+    <!-- SECCIÓN DE CURSOS -->
+    <section class="cursos">
+      <h2>Explora nuestros cursos</h2>
+      <div class="grid-cursos">
+        <div class="curso">
+          <img src="assets/img/progrmacion.png" class="curso-icon" alt="Lógica">
+          <h3>Curso 1: Lógica de programación</h3>
+          <p>Desarrolla el pensamiento computacional y aprende a representar algoritmos paso a paso.</p>
+          <a href="curso.html?curso=1" class="btn-curso">Ir al curso</a>
+        </div>
 
-      <h2>Otros cursos</h2>
-      <ul>
-        <li>JavaScript básico</li>
-        <li>Programación con Python</li>
-        <li>Control de versiones con Git</li>
-      </ul>
+        <div class="curso">
+          <img src="assets/img/pseint1.png" class="curso-icon" alt="PSeInt">
+          <h3>Curso 2: Introducción a PSeInt</h3>
+          <p>Aprende los fundamentos de la programación usando PSeInt, una herramienta sencilla para desarrollar tu lógica </p>
+          <a href="curso.html?curso=2" class="btn-curso">Ir al curso</a>
+        </div>
+
+        <div class="curso">
+          <img src="assets/img/python1.png" class="curso-icon" alt="Python">
+          <h3>Curso 3: Fundamentos de Python</h3>
+          <p>Aprende a programar con Python desde cero con un mini-proyecto final.</p>
+          <a href="curso.html?curso=3" class="btn-curso">Ir al curso</a>
+        </div>
+
+        <div class="curso">
+          <img src="assets/img/modular1.png" class="curso-icon" alt="Modularización">
+          <h3>Curso 4: Programación modular</h3>
+          <p>Organiza tus programas en funciones reutilizables y desarrolla un mini-reto.</p>
+          <a href="curso.html?curso=4" class="btn-curso">Ir al curso</a>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -44,4 +68,3 @@
   </footer>
 </body>
 </html>
-
