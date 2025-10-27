@@ -553,3 +553,67 @@ footer {
   from { opacity: 0; transform: scale(1.02); }
   to { opacity: 1; transform: scale(1); }
 }
+
+
+/* === ESTILOS RESPONSIVOS === */
+
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img.logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero,
+  .hero-dinamico {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero h1,
+  .hero-dinamico h1 {
+    font-size: 1.8em;
+  }
+
+  .hero p,
+  .hero-dinamico p {
+    font-size: 1.1em;
+  }
+
+  .grid-cursos {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .curso {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .detalle ul {
+    padding: 10px 20px;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .grid-cursos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
