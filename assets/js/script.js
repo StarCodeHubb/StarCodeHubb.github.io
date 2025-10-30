@@ -950,7 +950,76 @@ A continuación, se presentan ejemplos que integran los conceptos vistos sobre v
 
 
     `,
-    quiz_intermedio: `<p><strong>Quiz:</strong> Preguntas para reforzar comprensión de variables y tipos de datos.</p>`
+    quiz_intermedio: `<p><strong>Quiz:</strong> Preguntas para reforzar comprensión de variables y tipos de datos.</p>
+
+
+<section id="quiz-intermedio" style="max-width:900px; margin:36px auto; font-family: 'Segoe UI', Tahoma, sans-serif; color:#222;">
+  <h3 style="margin-bottom:8px;">📝 <strong>Instrucciones Generales – Quiz Intermedio</strong></h3>
+
+  <p style="text-align: justify; margin-bottom: 12px;">
+    <strong>📚 Propósito:</strong> El siguiente cuestionario tiene como propósito evaluar la comprensión de los temas desarrollados sobre diagramas de flujo y variables en programación. A través de estas preguntas se busca reforzar los conceptos fundamentales del pensamiento computacional, la estructura de los algoritmos y el uso adecuado de los datos dentro de un programa.
+  </p>
+
+  <ul style="margin: 8px 0 14px 20px; line-height:1.5;">
+    <li><strong>⏱ Duración total:</strong> 30 minutos.</li>
+    <li><strong>✅ Condición de aprobación:</strong> Nota mínima 11.</li>
+    <li><strong>⚖️ Peso en la evaluación:</strong> 25% de la nota final.</li>
+  </ul>
+
+  <h4 style="margin: 14px 0 8px 0;">🔍 Indicaciones</h4>
+  <p style="text-align: justify; margin-top:0;">
+    Lee atentamente cada enunciado y selecciona la respuesta correcta según los contenidos revisados.<br>
+    ✍️ Responde con calma, revisa tus opciones y evita respuestas impulsivas.<br>
+    💡 Consejo: si dudas, marca la opción más lógica y regresa luego si te queda tiempo.
+  </p>
+
+  <div style="background:#f8f9fb; border-left:4px solid #007bff; padding:10px 14px; border-radius:8px; margin:14px 0;">
+    <strong>🎁 BONUS – Caso integrador</strong>
+    <p style="margin:8px 0 0 0; text-align: justify;">
+      Como actividad opcional, se incluye un caso integrador tipo desafío, donde podrás aplicar los conocimientos vistos sobre diagramas de flujo, variables y estructuras lógicas. Su desarrollo no es obligatorio, pero sumará puntos adicionales en la nota final y servirá para reforzar tu aprendizaje práctico. Se valorará la claridad del razonamiento, el uso correcto de estructuras y la presentación del algoritmo.
+    </p>
+  </div>
+
+  <!-- Botón centrado -->
+  <div style="text-align:center; margin-top:18px;">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeivVtuBxYdjlADkDpjTQRWxMoLGeBKrpp-YkqA1tVbIpz_tg/viewform?usp=dialog"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="
+        display:inline-block;
+        background: linear-gradient(90deg,#0066ff,#00a3ff);
+        color:#fff;
+        text-decoration:none;
+        padding:12px 20px;
+        border-radius:10px;
+        font-weight:600;
+        box-shadow: 0 6px 18px rgba(0,115,255,0.16);
+        transition: transform .12s ease, box-shadow .12s ease;
+        border: 0;
+      "
+      aria-label="Abrir cuestionario - se abre en nueva pestaña"
+    >
+      ➤ Ir al cuestionario (Form) — Abrir
+    </a>
+  </div>
+
+  <p style="text-align:center; margin-top:10px; color:#666; font-size:0.92rem;">
+    El formulario se abrirá en una nueva pestaña. Si quieres que el enlace se muestre como botón pequeño en móviles, cambia `padding` a `10px 14px` en el estilo.
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    `
   },
   dia4: {
     objetivo: `<p><strong>Objetivo:</strong> Aplicar estructuras secuenciales y condicionales para resolver problemas.</p>`,
