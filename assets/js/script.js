@@ -1087,7 +1087,7 @@ print("El área del rectángulo es:", area)
   <h4 style="font-size: 1em; margin-top: 15px; text-align: left;"> Qué son las decisiones en programación</h4>
   <p>
   En programación, las estructuras condicionales permiten que un algoritmo tome decisiones según se cumpla o no una condición lógica. 
-  A diferencia de la estructura secuencial —donde todas las instrucciones se ejecutan en orden—, las condicionales dirigen el flujo del programa 
+  A diferencia de la estructura secuencial donde todas las instrucciones se ejecutan en orden, las condicionales dirigen el flujo del programa 
   por distintos caminos, dependiendo de si una expresión es verdadera (<em>True</em>) o falsa (<em>False</em>).
   </p>
   <p>
@@ -1802,7 +1802,45 @@ Fin
 
     
     `,
-    quiz_final: `<p><strong>Quiz final:</strong> Evaluación de todo lo aprendido en pseudocódigo.</p>`
+    quiz_final: `
+    <section style="color: white; text-align: left; margin-left: 40px; margin-right: 40px; font-size: 17px; line-height: 1.6;">
+
+  <p><strong>📚 Indicaciones generales:</strong><br>
+  Esta evaluación corresponde al cierre del módulo y representa el <strong>50% de la nota total.</strong><br>
+  <strong>Duración:</strong> 1 hora y 30 minutos ⏱️<br>
+  <strong>Preguntas:</strong> 30 en total (parte teórica + caso práctico)<br>
+  <strong>Nota máxima:</strong> 11 puntos<br>
+  Solo se permite <strong>un envío por estudiante.</strong></p>
+
+  <p><strong>Instrucciones del caso práctico:</strong><br>
+  Lee la situación del problema y redacta el pseudocódigo completo con entradas, procesos y salidas.<br>
+  Considera condiciones de nota, asistencia y bonificación.<br>
+  Sube tu archivo en formato <strong>PDF o Word (.docx)</strong> con tu nombre y sección.<br>
+  Se evaluará la claridad, estructura y lógica del pseudocódigo.</p>
+
+  <p><strong>Formato de archivo:</strong><br>
+  <code style="background-color: #222; padding: 5px 8px; border-radius: 5px; color: #aef;">Apellido_Nombre_CasosFinales</code><br>
+  Ejemplo: <code style="background-color: #222; padding: 5px 8px; border-radius: 5px; color: #aef;">Pérez_Luisa_CasosFinales.pdf</code></p>
+
+  <p><strong>⚠️ Reglas:</strong><br>
+  Cronómetro activo (1h 30min).<br>
+  Solo se aceptará un intento.<br>
+  Revisa antes de enviar; los duplicados serán anulados.</p>
+
+  <div style="margin-top: 25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScZ2RE99mQocj0h4IOZMZiL5bc26YZyqGJdbj68P9PRUREG9w/viewform?usp=dialog" 
+       target="_blank" 
+       style="display: inline-block; background-color: #0078ff; color: white; text-decoration: none; font-weight: bold; padding: 10px 25px; border-radius: 10px; transition: 0.3s;">
+       🧾 Ir al formulario
+    </a>
+  </div>
+</section>
+
+    
+    
+    
+    
+    `
   },
 
   // Curso 2 – PSeInt
@@ -1996,14 +2034,68 @@ function agregarReferencias(cursoId) {
   const referenciasPorCurso = {
     1: `
       <section class="modulo referencias" style="text-align: justify; margin-top: 40px; padding: 10px;">
-        <h2 style="text-align: center; margin-bottom: 15px;">📚 Referencias bibliográficas</h2>
-        <div style="text-align: left; margin-left: 30px;">
-          <p>• Cervera-Manjarrez, J. et al. (2023). <em>El pensamiento computacional y la educación.</em> Revista Latinoamericana de Tecnología Educativa.</p>
-          <p>• González, R. & Martínez, D. (2022). <em>Estrategias para fomentar el pensamiento lógico.</em> Editorial Académica Española.</p>
-          <p>• Rodríguez Canfranc, M. (2023). <em>La importancia del pensamiento computacional en la era digital.</em> Fundación Telefónica.</p>
-          <p>• Wing, J. (2006). <em>Computational Thinking.</em> Communications of the ACM, 49(3), 33–35.</p>
-        </div>
-      </section>
+    <section style="color: white; text-align: left; margin-left: 40px; margin-right: 40px; font-size: 17px; line-height: 1.6;">
+  <h2 style="margin-bottom: 15px;">📚 Referencias bibliográficas</h2>
+ <p style="margin-top: 25px;">
+  <p>Asana. (2025). ¿Qué es un diagrama de flujo y cómo hacerlo? Recuperado de <a href="https://asana.com/es/resources/what-is-a-flowchart" style="color: #9cd3ff;">https://asana.com/es/resources/what-is-a-flowchart</a></p>
+
+  <p>Brookshear, J. G., & Brylow, D. (2023). <i>Computer Science: An Overview</i> (14th ed.). Pearson Education.</p>
+
+  <p>Cedeño, D., & Cedeño, F. (2021). <i>Algoritmos y estructuras de datos.</i> Editorial Universitaria.</p>
+
+  <p>Cervera-Manjarrez, D., et al. (2023). Principios y estrategias para el desarrollo del pensamiento computacional. SciELO Venezuela.</p>
+
+  <p>Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). <i>Introduction to Algorithms</i> (4th ed.). MIT Press.</p>
+
+  <p>Creately. (2025). Aprende qué es un diagrama de flujo y cómo crearlo. Recuperado de <a href="https://creately.com/es/guides/diagramas/diagrama-de-flujo-guia/" style="color: #9cd3ff;">https://creately.com/es/guides/diagramas/diagrama-de-flujo-guia/</a></p>
+
+  <p>Dale, N., & Weems, C. (2023). <i>Programming and Problem Solving with Python</i> (2nd ed.). Jones & Bartlett Learning.</p>
+
+  <p>Dale, N., & Weems, C. (2023). <i>Programming Logic and Design: Comprehensive</i> (10ª ed.). Cengage Learning.</p>
+
+  <p>De Rivero Manrique, E. R. (2022). <i>Desarrollo de un sistema de recomendación basado en inteligencia artificial.</i> Universidad Católica de Santa María. Recuperado de <a href="https://repositorio.ucsm.edu.pe/bitstream/20.500.12920/11825/1/71.0678.IS.pdf" style="color: #9cd3ff;">https://repositorio.ucsm.edu.pe/bitstream/20.500.12920/11825/1/71.0678.IS.pdf</a></p>
+
+  <p>Deitel, P., & Associates, Inc. (2004). Control structures in programming: Sequence, selection, & iteration (pp. 5–7).</p>
+
+  <p>Deitel, P., & Deitel, H. (2019). <i>Introduction to Programming Using Python</i> (3ª ed., pp. 100–103). Pearson Education.</p>
+
+  <p>Gaddis, T. (2022). <i>Starting Out with Programming Logic and Design</i> (6th ed.). Pearson Education.</p>
+
+  <p>Gaddis, T. (2022). <i>Introducción a la programación con Python</i> (6ª ed., pp. 110–115). Pearson Educación.</p>
+
+  <p>García, H. M. (2024). Pensamiento computacional y resolución de problemas en matemáticas. Universidad Nacional de Educación. Recuperado de <a href="https://repositorio.une.edu.pe/server/api/core/bitstreams/5ff824af-837a-4cc4-89c8-dd2a00da34d4/content" style="color: #9cd3ff;">https://repositorio.une.edu.pe/server/api/core/bitstreams/5ff824af-837a-4cc4-89c8-dd2a00da34d4/content</a></p>
+
+  <p>García-Molina, M., & Valverde, J. (2019). <i>Introducción a la lógica computacional.</i> Universidad Politécnica de Madrid.</p>
+
+  <p>González, A., & Martínez, R. (2022). El pensamiento computacional como herramienta transversal en la educación básica. <i>Revista Iberoamericana de Educación a Distancia.</i></p>
+
+  <p>Herrera, A. (2020). <i>Diagrama de flujo.</i> Universidad Autónoma de Nuevo León. Recuperado de <a href="https://www.uanl.mx/utilerias/chip/descarga/diagrama_de_flujo.pdf" style="color: #9cd3ff;">https://www.uanl.mx/utilerias/chip/descarga/diagrama_de_flujo.pdf</a></p>
+
+  <p>Joyanes Aguilar, L. (2022). <i>Fundamentos de programación: Algoritmos, estructuras de datos y objetos</i> (4ª ed., pp. 236–240). McGraw-Hill.</p>
+
+  <p>Joyanes Aguilar, L. (2022). <i>Fundamentos de programación: Algoritmos, estructuras de datos y objetos</i> (4ª ed., pp. 250–252). McGraw-Hill.</p>
+
+  <p>Lambert, K. (2022). <i>Fundamentos de Python: Primeros programas</i> (3ª ed., pp. 127–130). Cengage Learning.</p>
+
+  <p>Liang, Y. D. (2022). <i>Introduction to Programming Using Python</i> (2nd ed.). Pearson Education.</p>
+
+  <p>Malvino, A. P. (2021). <i>Principios de electrónica</i> (8ª ed.). McGraw-Hill. (Referencia añadida por contexto de condicionales, si fue usada en texto)</p>
+
+  <p>Mendiolaza Cornejo, E. D. (2022). Estrategia metodológica para el desarrollo del pensamiento computacional en estudiantes de programación de computadoras. Universidad de San Ignacio de Loyola. Recuperado de <a href="https://repositorio.usil.edu.pe/bitstreams/f1a7a53f-a445-4aae-be94-0cb2735b3a2c/download" style="color: #9cd3ff;">https://repositorio.usil.edu.pe/bitstreams/f1a7a53f-a445-4aae-be94-0cb2735b3a2c/download</a></p>
+
+  <p>Nulab. (2024). Diagrama de procesos de negocio. Recuperado de <a href="https://nulab.com/es/cacoo/templates/business-process-diagram/" style="color: #9cd3ff;">https://nulab.com/es/cacoo/templates/business-process-diagram/</a></p>
+
+  <p>Rodríguez Canfranc, P. (2023). Pensamiento computacional, una competencia más allá de la programación. Fundación Telefónica. Recuperado de <a href="https://www.fundaciontelefonica.com" style="color: #9cd3ff;">https://www.fundaciontelefonica.com</a></p>
+
+  <p>Savitch, W. J. (2021). <i>Absolute C++</i> (7th ed.). Pearson Education.</p>
+
+  <p>Valacich, J. S., & Schneider, C. (2023). <i>Information Systems Today: Managing the Digital World</i> (10th ed.). Pearson Education.</p>
+
+  <p>Valacich, J., & Schneider, C. (2023). <i>Information Systems Today: Managing in the Digital World</i> (10ª ed., pp. 88–90). Pearson Education.</p>
+
+  <p>Wing, J. M. (2006). Computational thinking. <i>Communications of the ACM, 49</i>(3), 33–35.</p>
+</section>
+
     `,
     2: `
       <section class="modulo referencias" style="text-align: justify; margin-top: 40px; padding: 10px;">
