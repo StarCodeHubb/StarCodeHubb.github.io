@@ -472,7 +472,7 @@ const contenidoModulos = {
      <p>Tamaño aproximado: 4 a 8 bytes  </p>
      <p><strong>Ejemplos:</strong></p>
    <p style="margin-top: 25px;">
-  <img src="assets/img/float.png" alt="Pensamiento computacional" style="width: 250px; display: block; margin: 10px auto; border-radius: 8px;">
+  <img src="assets/img/float.png" alt="Pensamiento computacional" style="width: 180px; display: block; margin: 10px auto; border-radius: 8px;">
   <hr style="margin: 10px auto; width: 50%; height: 1px; background-color: #ccc; border: none;">
 </p>
 
@@ -480,10 +480,11 @@ const contenidoModulos = {
       <p>Representa un solo símbolo o letra, ya sea una letra, número o signo.</p>
       <p>Tamaño aproximado: 1 byte  </p>
      <p><strong>Ejemplo:</strong></p>
-  <p style="margin-top: 25px;">
-  <img src="assets/img/caracter.png" alt="Pensamiento computacional" style="width: 250px; display: block; margin: 10px auto; border-radius: 8px;">
+ <p style="margin-top: 25px;">
+  <img src="assets/img/caracter.png" alt="Pensamiento computacional" style="width: 180px; display: block; margin: 10px auto; border-radius: 8px;">
   <hr style="margin: 10px auto; width: 50%; height: 1px; background-color: #ccc; border: none;">
 </p>
+
 
      <p>• <strong>Cadena (string):</strong></p>
      <p>Una cadena es una secuencia de caracteres (letras, números o símbolos) encerrada entre comillas. Se utiliza para almacenar y procesar texto.</p>
@@ -757,17 +758,7 @@ En la programación, los errores relacionados con las variables son una de las c
   Por ello, la práctica constante y la revisión sistemática del código son estrategias clave para lograr algoritmos funcionales y eficientes.
 </p>
 
-      <p> </p>
-      <p> </p>
-      <p> </p>
-      <p> </p>
-      <p> </p>
-
-    
-    
-    
-    
-    
+  
     `,
     ejemplos: `<p><strong>Ejemplos:</strong> </p>
     
@@ -950,86 +941,867 @@ A continuación, se presentan ejemplos que integran los conceptos vistos sobre v
 
 
     `,
-    quiz_intermedio: `<p><strong>Quiz:</strong> Preguntas para reforzar comprensión de variables y tipos de datos.</p>
+    quiz_intermedio: `<p><strong>Quiz:</strong></p>
+<section id="quiz_intermedio" class="quiz-section" style="font-family: 'Segoe UI', Tahoma, sans-serif; color: #222; line-height: 1.6; margin-top: 30px;">
+
+  <p><strong>🧩 Planteamiento:</strong> Este cuestionario tiene como finalidad reforzar tu comprensión sobre el uso de variables, tipos de datos y errores comunes al programar. A través de preguntas prácticas, podrás identificar conceptos clave y evaluar tu progreso en el manejo de la lógica computacional.</p>
+
+  <p><strong></strong> <br>
+  <strong> Condición de aprobación:</strong> Nota mínima 11.<br>
+  <strong> Peso en la evaluación:</strong> 25% de la nota final.</p>
+
+   <p><strong> Indicaciones:</strong></p>
+ <ul style="margin: 12px 0 18px 20px; line-height: 1.7; text-align: left; color: #f3f4f6; font-family: 'Segoe UI', Tahoma, sans-serif;">
+  <li>Lee atentamente cada pregunta antes de responder. Asegúrate de comprender bien el enunciado antes de elegir una opción.</li>
+  <li>Selecciona la opción que consideres correcta según los conceptos aprendidos. Piensa en la respuesta más lógica basada en lo visto en clase.</li>
+  <li>Verifica tus respuestas antes de enviar el formulario. Revisa consistencia y que no hayas marcado opciones por error.</li>
+  <li>Recuerda que la práctica constante mejora tu razonamiento lógico; intenta razonar cada ejercicio y aprende de los errores.</li>
+</ul>
 
 
-<section id="quiz-intermedio" style="max-width:900px; margin:36px auto; font-family: 'Segoe UI', Tahoma, sans-serif; color:#222;">
-  <h3 style="margin-bottom:8px;">📝 <strong>Instrucciones Generales – Quiz Intermedio</strong></h3>
-
-  <p style="text-align: justify; margin-bottom: 12px;">
-    <strong>📚 Propósito:</strong> El siguiente cuestionario tiene como propósito evaluar la comprensión de los temas desarrollados sobre diagramas de flujo y variables en programación. A través de estas preguntas se busca reforzar los conceptos fundamentales del pensamiento computacional, la estructura de los algoritmos y el uso adecuado de los datos dentro de un programa.
-  </p>
-
-  <ul style="margin: 8px 0 14px 20px; line-height:1.5;">
-    <li><strong>⏱ Duración total:</strong> 30 minutos.</li>
-    <li><strong>✅ Condición de aprobación:</strong> Nota mínima 11.</li>
-    <li><strong>⚖️ Peso en la evaluación:</strong> 25% de la nota final.</li>
-  </ul>
-
-  <h4 style="margin: 14px 0 8px 0;">🔍 Indicaciones</h4>
-  <p style="text-align: justify; margin-top:0;">
-    Lee atentamente cada enunciado y selecciona la respuesta correcta según los contenidos revisados.<br>
-    ✍️ Responde con calma, revisa tus opciones y evita respuestas impulsivas.<br>
-    💡 Consejo: si dudas, marca la opción más lógica y regresa luego si te queda tiempo.
-  </p>
-
-  <div style="background:#f8f9fb; border-left:4px solid #007bff; padding:10px 14px; border-radius:8px; margin:14px 0;">
-    <strong>🎁 BONUS – Caso integrador</strong>
-    <p style="margin:8px 0 0 0; text-align: justify;">
-      Como actividad opcional, se incluye un caso integrador tipo desafío, donde podrás aplicar los conocimientos vistos sobre diagramas de flujo, variables y estructuras lógicas. Su desarrollo no es obligatorio, pero sumará puntos adicionales en la nota final y servirá para reforzar tu aprendizaje práctico. Se valorará la claridad del razonamiento, el uso correcto de estructuras y la presentación del algoritmo.
-    </p>
-  </div>
-
-  <!-- Botón centrado -->
-  <div style="text-align:center; margin-top:18px;">
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSeivVtuBxYdjlADkDpjTQRWxMoLGeBKrpp-YkqA1tVbIpz_tg/viewform?usp=dialog"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="
-        display:inline-block;
-        background: linear-gradient(90deg,#0066ff,#00a3ff);
-        color:#fff;
-        text-decoration:none;
-        padding:12px 20px;
-        border-radius:10px;
-        font-weight:600;
-        box-shadow: 0 6px 18px rgba(0,115,255,0.16);
-        transition: transform .12s ease, box-shadow .12s ease;
-        border: 0;
-      "
-      aria-label="Abrir cuestionario - se abre en nueva pestaña"
-    >
-      ➤ Ir al cuestionario (Form) — Abrir
+  <p><strong>📊 BONUS:</strong> Se incluye un pequeño caso  opcional para aplicar los conceptos vistos. Su desarrollo no es obligatorio, pero puede otorgar puntos adicionales y fortalecer tus habilidades prácticas.</p>
+<p style="margin-top: 30px;">
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeivVtuBxYdjlADkDpjTQRWxMoLGeBKrpp-YkqA1tVbIpz_tg/viewform?usp=dialog" 
+       target="_blank" 
+       style="background-color:#007BFF; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; box-shadow: 0 3px 6px rgba(0,0,0,0.15); transition: background-color 0.3s;">
+       📋 Iniciar Quiz
     </a>
   </div>
 
-  <p style="text-align:center; margin-top:10px; color:#666; font-size:0.92rem;">
-    El formulario se abrirá en una nueva pestaña. Si quieres que el enlace se muestre como botón pequeño en móviles, cambia `padding` a `10px 14px` en el estilo.
-  </p>
 </section>
-
-
-
-
-
-
-
-
-
-
 
     `
   },
   dia4: {
-    objetivo: `<p><strong>Objetivo:</strong> Aplicar estructuras secuenciales y condicionales para resolver problemas.</p>`,
-    teoria: `<p><strong>Teoría:</strong> Estructuras secuenciales y condicionales (if / if-else).</p>`,
-    ejemplos: `<p><strong>Ejemplos:</strong> Construir diagramas y pseudocódigo con decisiones (ej: edad ≥ 18 → mostrar "adulto").</p>`
+    objetivo: `<p><strong>Objetivo:</strong> Aplicar estructuras secuenciales y condicionales para resolver problemas.</p>
+    <p>
+    ✔️ Comprender el funcionamiento de las estructuras secuenciales y condicionales en la programación.<br>
+    ✔️ Aplicar correctamente estructuras de control.<br>
+    ✔️ Aplicar estas ideas tanto en el aula como en la vida diaria.
+     </p>
+    
+    
+    
+    `,
+    teoria: `
+<section style="color: white; font-family: 'Poppins', sans-serif; line-height: 1.6; text-align: left; padding: 20px;">
+
+  <h2 style="color: #e0edf2ff; font-size: 1.0em; margin-bottom: 8px;">1. Concepto de estructura secuencial</h2>
+
+  <h3 style="color: #d8d4c2ff; font-size: 1.0em; margin-top: 15px;"> Definición y funcionamiento</h3>
+  <p>
+    La estructura secuencial constituye la base de toda lógica algorítmica. Se refiere a la ejecución ordenada y lineal de las instrucciones de un programa, donde cada paso se cumple exactamente en el orden en que se escribe, sin saltos, bifurcaciones ni repeticiones.
+    <br><br>
+    Joyanes Aguilar (2022) explica que “una estructura secuencial es aquella en la que las acciones se ejecutan en el mismo orden en que se definen, sin alteraciones en el flujo de control” (p. 238). 
+    Esto significa que el flujo sigue un camino único desde el inicio hasta el final, garantizando un resultado predecible siempre que las entradas sean las mismas.
+    <br><br>
+    En otras palabras, los programas secuenciales actúan como una receta: se deben seguir los pasos en orden para obtener el resultado correcto. 
+    Si el orden cambia, el proceso pierde sentido. Por ejemplo, no se puede mostrar un resultado antes de realizar la operación correspondiente; esto rompería la secuencia lógica.
+  </p>
+
+  <h3 style="color: #d8d4c2ff; font-size: 1.0em; margin-top: 15px;"> Importancia dentro del flujo de un algoritmo</h3>
+  <p>
+    Dominar la estructura secuencial es esencial para comprender cómo piensa un programa. 
+    Antes de introducir condiciones o ciclos, el estudiante debe internalizar que todo algoritmo tiene un flujo principal que avanza paso a paso.
+    <br><br>
+    Dale y Weems (2023) sostienen que “las estructuras secuenciales establecen la base lógica sobre la cual se construyen las demás estructuras de control” (p. 110). 
+    En otras palabras, son el fundamento sobre el cual se edifica el resto de la lógica algorítmica.
+    <br><br>
+    La secuencia no solo organiza el código, sino que también desarrolla el pensamiento computacional, ayudando a los estudiantes a razonar de forma ordenada. 
+    Cuando el flujo de un algoritmo se ejecuta secuencialmente, el programador puede predecir con facilidad el comportamiento del programa y detectar errores más rápido.
+    <br><br>
+    Además, en términos de diseño, las secuencias aseguran que los datos fluyan correctamente entre las etapas del proceso: <strong>entrada → procesamiento → salida</strong>. 
+    Esta cadena es el modelo básico sobre el que se sustentan todos los programas informáticos, desde los más simples hasta los sistemas complejos.
+  </p>
+
+  <h3 style="color: #d8d4c2ff; font-size: 1.0em; margin-top: 15px;"> Ejemplo práctico de estructura secuencial</h3>
+  <p>
+    Un ejemplo clásico es el cálculo del área de un rectángulo. El algoritmo puede representarse de la siguiente manera:
+  </p>
+
+  <h4 style="color: #87cefa; font-size: 1.05em;">🧠 En pseudocódigo:</h4>
+  <pre style="background-color: #f5f5f5; color: black; padding: 12px; border-radius: 8px; border-left: 4px solid #007bff;">
+Inicio
+    Definir base, altura, area Como Real
+    Leer base
+    Leer altura
+    area ← base * altura
+    Mostrar "El área del rectángulo es: ", area
+Fin
+  </pre>
+
+  <h4 style="color: #87cefa; font-size: 1.05em;">🐍 En Python:</h4>
+  <pre style="background-color: #f5f5f5; color: black; padding: 12px; border-radius: 8px; border-left: 4px solid #28a745;">
+base = float(input("Ingrese la base: "))
+altura = float(input("Ingrese la altura: "))
+area = base * altura
+print("El área del rectángulo es:", area)
+  </pre>
+
+  <p>
+    En ambos casos, las instrucciones se ejecutan de manera secuencial: primero se leen los datos, luego se calcula el resultado y finalmente se muestra en pantalla.
+    <br><br>
+    Si se cambiara el orden, por ejemplo, intentando imprimir el resultado antes de calcularlo, el programa generaría un error o mostraría un valor incorrecto.
+  </p>
+
+  <h3 style="color: #d8d4c2ff; font-size: 1.0em; margin-top: 15px;"> Relación con los diagramas de flujo</h3>
+  <p>
+    En los diagramas de flujo, la estructura secuencial se representa mediante una línea continua de símbolos rectangulares (procesos) conectados por flechas que indican la dirección del flujo.
+    <br><br>
+    Deitel & Associates (2004) señalan que “la ejecución secuencial significa que las instrucciones se ejecutan una tras otra en el orden en que están escritas, formando la estructura de control más simple en la programación” (p. 6).
+    <br><br>
+    Esto facilita visualizar cómo los datos se transforman paso a paso, reforzando el pensamiento lógico del estudiante.
+  </p>
+
+  <p>
+    Por ejemplo, un diagrama de flujo para el cálculo del área de una circunferencia incluiría:
+  </p>
+
+  <p style="margin-top: 25px;">
+  <img src="assets/img/arci.png" 
+       alt="Pensamiento computacional" 
+       style="width: 230px; display: block; margin: 15px auto; border-radius: 10px;">
+</p>
+
+
+  <p>Todo conectado linealmente, sin condiciones ni repeticiones.</p>
+
+  <h3 style="color: #d8d4c2ff; font-size: 1.0em; margin-top: 15px;">Ventajas de la estructura secuencial</h3>
+  <ul>
+    <li><strong>Simplicidad:</strong> su flujo lineal facilita la comprensión y el aprendizaje inicial.</li>
+    <li><strong>Previsibilidad:</strong> el resultado depende directamente de las entradas.</li>
+    <li><strong>Depuración sencilla:</strong> al no tener bifurcaciones, los errores se localizan fácilmente.</li>
+    <li><strong>Base lógica:</strong> sirve de punto de partida para estructuras más avanzadas como condicionales o bucles.</li>
+  </ul>
+
+  <p>
+        Sin embargo, su principal limitación es que no permite tomar decisiones ni repetir acciones, por lo que solo resulta útil para algoritmos simples o con un flujo fijo.
+  </p>
+<section id="tema-4-2" style="color: #ffffff; background: none; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6;">
+
+  <h3 style="font-size: 1.2em; font-weight: bold; margin-top: 20px; text-align: left;">
+  2. Concepto de estructura condicional
+  </h3>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;"> Qué son las decisiones en programación</h4>
+  <p>
+  En programación, las estructuras condicionales permiten que un algoritmo tome decisiones según se cumpla o no una condición lógica. 
+  A diferencia de la estructura secuencial —donde todas las instrucciones se ejecutan en orden—, las condicionales dirigen el flujo del programa 
+  por distintos caminos, dependiendo de si una expresión es verdadera (<em>True</em>) o falsa (<em>False</em>).
+  </p>
+  <p>
+  Según <strong>Joyanes Aguilar (2022)</strong>, “las estructuras de decisión introducen la posibilidad de seleccionar entre varias acciones, 
+  en función del resultado de una condición” (p. 245). Es decir, el programa analiza una situación y, con base en ello, decide qué instrucción ejecutar.
+  </p>
+  <p>
+    Por ejemplo, en la vida real: “si está lloviendo, llevo paraguas; si no, salgo sin él”. En programación ocurre lo mismo: 
+    se evalúa una condición y se elige qué bloque de código ejecutar.
+  </p>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;">⚙️ Estructura if – else: condicional simple y doble</h4>
+  <p>
+    En los algoritmos, la instrucción condicional se expresa con la palabra clave <strong>if</strong> (si), que evalúa una condición lógica.
+    En la condicional simple, se ejecuta un bloque de código solo si la condición es verdadera.
+    En la condicional doble (<strong>if – else</strong>), se ejecuta un bloque si la condición es verdadera y otro si es falsa.
+  </p>
+  <p>
+    Según <strong>Dale y Weems (2023)</strong>, “el control condicional es el mecanismo que otorga flexibilidad al programa, 
+    al permitir adaptar su comportamiento a distintos escenarios” (p. 118).
+  </p>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;">Ejemplo de condicional simple en pseudocódigo</h4>
+  <pre style="background-color: #1e1e1e; color: #e0edf2ff; padding: 10px; border-radius: 6px; font-size: 0.9em;">
+Inicio
+    Definir edad Como Entero
+    Leer edad
+    Si edad >= 18 Entonces
+        Mostrar "Eres mayor de edad."
+    FinSi
+Fin
+  </pre>
+  <p>
+    Aquí, la instrucción <strong>Mostrar</strong> se ejecuta solo si la condición <code>edad >= 18</code> se cumple. 
+    Si no, el programa continúa sin mostrar nada.
+  </p>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;"> Ejemplo de condicional doble (if – else)</h4>
+  <pre style="background-color: #1e1e1e; color: #ffffff; padding: 10px; border-radius: 6px; font-size: 0.9em;">
+Inicio
+    Definir nota Como Real
+    Leer nota
+    Si nota >= 11 Entonces
+        Mostrar "Aprobado"
+    Sino
+        Mostrar "Desaprobado"
+    FinSi
+Fin
+  </pre>
+  <p>
+    Si la nota es mayor o igual a 11, se muestra “Aprobado”; de lo contrario, “Desaprobado”. 
+    Esta estructura controla decisiones y valida datos.
+  </p>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;">Representación en diagrama de flujo</h4>
+  <p>
+    En los diagramas de flujo, las estructuras condicionales se representan con un <strong>rombo de decisión</strong>, 
+    donde se formula una pregunta o condición, como “¿nota ≥ 11?”. 
+    Según <strong>Deitel & Associates (2004)</strong>, “el símbolo de decisión (rombo) indica el punto donde el programa debe elegir entre alternativas basadas en una condición” (p. 8).
+  </p>
+  <ul style="text-align: left; margin-left: 25px;">
+    <li>Una flecha con la etiqueta “Sí” o “Verdadero”.</li>
+    <li>Otra con la etiqueta “No” o “Falso”.</li>
+  </ul>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;"> Ejemplo en diagrama de flujo</h4>
+  <ul style="text-align: left; margin-left: 25px;">
+    <li>Inicio.</li>
+    <li>Leer número.</li>
+    <li>Condición: ¿número ≥ 0?</li>
+    <li>Sí: Mostrar “Positivo”.</li>
+    <li>No: Mostrar “Negativo”.</li>
+    <li>Fin.</li>
+  </ul>
+
+  <h4 style="font-size: 1em; margin-top: 15px; text-align: left;"> Importancia de las estructuras condicionales</h4>
+  <p>
+    Las estructuras condicionales permiten que los programas reaccionen ante distintas entradas o situaciones. 
+    Según <strong>Malvino (2021)</strong>, “sin estructuras condicionales, los programas se limitarían a ejecutar instrucciones fijas, 
+    sin adaptarse a los cambios de contexto o datos” (p. 214).
+  </p>
+  <p>
+    Toda aplicación —desde una calculadora hasta una red social— utiliza condiciones para tomar decisiones: validar contraseñas, mostrar mensajes, filtrar información o manejar errores. 
+    Dominar su uso es esencial para desarrollar la lógica necesaria en la programación.
+  </p>
+
+<section id="tema-4-5-4-6" style="color: #ffffff; background: none; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6;">
+
+  <h3 style="font-size: 1.2em; font-weight: bold; margin-top: 20px; text-align: left;">
+  3. Anidación de estructuras condicionales
+  </h3>
+
+  <p>
+    La <strong>anidación de estructuras condicionales</strong> ocurre cuando una condición se encuentra dentro de otra, es decir, 
+    cuando el resultado de una primera decisión determina si se evaluará o no una segunda. 
+    Este tipo de estructuras permite representar procesos jerárquicos o dependientes, en los que cada paso requiere cumplir una condición anterior para continuar.
+  </p>
+
+  <p>
+    Por ejemplo, al determinar si una persona puede conducir, primero se verifica si es mayor de edad; 
+    si lo es, se revisa si posee una licencia vigente. Solo si ambas condiciones se cumplen, se permite la acción. 
+    Esto refleja un razonamiento lógico secuencial, donde una decisión conduce a otra.
+  </p>
+
+  <p>
+    La anidación es muy útil en algoritmos que requieren verificaciones sucesivas o múltiples niveles de decisión. 
+    Sin embargo, debe utilizarse con prudencia, ya que un exceso de condicionales dentro de otras puede dificultar la lectura y el mantenimiento del código.
+  </p>
+
+  <p>
+    Según <strong>Gaddis (2022)</strong>, “las estructuras de decisión anidadas permiten representar una lógica compleja de manera jerárquica, 
+    pero su uso excesivo puede reducir la claridad del programa y aumentar las probabilidades de errores lógicos” (p. 113). 
+    Por ello, se recomienda mantener las anidaciones simples y organizadas, o reemplazarlas por estructuras múltiples si es posible.
+  </p>
+
+  <h3 style="font-size: 1.2em; font-weight: bold; margin-top: 25px; text-align: left;">
+     4. Errores comunes en estructuras condicionales
+  </h3>
+
+  <p>
+    Durante la construcción de estructuras condicionales, los programadores principiantes suelen cometer errores de lógica o sintaxis 
+    que impiden el correcto funcionamiento del algoritmo. Reconocerlos y prevenirlos es esencial para asegurar un código funcional y claro.
+  </p>
+
+  <p>Entre los errores más frecuentes se encuentran:</p>
+
+  <ul style="text-align: left; margin-left: 25px;">
+    <li><strong>Mal uso de operadores:</strong> </li>
+   <p style="margin-top: 25px;">
+  <img src="assets/img/41.jpg" alt="Pensamiento computacional" style="width: 500px; display: block; margin: 15px auto; border-radius: 10px;">
+</p>
+
+    <li><strong>Falta de sangría o indentación (en Python):</strong> </li>
+   <p style="margin-top: 25px;">
+  <img src="assets/img/4222.jpg" alt="Pensamiento computacional" style="width: 500px; display: block; margin: 15px auto; border-radius: 10px;">
+</p>
+
+    <li><strong>Condiciones mal planteadas o confusas:</strong> </li>
+<p style="margin-top: 25px;">
+  <img src="assets/img/433.jpg" alt="Pensamiento computacional" style="width: 500px; display: block; margin: 15px auto; border-radius: 10px;">
+</p>
+
+  </ul>
+
+  <p>
+    De acuerdo con <strong>Lambert (2022)</strong>, “los errores de sintaxis y de lógica en las estructuras de decisión son una de las causas más comunes de fallos en los programas, 
+    especialmente cuando las condiciones no están bien organizadas o los operadores se utilizan incorrectamente” (p. 129).
+  </p>
+
+  <p>
+    Una buena práctica es verificar las condiciones de forma individual antes de combinarlas y comentar el código 
+    para mantener su comprensión a largo plazo.
+  </p>
+
+<section id="recursos_aprendizaje" style="color: #ffffff; font-family: 'Arial', sans-serif; line-height: 1.6; margin-top: 30px;">
+
+  <h3 style="font-size: 1.0em; margin-bottom: 10px;">🎥 Videos a consultar</h3>
+
+  <ul style="list-style-type: none; padding-left: 0;">
+    <li style="margin-bottom: 18px;">
+      <strong>Castaño Giraldo, S. A.</strong> (2021, marzo 17). <em>Condicionales en Python desde cero [IF, ELIF, ELSE] #009</em> [Video]. YouTube. <br>
+      👉 <a href="https://www.youtube.com/watch?v=iFBcCDDDsms" target="_blank" style="color: #00bfff; text-decoration: none;">https://www.youtube.com/watch?v=iFBcCDDDsms</a><br>
+      <span>Este video introduce las estructuras condicionales en Python de forma sencilla, mostrando el uso de <code>if</code>, <code>elif</code> y <code>else</code> con ejemplos claros y prácticos.</span>
+    </li>
+
+    <li style="margin-bottom: 18px;">
+      <strong>Code JavaVu.</strong> (2020). <em>Estructura secuencial: ejemplos de algoritmos</em> [Video]. YouTube. <br>
+      👉 <a href="https://www.youtube.com/watch?v=cY78qXjyyXU" target="_blank" style="color: #00bfff; text-decoration: none;">https://www.youtube.com/watch?v=cY78qXjyyXU</a><br>
+      <span>Un recurso ideal para comprender cómo funcionan las estructuras secuenciales en los algoritmos, con ejemplos prácticos y explicaciones paso a paso.</span>
+    </li>
+
+    <li style="margin-bottom: 18px;">
+      <strong>SnekCato.</strong> (2021, abril 25). <em>IF, ELIF, ELSE | Condicionales en Python</em> [Video]. YouTube. <br>
+      👉 <a href="https://www.youtube.com/watch?v=S2gkQHGFiRE" target="_blank" style="color: #00bfff; text-decoration: none;">https://www.youtube.com/watch?v=S2gkQHGFiRE</a><br>
+      <span>Explica de manera dinámica cómo aplicar correctamente las estructuras condicionales en Python, con ejemplos de código y ejercicios de práctica.</span>
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.0em; margin-top: 25px;">💻 Programas que te pueden servir para practicar</h3>
+
+  <ul style="list-style-type: none; padding-left: 0;">
+    <li style="margin-bottom: 15px;">
+      <strong>RAPTOR:</strong><br>
+      Herramienta educativa para crear y ejecutar algoritmos mediante diagramas de flujo. Permite visualizar de forma clara cómo se ejecutan las estructuras secuenciales y condicionales paso a paso.
+    </li>
+
+    <li style="margin-bottom: 15px;">
+      <strong>Flowgorithm:</strong><br>
+      Programa gratuito diseñado para aprender programación a través de diagramas de flujo interactivos. Es ideal para practicar la lógica de decisiones (<code>if–else</code>, <code>if–elif–else</code>) antes de escribir código en Python.
+    </li>
+
+    <li style="margin-bottom: 15px;">
+      <strong>Miro:</strong><br>
+      Pizarra digital colaborativa que facilita la creación de diagramas de flujo, esquemas y mapas conceptuales. Muy útil para representar gráficamente el flujo de un algoritmo antes de implementarlo.
+    </li>
+  </ul>
+  </section>
+   <p style="margin-top: 25px;">
+  <img src="assets/img/A1.png" alt="Pensamiento computacional" style="width: 500px; display: block; margin: 15px auto; border-radius: 10px;">
+</p>
+
+    `,
+    ejemplos: `
+    
+<section id="ejemplos_estructuras" style="color: #ffffff; font-family: 'Arial', sans-serif; line-height: 1.5; margin-top: 10px; text-align: left;">
+
+  <h3 style="font-size: 1.3em; margin-bottom: 8px;">Ejemplo 1: </h3>
+  <p style="margin: 5px 0;">Un ejemplo clásico de estructura secuencial es el cálculo del promedio de tres notas. En este tipo de estructura, las instrucciones se ejecutan una tras otra, en el mismo orden en que fueron escritas.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir n1, n2, n3, promedio Como Real
+  Leer n1, n2, n3
+  promedio ← (n1 + n2 + n3) / 3
+  Mostrar "El promedio es: ", promedio
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ En este caso, el flujo es lineal y sin bifurcaciones: primero se leen los datos, luego se realiza el cálculo y finalmente se muestra el resultado.</p>
+
+  <h4 style="font-size: 1.1em; margin-top: 10px; margin-bottom: 5px;">Ejemplo 2:</h4>
+  <p style="margin: 5px 0;">Situación: calcular el área y el perímetro de un rectángulo.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir base, altura, area, perimetro Como Real
+  Leer base
+  Leer altura
+  area ← base * altura
+  perimetro ← 2 * (base + altura)
+  Mostrar "El área es: ", area
+  Mostrar "El perímetro es: ", perimetro
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ Este ejemplo sigue un flujo lineal de lectura, cálculo y salida, sin condiciones ni repeticiones.</p>
+
+  <h4 style="font-size: 1.1em; margin-top: 10px; margin-bottom: 5px;">Ejemplo 3:</h4>
+  <p style="margin: 5px 0;">Situación: determinar si una persona puede votar.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir edad Como Entero
+  Leer edad
+  Si edad >= 18 Entonces
+      Mostrar "Puede votar"
+  Sino
+      Mostrar "No puede votar"
+  FinSi
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ Aquí se utiliza la estructura if – else, que permite tomar una decisión según se cumpla o no la condición (edad ≥ 18).</p>
+
+  <h4 style="font-size: 1.1em; margin-top: 10px; margin-bottom: 5px;">Ejemplo 4:</h4>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir numero Como Entero
+  Leer numero
+  Si numero MOD 2 = 0 Entonces
+      Mostrar "El número es par"
+  Sino
+      Mostrar "El número es impar"
+  FinSi
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ El operador MOD calcula el residuo. Si es cero, el número es par; de lo contrario, es impar.</p>
+
+  <h4 style="font-size: 1.1em; margin-top: 10px; margin-bottom: 5px;">Ejemplo 5:</h4>
+  <p style="margin: 5px 0;">Situación: verificar si una persona puede conducir.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir edad Como Entero
+  Definir tiene_licencia Como Caracter
+  Leer edad
+  Si edad >= 18 Entonces
+      Leer tiene_licencia
+      Si tiene_licencia = "S" Entonces
+          Mostrar "Puede conducir"
+      Sino
+          Mostrar "No tiene licencia"
+      FinSi
+  Sino
+      Mostrar "No tiene la edad mínima"
+  FinSi
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ Este ejemplo muestra una anidación condicional, donde una decisión depende del resultado de otra.</p>
+
+  <h4 style="font-size: 1.1em; margin-top: 10px; margin-bottom: 5px;">Ejemplo 5:</h4>
+  <p style="margin: 5px 0;">Situación: clasificar una nota según el valor numérico.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir nota Como Real
+  Leer nota
+  Si nota >= 17 Entonces
+      Mostrar "Calificación: A"
+  Sino
+      Si nota >= 14 Entonces
+          Mostrar "Calificación: B"
+      Sino
+          Si nota >= 11 Entonces
+              Mostrar "Calificación: C"
+          Sino
+              Mostrar "Calificación: D"
+          FinSi
+      FinSi
+  FinSi
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ Este tipo de condicional múltiple permite evaluar varias condiciones de forma ordenada, ejecutando solo la primera que sea verdadera.</p>
+
+  <h4 style="font-size: 1.1em; margin-top: 10px; margin-bottom: 5px;">Ejemplo 6:</h4>
+  <p style="margin: 5px 0;">Situación: determinar la etapa de vida según la edad.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ffffff; font-family: 'Courier New', monospace;">
+Inicio
+  Definir edad Como Entero
+  Leer edad
+  Si edad < 12 Entonces
+      Mostrar "Niño"
+  Sino
+      Si edad < 18 Entonces
+          Mostrar "Adolescente"
+      Sino
+          Si edad < 60 Entonces
+              Mostrar "Adulto"
+          Sino
+              Mostrar "Adulto mayor"
+          FinSi
+      FinSi
+  FinSi
+Fin
+  </pre>
+
+  <p style="margin: 5px 0;">➡️ Este ejemplo permite clasificar rangos de edad usando condiciones jerárquicas.</p>
+
+</section>
+
+    
+    `
   },
   dia5: {
-    objetivo: `<p><strong>Objetivo:</strong> Integrar todo lo aprendido en pseudocódigo completo.</p>`,
-    teoria: `<p><strong>Teoría:</strong> Estructura general de un programa en pseudocódigo.</p>`,
-    ejemplos: `<p><strong>Ejemplos:</strong> Resolver ejercicios completos paso a paso.</p>`,
+    objetivo: `<p><strong>Objetivo:</strong></p>
+    
+     <p>
+    ✔️ Comprender la función del pseudocódigo como herramienta intermedia entre el razonamiento lógico y la programación estructurada.<br>
+    ✔️ Aplicar las reglas y estructuras básicas del pseudocódigo para representar soluciones algorítmicas de forma clara y ordenada.<br>
+    ✔️ Desarrollar habilidades de análisis y planificación mediante la escritura de algoritmos en pseudocódigo.
+     </p>
+    
+    
+    `,
+    teoria: `<p><strong>Teoría:</strong></p>
+
+    <section id="pseudocodigo" style="color: #ffffff; font-family: 'Arial', sans-serif; line-height: 1.5; margin-top: 30px; text-align: left;">
+
+  <h3 style="font-size: 1.0em; margin-bottom: 8px;">1. Definición y función del pseudocódigo</h3>
+  <p>El pseudocódigo es una herramienta utilizada para describir el funcionamiento de un algoritmo mediante una notación estructurada, que combina el lenguaje natural con ciertos elementos de la programación formal. Su objetivo principal es expresar la lógica de un proceso sin preocuparse por la sintaxis rígida de un lenguaje de programación. Esto permite que el analista o el estudiante se concentre en el razonamiento lógico antes de escribir código ejecutable.</p>
+
+  <p>El pseudocódigo no es interpretado por una computadora, sino que actúa como guía previa para el desarrollo del software. Gracias a su carácter universal, puede ser comprendido por programadores de distintos lenguajes y niveles de experiencia. Además, se considera una fase intermedia esencial en el diseño de programas, ya que evita errores conceptuales en etapas posteriores.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer número1, número2
+   Sumar ← número1 + número2
+   Mostrar Sumar
+Fin
+  </pre>
+
+  <h3 style="font-size: 1.0em; margin-bottom: 8px; margin-top: 20px;">2. Importancia en la programación</h3>
+  <p>El uso del pseudocódigo es fundamental para el desarrollo del pensamiento lógico y computacional. Permite que los estudiantes y programadores organicen sus ideas antes de pasar al código fuente, reduciendo la posibilidad de errores y mejorando la eficiencia del proceso de programación. En la enseñanza de la informática, el pseudocódigo se utiliza como una herramienta pedagógica para introducir los conceptos de algoritmia sin necesidad de aprender un lenguaje específico.</p>
+
+  <p>Asimismo, fomenta la comprensión estructurada del flujo de información, lo que facilita la detección de errores lógicos, la optimización de procesos y la comunicación entre miembros de un equipo de desarrollo. Gracias a su lenguaje neutro, el pseudocódigo puede emplearse en diferentes contextos técnicos y educativos, siendo un recurso ideal para documentar procedimientos o diseñar prototipos de programas.</p>
+
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer temperatura
+   Si temperatura > 37 Entonces
+        Mostrar "Tiene fiebre"
+   Sino
+        Mostrar "Temperatura normal"
+Fin
+  </pre>
+
+  <h3 style="font-size: 1.0em; margin-bottom: 8px; margin-top: 20px;">3. Reglas de escritura del pseudocódigo</h3>
+  <p>La correcta redacción del pseudocódigo garantiza la claridad y la comprensión del algoritmo. Generalmente, todo pseudocódigo inicia con la palabra “Inicio” y finaliza con “Fin”, lo que delimita el cuerpo del algoritmo. Cada instrucción debe escribirse en líneas separadas y con una sangría o indentación que refleje la jerarquía de las estructuras utilizadas.</p>
+
+  <p>Es recomendable emplear verbos de acción como Leer, Escribir, Calcular o Mostrar, los cuales indican las operaciones que realiza el algoritmo. Los nombres de las variables deben ser claros y representativos del contenido que almacenan. Además, deben evitarse ambigüedades, repeticiones innecesarias y estructuras poco legibles.</p>
+
+  <p><strong>Ejemplo correcto:</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer nota
+   Si nota >= 11 Entonces
+        Mostrar "Aprobado"
+   Sino
+        Mostrar "Desaprobado"
+Fin
+  </pre>
+
+  <p><strong>Ejemplo incorrecto:</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #ff8080; font-family: 'Courier New', monospace;">
+Leer nota
+Si nota>=11
+Mostrar Aprobado
+Sino
+Mostrar Desaprobado
+  </pre>
+
+  <h3 style="font-size: 1.0em; margin-bottom: 8px; margin-top: 20px;">4. Estructuras básicas del pseudocódigo</h3>
+  <p>Los algoritmos representados mediante pseudocódigo se organizan en tres estructuras fundamentales: secuencial, condicional y repetitiva.</p>
+
+  <p><strong>Estructura secuencial:</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer A, B
+   C ← A + B
+   Mostrar C
+Fin
+  </pre>
+
+  <p><strong>Estructura condicional:</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer edad
+   Si edad >= 18 Entonces
+        Mostrar "Mayor de edad"
+   Sino
+        Mostrar "Menor de edad"
+Fin
+  </pre>
+
+  <p><strong>Estructura repetitiva:</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Contador ← 1
+   Mientras Contador <= 5 Hacer
+         Mostrar Contador
+         Contador ← Contador + 1
+   FinMientras
+Fin
+  </pre>
+
+  <h3 style="font-size: 1.0em; margin-bottom: 8px; margin-top: 20px;">5. Ventajas del pseudocódigo</h3>
+  <p>El pseudocódigo presenta múltiples ventajas en el proceso de diseño de algoritmos. En primer lugar, facilita la comprensión de los procedimientos lógicos gracias a su lenguaje simple y estructurado. En segundo lugar, permite planificar y documentar soluciones antes de implementarlas, lo que disminuye la probabilidad de cometer errores durante la codificación. Finalmente, favorece el aprendizaje de la programación al centrarse en la lógica más que en la sintaxis.</p>
+
+  <p>Estas características convierten al pseudocódigo en una herramienta indispensable para quienes se inician en la programación y para los equipos que buscan estandarizar la comunicación técnica entre analistas, diseñadores y desarrolladores.</p>
+
+  <h3 style="font-size: 1.0em; margin-bottom: 8px; margin-top: 20px;">6. Ejemplos aplicados</h3>
+
+
+  <p><strong>Ejemplo 1: Calcular el promedio de tres números</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer n1, n2, n3
+   promedio ← (n1 + n2 + n3) / 3
+   Mostrar promedio
+Fin
+  </pre>
+
+  <p><strong>Ejemplo 2: Determinar si una persona es mayor de edad</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer edad
+   Si edad >= 18 Entonces
+        Mostrar "Mayor de edad"
+   Sino
+        Mostrar "Menor de edad"
+Fin
+  </pre>
+
+  <p><strong>Ejemplo 3: Clasificar una nota según su valor numérico</strong></p>
+  <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
+Inicio
+   Leer nota
+   Si nota >= 17 Entonces
+        Mostrar "Excelente"
+   Sino Si nota >= 14 Entonces
+        Mostrar "Bueno"
+   Sino Si nota >= 11 Entonces
+        Mostrar "Regular"
+   Sino
+        Mostrar "Desaprobado"
+Fin
+  </pre>
+
+</section>
+
+
+    `,
+    ejemplos: `<p><strong>Ejemplos:</strong>
+    
+  <section style="color: white; font-family: 'Poppins', sans-serif; line-height: 1.5; padding: 20px; text-align: left;">
+
+  <p style="margin-bottom: 10px;">
+    A continuación se presentan ejercicios prácticos para aplicar las estructuras fundamentales del pseudocódigo:
+    secuencial, condicional y repetitiva. Cada ejercicio incluye la descripción del problema, las entradas, los procesos y las salidas esperadas.
+  </p>
+
+  <!-- Ejercicio 1 -->
+  <h3 style="color: #ffcc00; margin-top: 20px; font-size: 18px;"> Ejercicio 1: Cálculo del promedio final de un estudiante</h3>
+  <p><strong>Descripción:</strong> Desarrollar un algoritmo que calcule el promedio final de un estudiante a partir de tres notas. Si el promedio es mayor o igual a 11, se mostrará “Aprobado”; de lo contrario, “Desaprobado”.</p>
+  <p><strong>Entradas:</strong> n1, n2, n3 (notas del estudiante)</p>
+  <p><strong>Proceso:</strong> Leer las tres notas. Calcular el promedio = (n1 + n2 + n3) / 3. Evaluar si el promedio ≥ 11.</p>
+  <p><strong>Salidas:</strong> Promedio del estudiante y mensaje correspondiente.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir n1, n2, n3, promedio Como Real
+    Leer n1, n2, n3
+    promedio ← (n1 + n2 + n3) / 3
+    Si promedio >= 11 Entonces
+        Mostrar "Aprobado con promedio de: ", promedio
+    Sino
+        Mostrar "Desaprobado con promedio de: ", promedio
+    FinSi
+Fin
+  </pre>
+
+  <!-- Ejercicio 2 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 2: Descuento según monto de compra</h3>
+  <p><strong>Descripción:</strong> Calcular el total a pagar considerando un descuento del 10% si el monto es mayor o igual a 500 soles.</p>
+  <p><strong>Entradas:</strong> monto (importe total de la compra)</p>
+  <p><strong>Proceso:</strong> Leer monto. Si monto ≥ 500, aplicar descuento = monto * 0.10. Calcular total = monto - descuento.</p>
+  <p><strong>Salidas:</strong> Descuento aplicado y total a pagar.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir monto, descuento, total Como Real
+    Leer monto
+    Si monto >= 500 Entonces
+        descuento ← monto * 0.10
+    Sino
+        descuento ← 0
+    FinSi
+    total ← monto - descuento
+    Mostrar "Descuento aplicado: ", descuento
+    Mostrar "Total a pagar: ", total
+Fin
+  </pre>
+
+  <!-- Ejercicio 3 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 3: Clasificación de edades</h3>
+  <p><strong>Descripción:</strong> Determinar la etapa de vida de una persona según su edad.</p>
+  <p><strong>Entradas:</strong> edad (años)</p>
+  <p><strong>Proceso:</strong> Leer edad y evaluar rangos: &lt;12 “Niño(a)”, 12–17 “Adolescente”, 18–59 “Adulto(a)”, ≥60 “Adulto mayor”.</p>
+  <p><strong>Salidas:</strong> Mensaje con la etapa de vida.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir edad Como Entero
+    Leer edad
+    Si edad < 12 Entonces
+        Mostrar "Niño(a)"
+    Sino
+        Si edad < 18 Entonces
+            Mostrar "Adolescente"
+        Sino
+            Si edad < 60 Entonces
+                Mostrar "Adulto(a)"
+            Sino
+                Mostrar "Adulto mayor"
+            FinSi
+        FinSi
+    FinSi
+Fin
+  </pre>
+
+  <!-- Ejercicio 4 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 4: Cálculo del salario semanal</h3>
+  <p><strong>Descripción:</strong> Calcular el salario semanal de un trabajador. Si trabaja más de 40 horas, las horas extra se pagan al 150% del valor normal.</p>
+  <p><strong>Entradas:</strong> horas trabajadas, tarifa por hora.</p>
+  <p><strong>Proceso:</strong> Leer horas y tarifa. Si horas ≤ 40, salario = horas * tarifa; si &gt;40, salario = (40 * tarifa) + ((horas - 40) * tarifa * 1.5).</p>
+  <p><strong>Salidas:</strong> Salario semanal total.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir horas, tarifa, salario Como Real
+    Leer horas, tarifa
+    Si horas <= 40 Entonces
+        salario ← horas * tarifa
+    Sino
+        salario ← (40 * tarifa) + ((horas - 40) * tarifa * 1.5)
+    FinSi
+    Mostrar "El salario semanal es: ", salario
+Fin
+  </pre>
+
+  <!-- Ejercicio 5 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 5: Suma de números positivos</h3>
+  <p><strong>Descripción:</strong> Leer 10 números e indicar la suma total solo de los valores positivos.</p>
+  <p><strong>Entradas:</strong> 10 números enteros (num).</p>
+  <p><strong>Proceso:</strong> Inicializar suma ← 0. Repetir 10 veces: leer num. Si num > 0, sumar a suma.</p>
+  <p><strong>Salidas:</strong> Suma total de los números positivos.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir num, suma, contador Como Entero
+    suma ← 0
+    contador ← 1
+    Mientras contador <= 10 Hacer
+        Leer num
+        Si num > 0 Entonces
+            suma ← suma + num
+        FinSi
+        contador ← contador + 1
+    FinMientras
+    Mostrar "La suma de los números positivos es: ", suma
+Fin
+  </pre>
+
+  <!-- Ejercicio 6 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 6: Determinar el mayor de tres números</h3>
+  <p><strong>Descripción:</strong> Leer tres números y determinar cuál es el mayor o si todos son iguales.</p>
+  <p><strong>Entradas:</strong> a, b, c (números reales).</p>
+  <p><strong>Proceso:</strong> Leer los tres números, compararlos y mostrar el mayor o mensaje de igualdad.</p>
+  <p><strong>Salidas:</strong> El número mayor o mensaje de igualdad.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir a, b, c Como Real
+    Leer a, b, c
+    Si a > b Y a > c Entonces
+        Mostrar "El mayor es: ", a
+    Sino
+        Si b > c Entonces
+            Mostrar "El mayor es: ", b
+        Sino
+            Si c > a Y c > b Entonces
+                Mostrar "El mayor es: ", c
+            Sino
+                Mostrar "Todos los números son iguales"
+            FinSi
+        FinSi
+    FinSi
+Fin
+  </pre>
+
+  <!-- Ejercicio 7 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 7: Validación de fecha</h3>
+  <p><strong>Descripción:</strong> Leer una fecha (día, mes, año) y validar si es correcta (sin considerar años bisiestos).</p>
+  <p><strong>Entradas:</strong> día, mes, año (valores enteros).</p>
+  <p><strong>Proceso:</strong> Verificar rangos de mes y día según el mes correspondiente.</p>
+  <p><strong>Salidas:</strong> Mensaje indicando si la fecha es válida o no.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir dia, mes, año Como Entero
+    Leer dia, mes, año
+    Si mes < 1 O mes > 12 Entonces
+        Mostrar "Mes inválido"
+    Sino
+        Si dia < 1 O dia > 31 Entonces
+            Mostrar "Día inválido"
+        Sino
+            Si (mes = 4 O mes = 6 O mes = 9 O mes = 11) Y dia > 30 Entonces
+                Mostrar "Día inválido para este mes"
+            Sino
+                Si mes = 2 Y dia > 28 Entonces
+                    Mostrar "Día inválido para febrero"
+                Sino
+                    Mostrar "Fecha válida"
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+Fin
+  </pre>
+
+  <!-- Ejercicio 8 -->
+  <h3 style="color: #ffcc00; margin-top: 25px; font-size: 18px;"> Ejercicio 8: Clasificación de notas con promedio general</h3>
+  <p><strong>Descripción:</strong> Leer las notas de cinco estudiantes, calcular el promedio general del grupo y mostrar cuántos aprobaron y desaprobaron.</p>
+  <p><strong>Entradas:</strong> nota (5 valores reales).</p>
+  <p><strong>Proceso:</strong> Acumular notas, contar aprobados y desaprobados, calcular promedio.</p>
+  <p><strong>Salidas:</strong> Promedio general, cantidad de aprobados y desaprobados.</p>
+
+  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
+Inicio
+    Definir nota, suma, promedio Como Real
+    Definir contador, aprobados, desaprobados Como Entero
+    suma ← 0
+    aprobados ← 0
+    desaprobados ← 0
+    Para contador ← 1 Hasta 5 Con Paso 1 Hacer
+        Leer nota
+        suma ← suma + nota
+        Si nota >= 11 Entonces
+            aprobados ← aprobados + 1
+        Sino
+            desaprobados ← desaprobados + 1
+        FinSi
+    FinPara
+    promedio ← suma / 5
+    Mostrar "Promedio general: ", promedio
+    Mostrar "Aprobados: ", aprobados
+    Mostrar "Desaprobados: ", desaprobados
+Fin
+  </pre>
+
+  <p style="margin-top: 20px;">
+    Estos ejercicios te permitirán aplicar de forma práctica las estructuras básicas del pseudocódigo, desarrollando el pensamiento lógico, la secuencia de pasos y la capacidad de traducir problemas reales a soluciones algorítmicas.
+  </p>
+
+</section>
+
+    
+    `,
     quiz_final: `<p><strong>Quiz final:</strong> Evaluación de todo lo aprendido en pseudocódigo.</p>`
   },
 
@@ -1111,7 +1883,7 @@ const cursos = {
       { nombre: "🔄 Tema 2 – Diagramas de flujo 🔄", id: "dia2", recursos: ["Teoría", "Ejemplos"] },
       { nombre: "🔢 Tema 3 – Variables y tipos de datos 🔢", id: "dia3", recursos: ["Teoría", "Ejemplos", "Quiz intermedio"] },
       { nombre: "⚙️ Tema 4 – Estructuras secuenciales y condicionales ⚙️", id: "dia4", recursos: ["Teoría", "Ejemplos"] },
-      { nombre: "💻 Tema 5 – Pseudocódigo completo y práctica guiada 💻", id: "dia5", recursos: ["Teoría", "Ejemplos", "Quiz final"] }
+      { nombre: "💻 Tema 5 – Pseudocódigo  💻", id: "dia5", recursos: ["Teoría", "Ejemplos", "Quiz final"] }
     ]
   },
   2: {
