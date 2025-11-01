@@ -11279,7 +11279,7 @@ const cursos = {
   4: {
     titulo: "Minicurso 4: Programación Modular",
     descripcion: "Organiza tus programas en funciones reutilizables y desarrolla un mini-reto.",
-    imagen: "assets/img/modular1.png",
+    imagen: "assets/img/prograMod.png",
     modulos: [
       { nombre: "Tema 1 – Concepto de modularización", id: "mod1", recursos: ["Teoría", "Ejemplos", "Quiz de entrada"] },
       { nombre: "Tema 2 – Funciones en pseudocódigo", id: "mod2", recursos: ["Teoría", "Ejemplos", "Quiz Intermedio"] },
@@ -11613,12 +11613,6 @@ function agregarReferencias(cursoId) {
 <p>Zelle, J. (2022) Python programming: An introduction to computer science (4th ed.) Franklin, Beedle & Associates Inc</p>
 
 </section>
-
-
-
-
-
-
 
 
 

@@ -2,10 +2,215 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nosotros - CodeSpace Hub</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* === ESTILOS GLOBALES === */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #0a192f;
+      background: #ffffff; /* Fondo blanco general */
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #0a192f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .logo {
+      width: 130px;
+      transition: transform 0.3s;
+    }
+
+    .logo:hover {
+      transform: scale(1.08);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #d6e8ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #66fcf1;
+    }
+
+    /* === CONTENIDO PRINCIPAL === */
+    main {
+      padding: 80px 10%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4em;
+      margin-bottom: 50px;
+      color: #0a192f;
+      letter-spacing: 1px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* === SECCIONES CON FONDO OSCURO === */
+    section {
+      background: #0e2439;
+      border: 1px solid rgba(102, 252, 241, 0.2);
+      border-radius: 16px;
+      padding: 40px 30px;
+      margin-bottom: 60px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease, border 0.4s ease;
+      color: #dce9f0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* === EFECTO NEÓN AL HACER HOVER === */
+    section:hover {
+      transform: translateY(-6px);
+      background: #102f46;
+      border-color: #66fcf1;
+      box-shadow: 
+        0 0 10px rgba(102, 252, 241, 0.5),
+        0 0 20px rgba(102, 252, 241, 0.4),
+        0 0 40px rgba(102, 252, 241, 0.2);
+    }
+
+    /* Efecto animado de brillo pulsante */
+    section:hover::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(102, 252, 241, 0.25) 0%, transparent 70%);
+      animation: pulseGlow 2.5s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.1); }
+    }
+
+    section * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: #66fcf1;
+      margin-bottom: 15px;
+      text-align: center;
+      text-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
+    }
+
+    p {
+      font-size: 1.05em;
+      text-align: justify;
+      margin-bottom: 12px;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    /* === CONTACTO === */
+    .contacto {
+      text-align: center;
+    }
+
+    .contacto a {
+      color: #66fcf1;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .contacto a:hover {
+      color: #45d9d3;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: #061325;
+      color: #c2d8e5;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.95em;
+      letter-spacing: 0.5px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    footer p {
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+      color: #bcd0df;
+    }
+
+    footer p span {
+      color: #66fcf1;
+      font-weight: 600;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      main {
+        padding: 60px 5%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <!-- === ENCABEZADO === -->
   <header>
     <img src="assets/img/logofondo.png" alt="Logo CodeSpace Hub" class="logo">
     <nav>
@@ -18,20 +223,61 @@
     </nav>
   </header>
 
+  <!-- === CONTENIDO PRINCIPAL === -->
   <main>
     <h1>Sobre CodeSpace Hub</h1>
-    <p>
-      CodeSpace Hub es una plataforma educativa gratuita creada para inspirar a estudiantes
-      a aprender programación y explorar el mundo tecnológico.
-    </p>
-    <p>
-      Nuestro objetivo es promover el acceso a la educación digital y despertar la curiosidad
-      por la ciencia, la lógica y la innovación.
-    </p>
+
+    <!-- SECCIÓN 1 -->
+    <section id="intro">
+      <h2>🧠 ¿Qué es CodeSpace Hub?</h2>
+      <p>
+        <strong>CodeSpace Hub</strong> es un espacio educativo digital para aprender programación basica y lógica computacional.
+        A través de un enfoque práctico e interactivo, guía a estudiantes y entusiastas en el dominio introductorio de herramientas como <strong>PSeInt</strong>,
+        <strong>Python</strong> y otras tecnologías modernas.
+      </p>
+      <p>
+        Ofrecemos minicursos, retos guiados y ejercicios interactivos para que cada persona pueda aprender a su ritmo, desde lo básico hasta lo creativo.
+      </p>
+    </section>
+
+    <!-- SECCIÓN 2 -->
+    <section id="mision">
+      <h2>🎯  Misión</h2>
+      <p>
+        Fomentar el aprendizaje accesible, dinámico y modular de la programación,
+        brindando herramientas que permitan <strong>comprender, aplicar y crear soluciones digitales reales</strong>.
+      </p>
+      <p>
+        En CodeSpace Hub creemos que la práctica constante y la creatividad son el camino hacia la autonomía en el desarrollo de proyectos tecnológicos.
+      </p>
+    </section>
+
+    <!-- SECCIÓN 3 -->
+    <section id="vision">
+      <h2>🌍 Visión</h2>
+      <p>
+        Ser una <strong>plataforma educativa líder</strong> en el ámbito de la programación básica e intermedia,
+        reconocida por su enfoque <strong>interactivo, didáctico y colaborativo</strong>.
+      </p>
+      <p>
+        Queremos que aprender a programar sea una experiencia <strong>clara, divertida y útil</strong> para todos,
+        creando una comunidad que evolucione junta, compartiendo conocimiento e inspiración.
+      </p>
+    </section>
+
+    <!-- SECCIÓN 4 -->
+    <section id="contacto" class="contacto">
+      <h2>💬 Contacto </h2>
+      <p>¿Tienes dudas, ideas o sugerencias? ¡Nos encantaría escucharte!</p>
+      <p> Correo: <a href="mailto:hubstarcode@gmail.com">hubstarcode@gmail.com</a></p>
+      <p> Sitio web: <a href="https://www.codespacehub.com" target="_blank">www.codespacehub.com</a></p>
+    </section>
   </main>
 
+  <!-- === PIE DE PÁGINA === -->
   <footer>
-    <p>© 2025 CodeSpace Hub</p>
+    <p>© 2025 <span>CodeSpace Hub</span> — Innovando en educación digital </p>
   </footer>
 </body>
 </html>
+
