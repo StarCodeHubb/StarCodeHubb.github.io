@@ -8282,7 +8282,7 @@ style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; 
     la organización general del programa.
   </p>
 
-  <div style="background-color: #b6d5d5ff; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 10px;">
+  <div style="background-color: #1e1e1e; padding: 10px; border-radius: 10px; color: #b6d5d5ff; margin-top: 10px;">
     <strong>Ejemplo básico:</strong>
     <pre style="margin-top: 5px;">
 def saludar():
