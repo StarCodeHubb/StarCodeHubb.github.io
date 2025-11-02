@@ -1,35 +1,503 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Quizzes - CodeSpace Hub</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <title>Quizzes Interactivos - CodeSpace Hub</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* --- Layout general --- */
+    :root{
+      --header-bg:#0a2239; /* tu color de header/footer exacto */
+      --page-bg:#f4f6f8;   /* fondo claro */
+      --card-bg:#152238;   /* tarjetas oscuras */
+      --card-text:#eef6fb;
+      --accent:#22c1dc;
+      --muted:#9aa7b6;
+      --success:#2ecc71;
+      --danger:#e74c3c;
+    }
+    html,body{height:100%;margin:0;font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;background:var(--page-bg);color:#111;}
+    header{background:var(--header-bg);padding:14px 24px;color:white;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+    header img.logo{height:56px}
+    nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0}
+    nav a{color:white;text-decoration:none;font-weight:600}
+    nav a.active{border-bottom:3px solid var(--accent);padding-bottom:6px}
+    main{max-width:1200px;margin:26px auto;padding:0 18px}
+    .intro{text-align:center}
+    .intro h1{color:var(--header-bg);margin-bottom:6px}
+    .intro p{color:var(--muted);margin-top:0}
+
+    /* --- GRID de tarjetas --- */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:26px}
+    .card{background:var(--card-bg);color:var(--card-text);padding:20px;border-radius:12px;box-shadow:0 8px 22px rgba(16,24,32,0.15);transition:transform .18s}
+    .card:hover{transform:translateY(-6px)}
+    .card h3{color:var(--accent);margin:0 0 8px}
+    .card p{color:var(--muted);margin:0 0 14px}
+    .card .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),#8a63ff);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;border:none;cursor:pointer}
+    .card .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--card-text);font-weight:600}
+
+    /* --- Modal (quiz stepper) --- */
+    .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px}
+    .modal{background:white;width:100%;max-width:820px;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(2,6,23,0.5)}
+    .modal-header{background:var(--header-bg);color:white;padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+    .modal-header h4{margin:0;font-size:16px}
+    .modal-body{padding:18px;background:linear-gradient(180deg,#fbfdff,#f7fafc)}
+    .question-card{background:var(--card-bg);color:var(--card-text);padding:18px;border-radius:10px;margin-bottom:12px}
+    .q-index{font-weight:700;color:var(--accent);margin-bottom:8px}
+    .q-text{font-weight:700;color:#eef6fb;margin-bottom:12px}
+    .options label{display:block;padding:10px;border-radius:8px;margin:6px 0;background:rgba(255,255,255,0.03);cursor:pointer;color:var(--muted)}
+    .options input{margin-right:10px}
+    .controls{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:12px;flex-wrap:wrap}
+    .controls .left{color:var(--muted)}
+    .controls button{padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.08);color:#333}
+    .feedback{margin-top:12px;padding:10px;border-radius:8px;background:rgba(34,193,220,0.06);color:#063244;font-weight:600}
+    .feedback.wrong{background:rgba(231,76,60,0.06);color:#3b1210}
+    .final-score{font-size:18px;font-weight:800;color:var(--header-bg)}
+    .explain{margin-top:8px;color:#2f3b46;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;font-size:14px}
+    .small-muted{font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:600px){
+      .modal{max-width:100%}
+    }
+  </style>
 </head>
 <body>
+
+  <!-- HEADER (NO TOCAR) -->
   <header>
-    <img src="assets/img/logofondo.png" alt="Logo CodeSpace Hub" class="logo">
+    <div style="display:flex;align-items:center;gap:12px">
+      <img src="assets/img/logofondo.png" alt="Logo" class="logo" style="height:52px">
+      <div>
+        <div style="font-weight:800;color:white">CodeSpace Hub</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.8)">Aprende. Practica. Repite.</div>
+      </div>
+    </div>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="quizzes.html" class="active">Quizzes</a></li>
-        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li style="display:inline"><a href="index.html">Inicio</a></li>
+        <li style="display:inline"><a href="cursos.html">Cursos</a></li>
+        <li style="display:inline"><a href="quizzes.html" class="active">Quizzes</a></li>
+        <li style="display:inline"><a href="sobre.html">Sobre Nosotros</a></li>
       </ul>
     </nav>
   </header>
+  <!-- /HEADER -->
 
   <main>
-    <h1>Quizzes Interactivos</h1>
-    <p>Pon a prueba tus conocimientos con nuestros cuestionarios sobre programación.</p>
-
-    <section>
-      <h2>Próximamente...</h2>
-      <p>Estamos desarrollando quizzes dinámicos para reforzar lo que aprendes en los cursos.</p>
+    <section class="intro">
+      <h1>Quizzes Interactivos — Todos los minicursos</h1>
+      <p>Haz clic en <strong>Iniciar</strong>, responde pregunta a pregunta y obtén tu puntuación con una breve explicación.</p>
     </section>
+
+    <div class="grid" role="list">
+
+
+
+      
+  <!-- 💡 NUEVO BLOQUE DE KAHOOT -->
+  <article class="card" role="listitem">
+
+<h3>🎮 Kahoot — Lógica y Programación</h3>
+    <p>Participa en el quiz interactivo de repaso del primer minicurso (Kahoot).</p>
+    <a href="https://kahoot.it/challenge/01397480?challenge-id=2993f517-b6c1-4ef7-86c0-8223f5d8c515_1762043924948"
+       target="_blank"
+       class="btn"
+       style="background:linear-gradient(90deg,#ff4081,#7c4dff);">
+       Ir al Kahoot
+    </a>
+  </article> <!-- Tarjeta Wayground -->
+  
+  
+<article class="quiz-card" style="background-color: #152238; color: #fff; border-radius: 10px; padding: 20px; max-width: 380px; box-shadow: 0 4px 10px rgba(0,0,0,0.35); text-align: left;">
+  <h3 style="color: #22c1dc; font-size: 1.05rem; margin-bottom: 10px;">🧩 Wayground — Lógica de Programación</h3>
+  
+  <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 18px;">
+    Participa en el quiz interactivo del primer minicurso a través de Wayground.
+  </p>
+
+  <div style="text-align: center;">
+    <a href="https://wayground.com/join?gc=61590634"
+       target="_blank"
+       class="btn"
+       style="display:inline-block; background:linear-gradient(90deg,#ff4081,#7c4dff); color:white; padding:10px 28px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:0.9rem; box-shadow:0 3px 6px rgba(0,0,0,0.3); transition: all 0.3s ease;">
+        Iniciar en Wayground
+    </a>
+  </div>
+</article>
+
+
+    
+
+
+      <!-- Cards — 6 quizzes -->
+      <article class="card" role="listitem">
+        <h3>⚙️ Minicurso 1 — Lógica y Algoritmos</h3>
+        <p>PseInt y fundamentos: algoritmos, diagramas y flujo lógico.</p>
+        <button class="btn" onclick="openQuiz('q1')">Iniciar Quiz</button>
+      </article>
+
+      <article class="card" role="listitem">
+        <h3>⚙️Minicurso 2 — Estructuras y PSeInt</h3>
+        <p>Condicionales, bucles, pseudocódigo y prácticas comunes en PSeInt.</p>
+        <button class="btn" onclick="openQuiz('q2')">Iniciar Quiz</button>
+      </article>
+
+      <article class="card" role="listitem">
+        <h3>🧩 Minicurso 3 — Fundamentos de Python</h3>
+        <p>Tipos, operadores, entrada/salida y sintaxis básica en Python.</p>
+        <button class="btn" onclick="openQuiz('q3')">Iniciar Quiz</button>
+      </article>
+
+      <article class="card" role="listitem">
+        <h3>⚙️ Minicurso 4 — Programación Modular</h3>
+        <p>Funciones, parámetros, módulos y buenas prácticas de diseño.</p>
+        <button class="btn" onclick="openQuiz('q4')">Iniciar Quiz</button>
+      </article>
+
+      <article class="card" role="listitem">
+        <h3>🧩  Aplicación 1 </h3>
+        <p>Preguntas mixtas que integran conceptos de todos los minicursos.</p>
+        <button class="btn" onclick="openQuiz('q5')">Iniciar Quiz</button>
+      </article>
+
+      <article class="card" role="listitem">
+        <h3>🧩 Aplicación 2</h3>
+        <p>Preguntas mixtas que integran conceptos de todos los minicursos</p>
+        <button class="btn" onclick="openQuiz('q6')">Iniciar Quiz</button>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 CodeSpace Hub</p>
+  <!-- Modal backdrop -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h4 id="modalTitle">Quiz</h4>
+        <div>
+          <button id="closeModal" class="btn-ghost" style="background:transparent;color:white;border:1px solid rgba(255,255,255,0.12);padding:6px 10px;border-radius:8px">Cerrar</button>
+        </div>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Dynamic content injected here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER (NO TOCAR) -->
+  <footer style="background:var(--header-bg);color:white;padding:14px 0;margin-top:30px;text-align:center">
+    <div style="max-width:1200px;margin:auto">© 2025 CodeSpace Hub — Proyecto educativo</div>
   </footer>
+
+  <script>
+    /* ====== DATA: 6 quizzes, each with 5 questions (types: mcq, tf, short) ====== */
+    const QUIZZES = {
+      q1: {
+        title: "Minicurso 1 — Lógica y Algoritmos",
+        description: "Fundamentos: algoritmo, diagrama de flujo, entrada/proceso/salida.",
+        questions: [
+          { id:"q1_1", type:"mcq", text:"¿Cuál es la estructura mínima de un pseudocódigo?", options:{a:"Inicio - Proceso - Fin", b:"Si - Entonces - Sino", c:"Mientras - Hacer", d:"Función - Llamada"}, answer:"a", explain:"Correcto — un pseudocódigo básico tiene Inicio, instrucciones y Fin."},
+          { id:"q1_2", type:"tf", text:"En un diagrama de flujo, el rombo representa una decisión. (V/F)", answer:"v", explain:"Verdadero — el rombo se usa para decisiones (si/sino)."},
+          { id:"q1_3", type:"short", text:"Escribe la palabra que indica la salida de un algoritmo en pseudocódigo (ej: Escribir o Mostrar).", answer:"escribir", explain:"'Escribir' o 'Mostrar' se usan para indicar la salida en pseudocódigo."},
+          { id:"q1_4", type:"mcq", text:"¿Qué significa que un algoritmo sea finito?", options:{a:"Que no tiene errores", b:"Que termina después de un número finito de pasos", c:"Que siempre es rápido", d:"Que no necesita entrada"}, answer:"b", explain:"Finitud indica que el algoritmo termina tras un número limitado de pasos."},
+          { id:"q1_5", type:"mcq", text:"¿Cuál es un buen primer paso para resolver un problema con pseudocódigo?", options:{a:"Implementar sin plan", b:"Dividir el problema en pasos pequeños", c:"Buscar soluciones ya hechas", d:"Ignorar requisitos"}, answer:"b", explain:"Dividirlo en pasos hace la solución manejable y clara."}
+        ]
+      },
+
+      q2: {
+        title: "Minicurso 2 — Estructuras y PSeInt",
+        description: "Condicionales, bucles y buenas prácticas en PSeInt.",
+        questions: [
+          { id:"q2_1", type:"mcq", text:"¿Cuál es la sintaxis para repetir 1 a 5 en pseudocódigo PSeInt?", options:{a:"Mientras i <= 5 Hacer", b:"Para i ← 1 Hasta 5 Con Paso 1 Hacer", c:"Repetir 5 Veces", d:"Loop 5"}, answer:"b", explain:"La estructura 'Para' con inicio, fin y paso es la más clara para un rango."},
+          { id:"q2_2", type:"tf", text:"El operador MOD devuelve el resto de una división. (V/F)", answer:"v", explain:"Verdadero — MOD se usa en PSeInt para obtener el residuo."},
+          { id:"q2_3", type:"mcq", text:"¿Qué evita un condicional correctamente usado?", options:{a:"Tomar decisiones lógicas", b:"Ejecutar código sin condiciones", c:"Depurar automáticamente", d:"Mezclar entradas y salidas"}, answer:"a", explain:"Los condicionales permiten decidir flujos distintos según condiciones."},
+          { id:"q2_4", type:"short", text:"Indica la palabra que se usa para leer entradas del usuario en PSeInt (ej: Leer).", answer:"leer", explain:"'Leer' se usa para indicar entrada en pseudocódigo/PSeInt."},
+          { id:"q2_5", type:"mcq", text:"¿Cuál es una práctica para evitar bucles infinitos?", options:{a:"No inicializar variables", b:"Actualizar la variable de control", c:"Usar condiciones confusas", d:"Omitir la condición"}, answer:"b", explain:"Actualizar la variable de control correctamente evita bucles infinitos."}
+        ]
+      },
+
+      q3: {
+        title: "Minicurso 3 — Fundamentos de Python",
+        description: "Sintaxis, tipos, print, comentarios y operaciones básicas.",
+        questions: [
+          { id:"q3_1", type:"mcq", text:"¿Cuál es el tipo de dato de \"Hola\" en Python?", options:{a:"int", b:"float", c:"str", d:"bool"}, answer:"c", explain:"\"Hola\" es una cadena, tipo 'str'."},
+          { id:"q3_2", type:"mcq", text:"¿Cómo se muestra texto por pantalla en Python 3?", options:{a:"print('texto')", b:"echo 'texto'", c:"console.log('texto')", d:"printf('texto')"}, answer:"a", explain:"print() es la función de salida en Python 3."},
+          { id:"q3_3", type:"tf", text:"La división entera en Python se hace con '//' . (V/F)", answer:"v", explain:"Verdadero — '//' realiza división entera."},
+          { id:"q3_4", type:"short", text:"¿Qué símbolo inicia un comentario de línea en Python?", answer:"#", explain:"El símbolo '#' inicia comentarios de una sola línea en Python."},
+          { id:"q3_5", type:"mcq", text:"¿Cuál es el resultado de 7 % 3 en Python?", options:{a:"1", b:"2", c:"3", d:"0"}, answer:"b", explain:"7 % 3 es 1? — espera: 7 dividido 3 es 2 residuo 1. Respuesta correcta: 'a' (1)."}, 
+        ]
+      },
+
+      q4: {
+        title: "Minicurso 4 — Programación Modular",
+        description: "Funciones, parámetros, return y organización modular en Python.",
+        questions: [
+          { id:"q4_1", type:"mcq", text:"¿Cuál es la palabra clave para definir una función en Python?", options:{a:"function", b:"def", c:"fn", d:"lambda"}, answer:"b", explain:"'def' define funciones en Python."},
+          { id:"q4_2", type:"short", text:"Si una función no tiene 'return', ¿qué devuelve por defecto en Python? (escribe la palabra)", answer:"none", explain:"Devuelve 'None' por defecto (tipo NoneType)."},
+          { id:"q4_3", type:"tf", text:"Los parámetros con valor por defecto se declaran como def f(x=10). (V/F)", answer:"v", explain:"Verdadero — x=10 es un parámetro con valor por defecto."},
+          { id:"q4_4", type:"mcq", text:"Ventaja de usar módulos:", options:{a:"Aumentar dependencias innecesarias", b:"Reutilización de código", c:"Ocultar errores", d:"Duplicar funciones"}, answer:"b", explain:"Los módulos promueven reutilización y separación de responsabilidades."},
+          { id:"q4_5", type:"mcq", text:"¿Cómo importas el módulo math en Python?", options:{a:"import math", b:"include math", c:"using math", d:"require('math')"}, answer:"a", explain:"La sintaxis correcta es import math."}
+        ]
+      },
+
+      q5: {
+        title: "Integrador — Aplicación práctica",
+        description: "Preguntas mixtas para integrar criterios: pseudocódigo, Python y modularidad.",
+        questions: [
+          { id:"q5_1", type:"mcq", text:"¿Qué instrucción en pseudocódigo indica entrada desde el usuario?", options:{a:"Escribir", b:"Leer", c:"Imprimir", d:"Mostrar"}, answer:"b", explain:"'Leer' se usa para entrada de datos."},
+          { id:"q5_2", type:"mcq", text:"Promedio de (2 + 5 + 8) / 3 es:", options:{a:"5", b:"5.0", c:"15", d:"None"}, answer:"b", explain:"(2+5+8)=15; 15/3=5.0 (valor real)."},
+          { id:"q5_3", type:"tf", text:"i ← i + 1 incrementa i en pseudocódigo. (V/F)", answer:"v", explain:"Verdadero — esa es la forma correcta de incrementar."},
+          { id:"q5_4", type:"short", text:"Escribe 'sí' o 'no' según: ¿Se puede devolver más de un valor en Python mediante tuplas? (sí/no)", answer:"sí", explain:"Sí — se devuelve una tupla con múltiples valores."},
+          { id:"q5_5", type:"mcq", text:"Mejor lugar para funciones reutilizables:", options:{a:"En el archivo principal", b:"En un módulo separado", c:"En comentarios", d:"Dentro de un condicional"}, answer:"b", explain:"Un módulo separado facilita la reutilización y mantenimiento."}
+        ]
+      },
+
+      q6: {
+        title: "Evaluación Final — Integrada",
+        description: "Examen integrador representativo (nivel final). Responde con cuidado.",
+        questions: [
+          { id:"q6_1", type:"mcq", text:"¿Qué es la abstracción en programación?", options:{a:"Detallar cada paso", b:"Ignorar requisitos", c:"Resumir detalles irrelevantes para enfocarse en lo esencial", d:"Copiar código"}, answer:"c", explain:"Abstracción es enfocarse en lo esencial y ocultar detalles irrelevantes."},
+          { id:"q6_2", type:"tf", text:"Una buena modularidad facilita pruebas unitarias. (V/F)", answer:"v", explain:"Verdadero — módulos pequeños son más fáciles de probar."},
+          { id:"q6_3", type:"short", text:"Escribe la función en Python que devuelve la longitud de una lista: (solo el nombre, ejemplo: len)", answer:"len", explain:"La función built-in len(lista) devuelve su longitud."},
+          { id:"q6_4", type:"mcq", text:"¿Qué operador en Python devuelve el residuo?", options:{a:"//", b:"%", c:"/", d:"**"}, answer:"b", explain:"El operador '%' devuelve el residuo (módulo)."},
+          { id:"q6_5", type:"mcq", text:"¿Cuál es una señal de bucle infinito en pseudocódigo?", options:{a:"Incrementar variable de control", b:"Condición que nunca cambia", c:"Comentario claro", d:"Uso de funciones"}, answer:"b", explain:"Si la condición nunca cambia, el bucle nunca termina."}
+        ]
+      }
+    };
+
+    /* ====== Modal open/close and quiz engine ====== */
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalBody = document.getElementById('modalBody');
+    const closeModalBtn = document.getElementById('closeModal');
+
+    let currentQuizId = null;
+    let currentIndex = 0;
+    let userResponses = {}; // store answers per quiz
+
+    function openQuiz(id){
+      currentQuizId = id;
+      currentIndex = 0;
+      userResponses = {}; // reset
+      renderModalForQuiz(id);
+      modalBackdrop.style.display = 'flex';
+      modalBackdrop.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(){
+      modalBackdrop.style.display = 'none';
+      modalBackdrop.setAttribute('aria-hidden','true');
+      modalBody.innerHTML = '';
+      document.body.style.overflow = '';
+    }
+    closeModalBtn.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', function(e){
+      if(e.target === modalBackdrop) closeModal();
+    });
+
+    function renderModalForQuiz(id){
+      const quiz = QUIZZES[id];
+      if(!quiz) return;
+      document.getElementById('modalTitle').textContent = quiz.title;
+      // initial render: question 0
+      renderQuestionCard(quiz, currentIndex);
+    }
+
+    function renderQuestionCard(quiz, idx){
+      const q = quiz.questions[idx];
+      // build HTML for current question
+      let html = '';
+      html += `<div>`;
+      html += `<div class="question-card">`;
+      html += `<div class="q-index small-muted">Pregunta ${idx+1} de ${quiz.questions.length}</div>`;
+      html += `<div class="q-text">${escapeHtml(q.text)}</div>`;
+
+      if(q.type === 'mcq' || q.type === 'tf'){
+        html += `<div class="options" role="radiogroup">`;
+        // if mcq: iterate options keys in order a,b,c,d
+        if(q.type === 'mcq'){
+          const opts = q.options;
+          const keys = Object.keys(opts);
+          keys.forEach(k=>{
+            html += `<label><input type="radio" name="${q.id}" value="${k}"> ${escapeHtml(opts[k])}</label>`;
+          });
+        } else {
+          // tf: show Verdadero / Falso
+          html += `<label><input type="radio" name="${q.id}" value="v"> Verdadero</label>`;
+          html += `<label><input type="radio" name="${q.id}" value="f"> Falso</label>`;
+        }
+        html += `</div>`;
+      } else if(q.type === 'short'){
+        html += `<div style="margin-top:8px"><input aria-label="respuesta corta" id="input-${q.id}" type="text" placeholder="Escribe tu respuesta..." style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd"></div>`;
+        html += `<div class="small-muted" style="margin-top:8px">Respuesta corta: se compara sin distinguir mayúsculas/minúsculas</div>`;
+      }
+
+      html += `</div>`; // end question-card
+
+      // controls
+      html += `<div class="controls">`;
+      html += `<div class="left small-muted">Tema: ${escapeHtml(quiz.title)}</div>`;
+      // Prev button
+      html += `<div>`;
+      html += `<button class="btn-ghost" onclick="prevQuestion()" ${idx===0 ? 'disabled' : ''}>Anterior</button>`;
+      // Next or Submit
+      if(idx < quiz.questions.length - 1){
+        html += ` <button class="btn-primary" onclick="nextQuestion()">Siguiente</button>`;
+      } else {
+        html += ` <button class="btn-primary" onclick="submitQuiz()">Enviar y Calificar</button>`;
+      }
+      html += `</div></div>`;
+
+      // place into modal
+      modalBody.innerHTML = html;
+
+      // restore previously selected value if exists
+      const saved = userResponses[q.id];
+      if(saved){
+        if(q.type === 'short'){
+          const input = document.getElementById(`input-${q.id}`);
+          if(input) input.value = saved;
+        } else {
+          const radio = modalBody.querySelector(`input[name="${q.id}"][value="${saved}"]`);
+          if(radio) radio.checked = true;
+        }
+      }
+    }
+
+    function saveCurrentAnswer(){
+      const quiz = QUIZZES[currentQuizId];
+      const q = quiz.questions[currentIndex];
+      if(q.type === 'short'){
+        const input = document.getElementById(`input-${q.id}`);
+        if(input) userResponses[q.id] = input.value.trim();
+      } else {
+        const sel = modalBody.querySelector(`input[name="${q.id}"]:checked`);
+        userResponses[q.id] = sel ? sel.value : null;
+      }
+    }
+
+    function nextQuestion(){
+      saveCurrentAnswer();
+      const quiz = QUIZZES[currentQuizId];
+      if(currentIndex < quiz.questions.length - 1){
+        currentIndex++;
+        renderQuestionCard(quiz, currentIndex);
+      }
+    }
+
+    function prevQuestion(){
+      saveCurrentAnswer();
+      if(currentIndex > 0){
+        currentIndex--;
+        renderQuestionCard(QUIZZES[currentQuizId], currentIndex);
+      }
+    }
+
+    function submitQuiz(){
+      // save last
+      saveCurrentAnswer();
+      const quiz = QUIZZES[currentQuizId];
+      // calculate score and feedback
+      let total = quiz.questions.length;
+      let correctCount = 0;
+      let feedbackHtml = '';
+
+      quiz.questions.forEach((q, i)=>{
+        const user = (userResponses[q.id] !== undefined && userResponses[q.id] !== null) ? String(userResponses[q.id]).trim() : null;
+        let ok = false;
+        // compare according to type
+        if(q.type === 'short'){
+          if(user !== null && user !== ''){
+            // normalize: lower-case, remove accents & spaces
+            const norm = normalizeAnswer(user);
+            const expected = normalizeAnswer(String(q.answer));
+            ok = norm === expected;
+          } else {
+            ok = false;
+          }
+        } else {
+          // mcq or tf
+          ok = (user === q.answer);
+        }
+
+        if(ok) correctCount++;
+
+        // prepare per-question feedback block
+        feedbackHtml += `<div class="feedback ${ok ? '' : 'wrong'}">`;
+        feedbackHtml += `${ok ? '✅' : '❌'} <strong>Pregunta ${i+1}:</strong> ${ok ? 'Correcto' : 'Incorrecto'}.`;
+        feedbackHtml += `<div class="explain">${escapeHtml(q.explain)}</div>`;
+        if(!ok && q.type !== 'short' && q.options){
+          // show correct option text
+          const correctKey = q.answer;
+          const correctText = q.options && q.options[correctKey] ? q.options[correctKey] : '';
+          if(correctText) feedbackHtml += `<div class="small-muted" style="margin-top:6px">Respuesta correcta: ${escapeHtml(correctText)}</div>`;
+        } else if(!ok && q.type === 'short'){
+          feedbackHtml += `<div class="small-muted" style="margin-top:6px">Respuesta esperada: <strong>${escapeHtml(q.answer)}</strong></div>`;
+        }
+        feedbackHtml += `</div>`;
+      });
+
+      // show final
+      const percent = Math.round((correctCount/total)*100);
+      let resultHtml = `<div style="text-align:left">`;
+      resultHtml += `<div class="final-score">Resultado: ${correctCount} / ${total} — ${percent}%</div>`;
+      resultHtml += `<div class="small-muted" style="margin-top:8px">Retroalimentación por pregunta:</div>`;
+      resultHtml += feedbackHtml;
+      resultHtml += `<div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">`;
+      resultHtml += `<button class="btn-ghost" onclick="retakeQuiz()">Volver a intentar</button>`;
+      resultHtml += `<button class="btn-primary" onclick="closeModal();">Cerrar</button>`;
+      resultHtml += `</div></div>`;
+
+      modalBody.innerHTML = resultHtml;
+    }
+
+    function retakeQuiz(){
+      // reset stored answers and restart at question 0
+      const quiz = QUIZZES[currentQuizId];
+      quiz.questions.forEach(q => { userResponses[q.id] = null; });
+      currentIndex = 0;
+      userResponses = {};
+      renderQuestionCard(quiz, 0);
+    }
+
+    /* ====== Helpers ====== */
+    function escapeHtml(text){
+      if(!text && text !== 0) return '';
+      return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function normalizeAnswer(s){
+      // lower, trim, remove accents and duplicated spaces
+      const accents = {'á':'a','é':'e','í':'i','ó':'o','ú':'u','ü':'u','ñ':'n'};
+      s = s.toLowerCase().trim();
+      s = s.replace(/[\u0300-\u036f]/g, ''); // remove diacritics if any remain
+      s = s.replace(/[áéíóúüñ]/g, ch => accents[ch] || ch);
+      s = s.replace(/\s+/g,' ');
+      return s;
+    }
+
+    // small correction: one question q3_5 had wrong answer mapping in data; fix on load if necessary:
+    (function fixData(){
+      // if q3 has question 5 whose explain shows mismatch, ensure answer is 'a' (1)
+      if(QUIZZES.q3 && QUIZZES.q3.questions[4]){
+        // question index 4 is q3_5
+        QUIZZES.q3.questions[4].answer = 'a';
+        QUIZZES.q3.questions[4].explain = "7 % 3 = 1 (residuo).";
+      }
+    })();
+
+    // Keyboard: Esc to close modal
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape' && modalBackdrop.style.display === 'flex') closeModal();
+    });
+
+  </script>
 </body>
 </html>

@@ -237,12 +237,11 @@ const contenidoModulos = {
         <p> - Lee cuidadosamente cada pregunta antes de responder.<p>
         <p> - Marca la alternativa correcta o desarrolla tu respuesta según se indique.<p>
         <p> - Solo se permite una respuesta por pregunta.<p>
-        <p> - Dispones de 30 minutos para completar la evaluación.<p>
         <p> - La nota mínima para aprobar este cuestionario es 11.<p>
         <p>✨ ¡Éxitos! Recuerda que esta es una oportunidad para reflexionar sobre tu forma de pensar, analizar y resolver problemas.<p>
         <div style="text-align: center; margin: 30px 0;">
             <a href="https://form-timer.com/start/92fc7bfb" target="_blank" 
-             style="display: inline-block; background-color: #007bff; color: white; 
+             style="display: inline-block; background-color: #2a5e95ff; color: white; 
             padding: 12px 24px; text-decoration: none; border-radius: 8px; 
             font-weight: bold; font-size: 16px; transition: 0.3s;">
            📝 Ir al cuestionario
@@ -1807,9 +1806,8 @@ Fin
 
   <p><strong>📚 Indicaciones generales:</strong><br>
   Esta evaluación corresponde al cierre del módulo y representa el <strong>50% de la nota total.</strong><br>
-  <strong>Duración:</strong> 1 hora y 30 minutos ⏱️<br>
   <strong>Preguntas:</strong> 30 en total (parte teórica + caso práctico)<br>
-  <strong>Nota máxima:</strong> 11 puntos<br>
+  <strong>Nota máxima:</strong> Para aporbar el minicurso 1 se requiere minimo una nota de 11 <br>
   Solo se permite <strong>un envío por estudiante.</strong></p>
 
   <p><strong>Instrucciones del caso práctico:</strong><br>
@@ -1823,9 +1821,9 @@ Fin
   Ejemplo: <code style="background-color: #222; padding: 5px 8px; border-radius: 5px; color: #aef;">Pérez_Luisa_CasosFinales.pdf</code></p>
 
   <p><strong>⚠️ Reglas:</strong><br>
-  Cronómetro activo (1h 30min).<br>
+
   Solo se aceptará un intento.<br>
-  Revisa antes de enviar; los duplicados serán anulados.</p>
+  Revisa antes de enviar; los duplicados serán observados.</p>
 
   <div style="margin-top: 25px;">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScZ2RE99mQocj0h4IOZMZiL5bc26YZyqGJdbj68P9PRUREG9w/viewform?usp=dialog" 
@@ -1998,11 +1996,12 @@ FinAlgoritmo
     <a href="https://www.youtube.com/watch?v=GqkTm0_K6Kc" target="_blank" style="color: #00ffff;">https://www.youtube.com/watch?v=GqkTm0_K6Kc</a>
   </p>
   <p>
-    Este video complementa el aprendizaje visual de los estudiantes y facilita la verificación práctica del proceso.
+    Este video complementa el aprendizaje visual de los estudiantes y facilita la verificación práctica del proceso  "Controlar el uso de ; al final de sentencias secuenciales (OJO ESA OPCIÓN NO SE MARCA)".
   </p>
 
   <div style="margin-top: 15px;">
     <a href="https://docs.google.com/document/d/1z3NcIsgtF0tZzhx-0xDjMqVzjkMSXux902INN05Sx54/export?format=pdf"
+    
        download="Manual_de_Instalacion_PSeInt.pdf"
        style="display: inline-block; background-color: #007bff; color: white; text-decoration: none; 
               font-weight: bold; padding: 10px 25px; border-radius: 8px; transition: 0.3s;">
@@ -2078,9 +2077,9 @@ FinAlgoritmo
     `,
     ejemplos: `
     
-    <section style="color: white; text-align: left; margin-left: 40px; margin-right: 40px; font-size: 16px; line-height: 1.6;">
+   <section style="color: white; text-align: left; margin-left: 40px; margin-right: 40px; font-size: 16px; line-height: 1.6;">
 
-  <h2 style="color: #00ffff; font-size: 22px;">💻 Ejemplos prácticos</h2>
+
 
   <p>El aprendizaje de la programación requiere no solo comprender la teoría de las estructuras y comandos, sino también practicar la ejecución, depuración y análisis de errores en situaciones reales. A través de ejemplos sencillos, el estudiante puede observar cómo se comportan los algoritmos, identificar los tipos de errores más comunes (de sintaxis, lógica o ejecución) y aplicar estrategias para resolverlos.</p>
 
@@ -2180,21 +2179,54 @@ FinAlgoritmo
     
     
     
+
+    
+    
+    
+    
+    
     `,
-    quiz: `<p><strong>Quiz:</strong></p>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    `
+    quiz_de_entrada: `
+
+
+
+<section id="quiz_entrada_pseint" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px;">
+
+  <p><strong style="color:#22c1dc;"> Planteamiento:</strong> 
+  Este cuestionario tiene como objetivo diagnosticar tus conocimientos previos sobre la sintaxis básica y el entorno de trabajo en 
+  <strong>PSeInt</strong>. A través de preguntas introductorias, podrás identificar tu punto de partida antes de iniciar el minicurso.</p>
+
+  <p>
+    <strong style="color:#22c1dc;"> Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;"> Peso en la evaluación:</strong> No calificable, sirve como diagnóstico inicial.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; text-align:left; color:#fff; font-family:'Segoe UI', Tahoma, sans-serif;">
+    <li>Lee cada pregunta cuidadosamente antes de responder.</li>
+    <li>Selecciona la alternativa que consideres correcta de acuerdo con tu conocimiento previo sobre PSeInt.</li>
+    <li>Este Examen pesará un 25% de la nota final; Asimismo, para aprobrar este minicurso 1 deberas tener minimo un 11 de nota </li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu comprensión inicial de los conceptos básicos de programación y del entorno PSeInt para orientar el aprendizaje del minicurso.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5TWglKqqFwuEm7rVO4cYq9Kq1zAj8TNytYnVCWI9WlEvG9A/viewform?usp=dialog" 
+       target="_blank" 
+       style="background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       🚀 Iniciar Evaluación de Entrada
+    </a>
+  </div>
+
+</section>
+
+`
   },
   pseint2: {
-    objetivo: `<p><strong>Objetivo:</strong> </p>
+    objetivo: `<p><strong>Objetivo</strong> </p>
      <p>
 
     ✔️ Identificar las variables y tipos de datos utilizados en PSeInt. <br>
@@ -2405,153 +2437,134 @@ FinAlgoritmo
     
     `,
     ejemplos: `
-  <section style="background-color:#0a0a0a; color:#e6e6e6; font-family: Arial, sans-serif; line-height:1.7; padding:25px; border-radius:12px; text-align:left;">
 
-  <h2 style="color:#00bfff; font-size:26px; margin-bottom:25px;">💡 Ejemplos prácticos en Python (niveles progresivos)</h2>
+<section style="font-family: Arial, sans-serif; color:#ffffff; line-height:1.8; padding:50px; text-align:left; max-width:1400px; margin:auto;">
 
-  <!-- Ejemplo 1 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 1</h3>
+  <h2 style="font-size:28px; text-align:center; margin-bottom:35px;">
+    Ejemplos de PSeInt
+  </h2>
+
+  <!-- EJEMPLO 1 -->
+  <h3 style="font-size:22px; margin-top:35px;">
+    Ejemplo 1
+  </h3>
   <p><strong>Enunciado:</strong> Pedir al usuario su nombre y saludarlo.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-nombre = input("Ingrese su nombre: ")
-print("Hola,", nombre, "- bienvenido al curso de Python.")
-  </div>
-  <p><em>Nota:</em> Uso de variable tipo cadena, función <code>input()</code> y <code>print()</code>. No incluye condicionales ni bucles. Ideal para principiantes.</p>
+  <pre style="padding:25px; border-radius:10px; font-size:16px; font-family:'Consolas','Courier New',monospace; color:#ffffff; overflow-x:auto; width:100%; white-space: pre;">
+SubProceso Saludar
+    Definir nombre Como Cadena
+    Escribir "Ingrese su nombre: "
+    Leer nombre
+    Escribir "¡Hola ", nombre, ", bienvenido al curso de PSeInt!"
+FinSubProceso
+  </pre>
 
-  <!-- Ejemplo 2 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 2</h3>
+  <!-- EJEMPLO 2 -->
+  <h3 style="font-size:22px; margin-top:35px;">
+    Ejemplo 2
+  </h3>
   <p><strong>Enunciado:</strong> Leer un número entero y determinar si es mayor, igual o menor que 10.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-n = int(input("Ingrese un número entero: "))
-if n > 10:
-    print("El número es mayor que 10.")
-elif n == 10:
-    print("El número es igual a 10.")
-else:
-    print("El número es menor que 10.")
-  </div>
-  <p><em>Nota:</em> Introduce condicionales <code>if-elif-else</code> y operadores relacionales.</p>
+  <pre style="padding:25px; border-radius:10px; font-size:16px; font-family:'Consolas','Courier New',monospace; color:#ffffff; overflow-x:auto; width:100%; white-space: pre;">
+Definir n Como Entero
+Escribir "Ingrese un número entero: "
+Leer n
 
-  <!-- Ejemplo 3 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 3</h3>
-  <p><strong>Enunciado:</strong> Calcular la suma de los primeros n números positivos (donde n lo define el usuario).</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-n = int(input("¿Cuántos números sumaremos? "))
-suma = 0
-for i in range(1, n+1):
-    suma += i
-print("La suma de los primeros", n, "números es:", suma)
-  </div>
-  <p><em>Nota:</em> Introduce bucle <code>for</code>, acumulador (<code>suma</code>) y uso de <code>range()</code>.</p>
+Si n > 10 Entonces
+    Escribir "El número es mayor que 10."
+Sino
+    Si n = 10 Entonces
+        Escribir "El número es igual a 10."
+    Sino
+        Escribir "El número es menor que 10."
+    FinSi
+FinSi
+  </pre>
 
-  <!-- Ejemplo 4 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 4</h3>
-  <p><strong>Enunciado:</strong> Leer 5 calificaciones (0–20) y mostrar el promedio, el mayor y el menor valor ingresado.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-suma = 0.0
-mayor = -1
-menor = 100
-for i in range(5):
-    nota = float(input(f"Ingrese la nota {i+1} (0-20): "))
-    suma += nota
-    if nota > mayor:
-        mayor = nota
-    if nota < menor:
-        menor = nota
-promedio = suma / 5
-print("Promedio:", promedio)
-print("Mayor nota:", mayor)
-print("Menor nota:", menor)
-  </div>
-  <p><em>Nota:</em> Combina bucle y condicionales dentro del bucle.</p>
+  <!-- EJEMPLO 3 -->
+  <h3 style="font-size:22px; margin-top:35px;">
+    Ejemplo 3
+  </h3>
+  <p><strong>Enunciado:</strong> Calcular la suma de los primeros n números positivos.</p>
+  <pre style="padding:25px; border-radius:10px; font-size:16px; font-family:'Consolas','Courier New',monospace; color:#ffffff; overflow-x:auto; width:100%; white-space: pre;">
+Definir n, suma, i Como Entero
+suma <- 0
 
-  <!-- Ejemplo 5 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 5</h3>
-  <p><strong>Enunciado:</strong> Leer números hasta que el usuario ingrese 0; contar cuántos positivos hay, su suma y promedio.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-contador = 0
-suma = 0.0
-while True:
-    n = float(input("Ingrese un número (0 para terminar): "))
-    if n == 0:
-        break
-    if n > 0:
-        contador += 1
-        suma += n
-if contador > 0:
-    promedio = suma / contador
-    print("Cantidad de positivos:", contador)
-    print("Suma de positivos:", suma)
-    print("Promedio de positivos:", promedio)
-else:
-    print("No se ingresaron números positivos.")
-  </div>
-  <p><em>Nota:</em> Usa bucle <code>while</code> infinito con <code>break</code> y condicional dentro del bucle.</p>
+Escribir "¿Cuántos números sumaremos? "
+Leer n
 
-  <!-- Ejemplo 6 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 6 – Nivel avanzado</h3>
-  <p><strong>Enunciado:</strong> Leer edades hasta que se introduzca una negativa; contar cuántas personas están entre 18 y 65 años.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-contador_activa = 0
-while True:
-    edad = int(input("Ingrese edad (negativo para terminar): "))
-    if edad < 0:
-        break
-    if edad >= 18 and edad <= 65:
-        contador_activa += 1
-print("Cantidad de personas en edad laboral activa:", contador_activa)
-  </div>
-  <p><em>Nota:</em> Incluye operadores lógicos <code>and</code>, bucle con condición de paro y conteo selectivo.</p>
+Para i <- 1 Hasta n Con Paso 1 Hacer
+    suma <- suma + i
+FinPara
 
-  <!-- Ejemplo 7 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 7 – Nivel difícil</h3>
-  <p><strong>Enunciado:</strong> Calcular el total a pagar considerando descuentos del 10% si el precio supera 1000.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-n = int(input("¿Cuántos precios ingresará? "))
-total = 0.0
-contador_desc = 0
-for i in range(n):
-    precio = float(input(f"Ingrese precio del producto {i+1}: "))
-    if precio > 1000:
-        precio = precio * 0.9
-        contador_desc += 1
-    total += precio
-print("Total a pagar:", total)
-print("Cantidad de productos con descuento:", contador_desc)
-  </div>
-  <p><em>Nota:</em> Requiere bucle, condicional, acumuladores y conteo.</p>
+Escribir "La suma de los primeros ", n, " números es: ", suma
+  </pre>
 
-  <!-- Ejemplo 8 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 8 – Nivel muy difícil (Integrador)</h3>
-  <p><strong>Enunciado:</strong> Juego donde el usuario intenta adivinar un número entre 1 y 50 (máximo 7 intentos).</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
-import random
-secreto = random.randint(1, 50)
-intentos = 0
-max_intentos = 7
-while intentos < max_intentos:
-    intentos += 1
-    n = int(input(f"Intento {intentos} de {max_intentos}. Ingrese número (1-50): "))
-    if n == secreto:
-        print("¡Ganaste! Número correcto:", secreto)
-        break
-    elif n < secreto:
-        print("El número secreto es mayor.")
-    else:
-        print("El número secreto es menor.")
-else:
-    print("Lo siento, agotaste los intentos. El número era:", secreto)
-print("Usaste", intentos, "intentos.")
-  </div>
-  <p><em>Nota:</em> Incluye módulo <code>random</code>, bucle condicionado y condicionales anidados.</p>
+  <!-- EJEMPLO 4 -->
+  <h3 style="font-size:22px; margin-top:35px;">
+    Ejemplo 4
+  </h3>
+  <p><strong>Enunciado:</strong> Leer 5 calificaciones y mostrar promedio, mayor y menor.</p>
+  <pre style="padding:25px; border-radius:10px; font-size:16px; font-family:'Consolas','Courier New',monospace; color:#ffffff; overflow-x:auto; width:100%; white-space: pre;">
+Definir suma, mayor, menor, nota, i Como Real
+suma <- 0
+mayor <- -1
+menor <- 100
+
+Para i <- 1 Hasta 5 Con Paso 1 Hacer
+    Escribir "Ingrese la nota ", i, " (0-20): "
+    Leer nota
+    suma <- suma + nota
+
+    Si nota > mayor Entonces
+        mayor <- nota
+    FinSi
+
+    Si nota < menor Entonces
+        menor <- nota
+    FinSi
+FinPara
+
+Escribir "Promedio: ", suma/5
+Escribir "Mayor nota: ", mayor
+Escribir "Menor nota: ", menor
+  </pre>
+
+  <!-- EJEMPLO 5 -->
+  <h3 style="font-size:22px; margin-top:35px;">
+    Ejemplo 5
+  </h3>
+  <p><strong>Enunciado:</strong> Leer números hasta que se ingrese 0; contar positivos, su suma y promedio.</p>
+  <pre style="padding:25px; border-radius:10px; font-size:16px; font-family:'Consolas','Courier New',monospace; color:#ffffff; overflow-x:auto; width:100%; white-space: pre;">
+Definir n, contador Como Entero
+Definir suma Como Real
+contador <- 0
+suma <- 0
+
+Mientras Verdadero Hacer
+    Escribir "Ingrese un número (0 para terminar): "
+    Leer n
+    Si n = 0 Entonces
+        Salir
+    FinSi
+    Si n > 0 Entonces
+        contador <- contador + 1
+        suma <- suma + n
+    FinSi
+FinMientras
+
+Si contador > 0 Entonces
+    Escribir "Cantidad de positivos: ", contador
+    Escribir "Suma de positivos: ", suma
+    Escribir "Promedio de positivos: ", suma/contador
+Sino
+    Escribir "No se ingresaron números positivos."
+FinSi
+  </pre>
 
 </section>
 
+
     
-    
-    
-    `,
-    quiz: `<p><strong>Quiz:</strong> </p>`
+    `
   },
   pseint3: {
     objetivo: `<p><strong>Objetivo:</strong></p>
@@ -2957,7 +2970,54 @@ FinAlgoritmo
 
 </section>
 `,
-    quiz: `<p><strong>Quiz:</strong> Evaluación de ejercicios prácticos.</p>`
+ quiz_intermedio: `
+ 
+ <section id="quiz_intermedio_pseint" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Quiz Intermedio:</strong></p>
+
+  <p><strong style="color:#22c1dc;"> Planteamiento:</strong> 
+  Este cuestionario tiene como objetivo reforzar tus conocimientos sobre el uso de estructuras condicionales y el control de flujo en 
+  <strong>PSeInt</strong>. A través de ejercicios prácticos, podrás comprobar tu dominio en la toma de decisiones dentro de los algoritmos.</p>
+
+  <p>
+    <strong style="color:#22c1dc;"> Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;"> Peso en la evaluación:</strong> 25% de la nota final.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee atentamente cada pregunta antes de responder.</li>
+    <li>Aplica correctamente las estructuras condicionales según los ejemplos vistos.</li>
+    <li>Selecciona la opción correcta o desarrolla la respuesta indicada.</li>
+    <li>Revisa tus respuestas antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu capacidad para analizar y resolver problemas aplicando condiciones simples y compuestas en el entorno de <strong>PSeInt</strong>.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOEbKwkz5ur8Lc7h1UKuHH62h25KEl8s-64V5T-bZucI-h1A/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       📋 Iniciar Quiz Intermedio
+    </a>
+  </div>
+
+</section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ `
   },
   pseint4: {
     objetivo: `<p><strong>Objetivo:</strong></p>
@@ -5753,10 +5813,40 @@ FinAlgoritmo
     
     
     `,
-    quiz: `<p><strong>Quiz:</strong> </p>
-    
-    
-    
+    quiz_final: `<section id="quiz_final_pseint" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Examen Final – Minicurso 1:</strong></p>
+
+  <p><strong style="color:#22c1dc;">📊 Planteamiento:</strong> 
+  Este examen tiene como propósito evaluar tu dominio de los conceptos fundamentales de <strong>PSeInt</strong>, incluyendo el uso de variables, estructuras condicionales, ciclos y el diseño lógico de algoritmos. Es la etapa final para demostrar tu progreso en este minicurso.</p>
+
+  <p>
+    <strong style="color:#22c1dc;"> Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;"> Peso en la evaluación:</strong> 50 % de la nota total del Minicurso 1.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee con atención cada pregunta antes de responder.</li>
+    <li>Aplica los conceptos aprendidos sobre estructuras secuenciales, condicionales y repetitivas.</li>
+    <li>Responde de manera ordenada y clara.</li>
+    <li>Verifica tus respuestas antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar de forma integral tu comprensión sobre el desarrollo de algoritmos en <strong>PSeInt</strong> y tu capacidad para resolver problemas aplicando lógica computacional.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScA8M-pgIldv7ShwdaCPvy1tvTZgFN4fXPT5FClvExfNmUBXA/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       🧾 Iniciar Examen Final
+    </a>
+  </div>
+
+</section>
     
     `
   },
@@ -6418,7 +6508,40 @@ if __name__ == "__main__":
     
     
     `,
-    quiz: `<p><strong>Quiz:</strong> Preguntas de variables y tipos de datos.</p>`
+    quiz_de_entrada: `<section id="quiz_final_python" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Examen  Entrada – Minicurso 3: Introducción a Python</strong></p>
+
+  <p><strong style="color:#22c1dc;">🐍 Planteamiento:</strong> 
+  Este examen tiene como objetivo evaluar tu comprensión general de los fundamentos de <strong>Python</strong>, incluyendo el uso de variables, tipos de datos, estructuras condicionales, bucles y funciones. Representa la fase final para consolidar tus aprendizajes del minicurso.</p>
+
+  <p>
+    <strong style="color:#22c1dc;"> Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;">Peso en la evaluación:</strong> 25 % de la nota total del Minicurso 3.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee con atención cada pregunta antes de responder.</li>
+    <li>Aplica correctamente los conceptos aprendidos sobre la sintaxis y estructura de Python.</li>
+    <li>Selecciona la alternativa correcta o desarrolla las respuestas solicitadas.</li>
+    <li>Revisa tus respuestas antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu capacidad para aplicar los principios básicos de programación en <strong>Python</strong>, demostrando tu comprensión del flujo lógico y la resolución de problemas.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfASvX147rZ6ba8WRwjqhv8hD36u9gk6MNigv5UO0UiH7eHvQ/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       🧾 Iniciar Examen Final
+    </a>
+  </div>
+
+</section>`
   },
   py2: {
     objetivo: `<p><strong>Objetivo:</strong> Aplicar condicionales y bucles en Python.</p>
@@ -8121,7 +8244,49 @@ while True:
       
     
     `,
-    quiz: `<p><strong>Quiz:</strong> Preguntas sobre funciones y modularización.</p>`
+    quiz_intermedio: `
+
+    <section id="quiz_intermedio_python" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Quiz Intermedio – Minicurso 3: Fundamentos de Python</strong></p>
+
+  <p><strong style="color:#22c1dc;"> Planteamiento:</strong> 
+  Este cuestionario tiene como propósito reforzar tus conocimientos sobre el uso de estructuras de control, ciclos y manejo de datos en <strong>Python</strong>. Te permitirá comprobar tu dominio de los fundamentos antes de avanzar a los temas finales del curso.</p>
+
+  <p>
+    <strong style="color:#22c1dc;">Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;"> Peso en la evaluación:</strong> 25% de la nota total del Minicurso 3.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee con atención cada pregunta antes de responder.</li>
+    <li>Aplica correctamente los conceptos de condicionales, bucles y tipos de datos.</li>
+    <li>Selecciona la opción más adecuada o desarrolla la respuesta solicitada.</li>
+    <li>Revisa tus respuestas antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu comprensión intermedia de la lógica y sintaxis de Python mediante la resolución de ejercicios prácticos y preguntas de análisis.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOwXd7KDgeAnHxAXCk_LsqWyMt9Bfv7t5udInNkd5kWJlwpA/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       📋 Iniciar Quiz Intermedio
+    </a>
+  </div>
+
+</section>
+
+    
+    
+    
+    
+    
+    `
   },
   py4: {
     objetivo: `<p><strong>Objetivo:</strong></p>
@@ -10038,9 +10203,42 @@ while True:<br>
 
 
     `,
-    quiz: `<p><strong>Quiz:</strong> </p>
+    quiz_final: `
     
-    
+    <section id="quiz_final_python" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Examen Final – Minicurso 3: Fundamentos de Python</strong></p>
+
+  <p><strong style="color:#22c1dc;"> Planteamiento:</strong> 
+  Este examen tiene como propósito evaluar tu dominio integral de los conceptos fundamentales de <strong>Python</strong>, incluyendo variables, estructuras de control, funciones y manejo de datos. Es la etapa final para demostrar tu progreso en este minicurso.</p>
+
+  <p>
+    <strong style="color:#22c1dc;">Condición de aprobación para el minicurso 3:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;">Peso en la evaluación:</strong> 50% de la nota total del Minicurso 3.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee cada pregunta cuidadosamente antes de responder.</li>
+    <li>Aplica los conocimientos adquiridos en todo el curso.</li>
+    <li>Desarrolla tus respuestas con claridad y precisión.</li>
+    <li>Revisa tus respuestas antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu capacidad para aplicar los fundamentos de Python en la resolución de problemas mediante el diseño y análisis de algoritmos.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScA8M-pgIldv7ShwdaCPvy1tvTZgFN4fXPT5FClvExfNmUBXA/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       🧾 Iniciar Examen Final
+    </a>
+  </div>
+
+</section>
     
     
     
@@ -10378,7 +10576,47 @@ Representa un ejemplo realista de cómo modularizar un programa completo.</p>
     
     
     `,
-    quiz: `<p><strong>Quiz:</strong> Preguntas de modularización.</p>`
+    quiz_de_entrada: `
+
+
+    <section id="quiz_intermedio_modular" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Quiz Intermedio – Minicurso 4: Programación Modular</strong></p>
+
+  <p><strong style="color:#22c1dc;"> Planteamiento:</strong> 
+  Este cuestionario busca reforzar tus conocimientos sobre el uso de funciones, parámetros, alcance de variables y la importancia de la modularización en el desarrollo de programas. Permite comprobar tu progreso antes del examen final.</p>
+
+  <p>
+    <strong style="color:#22c1dc;">Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;">Peso en la evaluación:</strong> 25% de la nota total del Minicurso 4.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee atentamente cada pregunta antes de responder.</li>
+    <li>Aplica correctamente los conceptos de funciones y modularización.</li>
+    <li>Selecciona o desarrolla las respuestas según se indique en cada caso.</li>
+    <li>Verifica tus respuestas antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu dominio intermedio en la aplicación de funciones y módulos dentro de programas estructurados.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc08vI1O6APWwy7SavAQnMkVEDu9tBN562lC72A_EfZVDXiMQ/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       📋 Iniciar Quiz Intermedio
+    </a>
+  </div>
+
+</section>
+    
+    
+    
+    `
   },
   mod2: {
     objetivo: `<p><strong>Objetivo:</strong> </p>
@@ -10858,11 +11096,39 @@ mostrar_resultado("Ana", 11, 10, 13)
     
     
     `,
-    quiz: `<p><strong>Quiz:</strong></p>
-    
-    
-    
-    
+    quiz_intermedio: `<section id="evaluacion_intermedia_modular" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Evaluación Intermedia – Minicurso 4: Programación Modular</strong></p>
+
+  <p><strong style="color:#22c1dc;"> Planteamiento:</strong> 
+  Esta evaluación busca medir tu comprensión sobre el uso de funciones, parámetros, modularización y organización del código en Python. Te permitirá identificar tu nivel de avance antes del examen final.</p>
+
+  <p>
+    <strong style="color:#22c1dc;">Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;">Peso en la evaluación:</strong> 25% de la nota total del Minicurso 4.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee cada pregunta con atención antes de responder.</li>
+    <li>Aplica los principios de modularización y buenas prácticas de codificación.</li>
+    <li>Responde con claridad y revisa antes de enviar.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
+  Evaluar tu dominio intermedio en la aplicación de funciones, parámetros y módulos en programas estructurados.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_9eE9O7zEwJAKDrnYAlmYPyHHE364yokYfeCQsVMjkxMS_g/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       🧾 Iniciar Evaluación Intermedia
+    </a>
+  </div>
+
+</section>
     
     `
   },
@@ -11224,7 +11490,42 @@ mostrar_inventario(inventario)
   
     
     `,
-    quiz: `<p><strong>Quiz:</strong> </p>
+    quiz_final: `
+
+
+    <section id="evaluacion_final_modular" class="quiz-section" 
+style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
+
+  <p><strong style="color:#22c1dc;">Evaluación Final – Minicurso 4: Programación Modular</strong></p>
+
+  <p><strong style="color:#22c1dc;">📘 Planteamiento:</strong> 
+  Esta evaluación final tiene como propósito medir tu dominio completo sobre la <strong>programación modular en Python</strong>, incluyendo el diseño de funciones, la correcta organización del código y la aplicación de buenas prácticas de desarrollo. Es el paso final para completar este minicurso.</p>
+
+  <p>
+    <strong style="color:#22c1dc;">Condición de aprobación:</strong> Nota mínima 11.<br>
+    <strong style="color:#22c1dc;">Peso en la evaluación:</strong> 50% de la nota total del Minicurso 4.
+  </p>
+
+  <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
+  <ul style="margin:12px 0 18px 20px; line-height:1.7; color:#fff;">
+    <li>Lee atentamente cada pregunta antes de responder.</li>
+    <li>Aplica correctamente los principios de modularización, reutilización y claridad del código.</li>
+    <li>Responde con precisión y revisa antes de enviar el formulario.</li>
+  </ul>
+
+  <p><strong style="color:#22c1dc;">🎯 Objetivo:</strong> 
+  Evaluar tu capacidad para aplicar la programación modular en la resolución de problemas reales mediante funciones bien estructuradas y código limpio.</p>
+
+  <div style="text-align:center; margin-top:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkbhzwpHdjLDJjSfdHZZUF_fJvb0JnS0XjcI-yqOaN_3eRCg/viewform?usp=dialog" 
+       target="_blank" 
+       style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
+              box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
+       🧾 Iniciar Evaluación Final
+    </a>
+  </div>
+
+</section>
     
     
     
@@ -11268,12 +11569,12 @@ const cursos = {
     descripcion: "Aprende a programar con Python desde cero con un mini-proyecto final.",
     imagen: "assets/img/python1.png",
     modulos: [
-      { nombre: "Tema 1– Introducción a Python y su entorno", id: "py1", recursos: ["Teoría", "Ejemplos", "Quiz de entrada "] },
+      { nombre: "Tema 1– Introducción a Python y su entorno", id: "py1", recursos: ["Teoría", "Ejemplos", "Quiz de entrada"] },
       { nombre: "Tema 2 – Variables, operadores y estructuras de control en Python", id: "py2", recursos: ["Teoría", "Ejemplos"] },
-      { nombre: "Tema 3 – Estructuras de datos básicas en Python ", id: "py3", recursos: ["Teoría", "Ejemplos", "Quiz Intermedio"] },
+      { nombre: "Tema 3 – Estructuras de datos básicas en Python ", id: "py3", recursos: ["Teoría", "Ejemplos", "quiz intermedio"] },
       { nombre: "Tema 4 – Funciones y modularidad en Python", id: "py4", recursos: ["Teoría", "Ejemplos"] },
       { nombre: "Tema 5 –  Entrada, salida y manejo de errores en Python", id: "py5", recursos: ["Teoría", "Ejemplos"] },
-      { nombre: "Tema 6 –  Aplicación práctica", id: "py6", recursos: ["Teoría", "Ejemplos", "Quiz final"] }
+      { nombre: "Tema 6 –  Aplicación práctica", id: "py6", recursos: ["Teoría", "Ejemplos", "Quiz Final"] }
     ]
   },
   4: {
@@ -11282,7 +11583,7 @@ const cursos = {
     imagen: "assets/img/prograMod.png",
     modulos: [
       { nombre: "Tema 1 – Concepto de modularización", id: "mod1", recursos: ["Teoría", "Ejemplos", "Quiz de entrada"] },
-      { nombre: "Tema 2 – Funciones en pseudocódigo", id: "mod2", recursos: ["Teoría", "Ejemplos", "Quiz Intermedio"] },
+      { nombre: "Tema 2 – Funciones en pseudocódigo", id: "mod2", recursos: ["Teoría", "Ejemplos", "quiz intermedio"] },
       { nombre: "Tema 3 – Parámetros en funciones y subprocesos", id: "mod3", recursos: ["Teoría", "Ejemplos", "Quiz final"] }
     ]
   }
