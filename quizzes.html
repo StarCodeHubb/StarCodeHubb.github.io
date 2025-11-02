@@ -130,7 +130,7 @@
 </article>
 
 <article class="quiz-card" style="background-color: #152238; color: #fff; border-radius: 10px; padding: 20px; max-width: 380px; box-shadow: 0 4px 10px rgba(0,0,0,0.35); text-align: left;">
-  <h3 style="color: #22c1dc; font-size: 1.05rem; margin-bottom: 10px;">🐍 Wayground - Fundamentos de Python</h3>
+  <h3 style="color: #22c1dc; font-size: 1.05rem; margin-bottom: 10px;">🎮 Wayground - Fundamentos de Python</h3>
   
   <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 18px;">
     Participa en el quiz interactivo del tercer minicurso y pon a prueba tus conocimientos sobre Python.
@@ -148,7 +148,7 @@
 
     
 <article class="quiz-card" style="background-color: #152238; color: #fff; border-radius: 10px; padding: 20px; max-width: 380px; box-shadow: 0 4px 10px rgba(0,0,0,0.35); text-align: left;">
-  <h3 style="color: #00e676; font-size: 1.05rem; margin-bottom: 10px;">🧩 Kahoot - Programación Modular</h3>
+  <h3 style="color: #00e676; font-size: 1.05rem; margin-bottom: 10px;">🎮 Kahoot - Programación Modular</h3>
   
   <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 18px;">
     Participa en el quiz interactivo del cuarto minicurso,
@@ -201,6 +201,20 @@
         <p>Preguntas mixtas que integran conceptos de todos los minicursos</p>
         <button class="btn" onclick="openQuiz('q6')">Iniciar Quiz</button>
       </article>
+
+
+      <article class="card" role="listitem">
+  <h3>⚙️  Bucles y Condicionales Avanzados</h3>
+  <p>Uso avanzado de if, elif, while, break, continue y estructuras anidadas.</p>
+  <button class="btn" onclick="openQuiz('q7')">Iniciar Quiz</button>
+</article>
+
+<article class="card" role="listitem">
+  <h3>⚙️ Listas, Tuplas y Diccionarios</h3>
+  <p>Estructuras esenciales para almacenar y organizar datos en Python.</p>
+  <button class="btn" onclick="openQuiz('q8')">Iniciar Quiz</button>
+</article>
+
     </div>
   </main>
 
@@ -298,7 +312,35 @@
           { id:"q6_4", type:"mcq", text:"¿Qué operador en Python devuelve el residuo?", options:{a:"//", b:"%", c:"/", d:"**"}, answer:"b", explain:"El operador '%' devuelve el residuo (módulo)."},
           { id:"q6_5", type:"mcq", text:"¿Cuál es una señal de bucle infinito en pseudocódigo?", options:{a:"Incrementar variable de control", b:"Condición que nunca cambia", c:"Comentario claro", d:"Uso de funciones"}, answer:"b", explain:"Si la condición nunca cambia, el bucle nunca termina."}
         ]
-      }
+      },
+
+    q7: {
+  title: "Minicurso 7 — Bucles y Condicionales Avanzados",
+  description: "Uso avanzado de if, elif, while, break, continue y estructuras anidadas.",
+  questions: [
+    { id:"q7_1", type:"mcq", text:"¿Qué palabra clave termina un bucle inmediatamente?", options:{a:"stop", b:"exit", c:"break", d:"continue"}, answer:"c", explain:"'break' interrumpe el bucle por completo." },
+    { id:"q7_2", type:"mcq", text:"¿Qué palabra omite la iteración actual pero continúa el bucle?", options:{a:"pass", b:"skip", c:"continue", d:"next"}, answer:"c", explain:"'continue' salta la iteración actual." },
+    { id:"q7_3", type:"tf", text:"El bloque 'else' puede usarse después de un bucle 'for'. (V/F)", answer:"v", explain:"Verdadero — se ejecuta si el bucle no se interrumpe con 'break'." },
+    { id:"q7_4", type:"mcq", text:"¿Qué palabra se usa cuando no se quiere ejecutar ninguna acción?", options:{a:"none", b:"skip", c:"pass", d:"void"}, answer:"c", explain:"'pass' evita errores de sintaxis al dejar un bloque vacío." },
+    { id:"q7_5", type:"short", text:"Completa: Los bucles que nunca terminan se llaman ______.", answer:"infinitos", explain:"Un bucle sin condición de salida se llama bucle infinito." }
+  ]
+}, 
+
+q8: {
+  title: "  Listas, Tuplas y Diccionarios",
+  description: "Colecciones de datos en Python y sus operaciones básicas.",
+  questions: [
+    { id:"q8_1", type:"mcq", text:"¿Qué tipo de estructura permite modificar sus elementos?", options:{a:"tupla", b:"lista", c:"diccionario", d:"set"}, answer:"b", explain:"Las listas son mutables, a diferencia de las tuplas." },
+    { id:"q8_2", type:"tf", text:"Las tuplas pueden cambiar sus valores después de ser creadas. (V/F)", answer:"f", explain:"Falso — las tuplas son inmutables." },
+    { id:"q8_3", type:"mcq", text:"¿Cómo se accede al valor asociado a una clave en un diccionario?", options:{a:"diccionario.clave", b:"diccionario{clave}", c:"diccionario[clave]", d:"diccionario.getclave()"}, answer:"c", explain:"Se usa la sintaxis diccionario['clave']." },
+    { id:"q8_4", type:"short", text:"Completa: Para agregar un elemento al final de una lista se usa ______.", answer:"append", explain:"El método append() agrega un elemento al final de la lista." },
+    { id:"q8_5", type:"mcq", text:"¿Cuál de las siguientes estructuras utiliza pares clave:valor?", options:{a:"lista", b:"tupla", c:"diccionario", d:"cadena"}, answer:"c", explain:"El diccionario almacena datos en pares clave:valor." }
+  ]
+},
+
+
+
+
     };
 
     /* ====== Modal open/close and quiz engine ====== */

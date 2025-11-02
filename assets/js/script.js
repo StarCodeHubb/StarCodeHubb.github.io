@@ -1890,18 +1890,9 @@ Fin
   </p>
   <p>
     En cuanto a la representación, los algoritmos pueden mostrarse mediante diagramas de flujo, pseudocódigo o estructuración textual; estos medios facilitan la comprensión de la lógica antes de implementarla en un lenguaje de programación. 
-  </p>
-  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
-INICIO  
-  LEER número1  
-  LEER número2  
-  SI número1 > número2 ENTONCES  
-     IMPRIMIR "El mayor es número1"  
-  SINO  
-     IMPRIMIR "El mayor es número2"  
-  FIN_SI  
-FIN
-  </pre>
+         <p style="margin-top: 25px;">
+        <img src="assets/img/pp1.png" alt="Pensamiento computacional" style="width: 350px; display: block; margin: 15px auto; border-radius: 10px;">
+        <p style="margin-top: 25px;">
   <p>
     Este ejemplo muestra un algoritmo simple que define datos de entrada, una decisión y una salida. La correcta comprensión y diseño de algoritmos es clave para que la programación no sea un ejercicio mecánico de codificación, sino una actividad estructurada de resolución de problemas, cómoda de trasponer al entorno del pseudocódigo (como el de PSeInt) y al posterior desarrollo en lenguajes de programación.
   </p>
@@ -1924,15 +1915,11 @@ FIN
   <p>
     El pseudocódigo es una herramienta de representación de algoritmos escrita en un lenguaje cercano al humano, que imita la lógica de programación pero sin adoptar la sintaxis estricta de un lenguaje de código. Su función primordial es servir como puente entre la idea algorítmica y el desarrollo en un lenguaje real. Por ejemplo, un recurso en español define: “un pseudocódigo es una forma de representar la solución a un algoritmo de la forma más detallada posible, y a su vez lo más parecida posible al lenguaje que posteriormente se utilizará para la codificación del mismo”. 
   </p>
-  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; font-family: 'Courier New', monospace; overflow-x: auto;">
-Algoritmo CalcularPromedio  
-   LEER valor1, valor2, valor3  
-   suma ← valor1 + valor2 + valor3  
-   promedio ← suma / 3  
-   IMPRIMIR "El promedio es:", promedio  
-FinAlgoritmo
-  </pre>
-  <p>
+
+
+   <p style="margin-top: 25px;">
+        <img src="assets/img/pp2.png" alt="Pensamiento computacional" style="width: 350px; display: block; margin: 15px auto; border-radius: 10px;">
+        <p style="margin-top: 25px;">
     Este pseudocódigo refleja las instrucciones esenciales. Por tal motivo, para los estudiantes que se introducen en programación con PSeInt, el pseudocódigo será un aliado que mejora la comprensión, agiliza el aprendizaje y reduce la barrera que representa conocer la sintaxis de un lenguaje formal y finalmente la traducen al entorno de programación.
   </p>
 
@@ -1957,11 +1944,9 @@ FinAlgoritmo
   </ul>
   <p>Por ejemplo, un estudiante puede escribir el siguiente pseudocódigo:</p>
 
-  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; text-align: center; font-family: 'Courier New', monospace; overflow-x: auto;">
-Algoritmo Saludo
-    Escribir "Hola, mundo!"
-FinAlgoritmo
-  </pre>
+<p style="margin-top: 25px;">
+        <img src="assets/img/pp3.png" alt="Pensamiento computacional" style="width: 350px; display: block; margin: 15px auto; border-radius: 10px;">
+        <p style="margin-top: 25px;">
 
   <p>
     Al ejecutarlo, el programa imprimirá el mensaje <i>Hola, mundo!</i>, ejemplificando la relación entre las instrucciones escritas y la salida del sistema. De este modo, el aprendizaje de la programación se vuelve tangible desde el primer contacto con la herramienta.
@@ -1979,11 +1964,9 @@ FinAlgoritmo
   </ul>
   <p>Por ejemplo, se puede probar el siguiente código:</p>
 
-  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; text-align: center; font-family: 'Courier New', monospace; overflow-x: auto;">
-Algoritmo HolaMundo
-    Escribir "¡Bienvenido a PSeInt!"
-FinAlgoritmo
-  </pre>
+  <p style="margin-top: 25px;">
+        <img src="assets/img/pp4.png" alt="Pensamiento computacional" style="width: 350px; display: block; margin: 15px auto; border-radius: 10px;">
+        <p style="margin-top: 25px;">
 
   <p>
     Si el mensaje se muestra correctamente en pantalla, el entorno está listo para ser utilizado.
@@ -2042,15 +2025,9 @@ FinAlgoritmo
     En PSeInt, la ejecución directa (tecla F9) interpreta el algoritmo y muestra los resultados en consola. Por ejemplo:
   </p>
 
-  <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; text-align: center; font-family: 'Courier New', monospace; overflow-x: auto;">
-Algoritmo SumaDosNumeros
-    Leer a
-    Leer b
-    suma ← a + b
-    Escribir "La suma es: ", suma
-FinAlgoritmo
-  </pre>
-
+<p style="margin-top: 25px;">
+        <img src="assets/img/pp5.png" alt="Pensamiento computacional" style="width: 350px; display: block; margin: 15px auto; border-radius: 10px;">
+        <p style="margin-top: 25px;">
   <p>
     Si el usuario ingresa <strong>a = 3</strong> y <strong>b = 5</strong>, el programa imprimirá <i>La suma es: 8</i>.
     La depuración paso a paso (tecla F8) permite seguir la ejecución línea por línea, observando cómo cambian los valores de las variables.
@@ -2151,10 +2128,10 @@ FinAlgoritmo
 
   <p><strong>Error común:</strong> olvidar incrementar <code>i</code>, lo que produce un bucle infinito.</p>
 
-  <h3 style="color: #00ffff;">Ejemplo 5: Validar división entre cero</h3>
+  <h3 style="color: #cee3e3ff;">Ejemplo 5: Validar división entre cero</h3>
   <p><strong>Objetivo:</strong> prevenir errores de ejecución.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 12px; border-radius: 10px; font-family: monospace;">
+  <pre style="background-color: #111; color: #cdefefff; padding: 12px; border-radius: 10px; font-family: monospace;">
 Algoritmo DivisionSegura
     Definir a, b, resultado Como Real
     Escribir "Ingrese el dividendo:"
@@ -2174,13 +2151,6 @@ FinAlgoritmo
 
 </section>
 
-    
-    
-    
-    
-    
-
-    
     
     
     
@@ -2852,10 +2822,10 @@ FinAlgoritmo
 
   <p>Las estructuras condicionales permiten que un algoritmo tome decisiones en función del cumplimiento de una condición lógica. A través de las sentencias <strong>Si...Entonces...Sino</strong>, los programas pueden responder de forma diferente según los datos ingresados o los resultados obtenidos. Los siguientes ejercicios desarrollan progresivamente el uso de condicionales simples, compuestas y anidadas, así como el empleo de operadores lógicos en la toma de decisiones.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1: Verificar mayoría de edad (Nivel básico)</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;">Ejercicio 1: Verificar mayoría de edad (Nivel básico)</h3>
   <p><strong>Planteamiento del problema:</strong> Crear un programa que solicite la edad del usuario y determine si es mayor o menor de edad.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo VerificarEdad
     Definir edad Como Entero
     Escribir "Ingrese su edad:"
@@ -2869,10 +2839,10 @@ FinAlgoritmo
   </pre>
   <p><strong>Conceptos aplicados:</strong> condicional simple, operador relacional.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2: Determinar si un número es par o impar (Nivel básico-intermedio)</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;">Ejercicio 2: Determinar si un número es par o impar (Nivel básico-intermedio)</h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar un algoritmo que lea un número entero y determine si es par o impar.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ParOImpar
     Definir n Como Entero
     Escribir "Ingrese un número:"
@@ -2889,7 +2859,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3: Clasificación de notas (Nivel intermedio)</h3>
   <p><strong>Planteamiento del problema:</strong> Realizar un programa que lea una nota (0–20) y muestre si el estudiante está Desaprobado, Aprobado o Excelente.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ClasificarNota
     Definir nota Como Real
     Escribir "Ingrese la nota (0-20):"
@@ -2910,7 +2880,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4: Descuento por tipo de cliente (Nivel intermedio)</h3>
   <p><strong>Planteamiento del problema:</strong> Elaborar un algoritmo que solicite el tipo de cliente (VIP, Preferente o Regular) y muestre si tiene o no descuento especial.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo DescuentoCliente
     Definir tipo Como Cadena
     Escribir "Ingrese tipo de cliente (VIP, Preferente o Regular):"
@@ -2927,7 +2897,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5: Validar acceso al sistema (Nivel intermedio-avanzado)</h3>
   <p><strong>Planteamiento del problema:</strong> Crear un algoritmo que solicite un nombre de usuario y contraseña. Si el usuario es “admin” y la clave “1234”, debe mostrar “Acceso concedido”; de lo contrario, “Acceso denegado”.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo AccesoSistema
     Definir usuario, clave Como Cadena
     Escribir "Ingrese usuario:"
@@ -2946,7 +2916,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6: Clasificación por edad (Nivel avanzado)</h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar un programa que clasifique a una persona según su edad en: Niño (0–11), Adolescente (12–17), Adulto (18–59) o Adulto mayor (60 o más).</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #cce4e4ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo CategoriaEdad
     Definir edad Como Entero
     Escribir "Ingrese su edad:"
@@ -4083,10 +4053,10 @@ promedio &lt;- suma / contador
 
   <p>Dominar estas estructuras es esencial para comprender la lógica de control en programación, desarrollar pensamiento algorítmico y optimizar los procesos dentro de un programa.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1: Contador simple (Nivel básico)</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;">Ejercicio 1: Contador simple </h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar un algoritmo que muestre los números del 1 al 5 en pantalla, uno por línea.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color:#b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ContarHastaCinco
     Definir i Como Entero
     i <- 1
@@ -4099,10 +4069,10 @@ FinAlgoritmo
 
   <p><em>Nota:</em> Se aplica una estructura <strong>Mientras</strong> para ejecutar el bloque repetidamente mientras la condición sea verdadera.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2: Suma de los primeros N números (Nivel básico-intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2: Suma de los primeros N números</h3>
   <p><strong>Planteamiento del problema:</strong> Crear un algoritmo que lea un número N y calcule la suma de todos los números naturales desde 1 hasta N.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo SumaHastaN
     Definir N, i, suma Como Entero
     suma <- 0
@@ -4117,10 +4087,10 @@ FinAlgoritmo
 
   <p><em>Nota:</em> Se utiliza el bucle <strong>Para</strong>, ideal cuando se conoce el número exacto de repeticiones.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3: Tabla de multiplicar (Nivel intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3: Tabla de multiplicar </h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar un algoritmo que muestre la tabla de multiplicar de un número ingresado por el usuario (del 1 al 12).</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo TablaMultiplicar
     Definir n, i Como Entero
     Escribir "Ingrese un número:"
@@ -4133,10 +4103,10 @@ FinAlgoritmo
 
   <p><em>Nota:</em> El uso de un ciclo <strong>Para</strong> permite automatizar cálculos repetitivos, evitando escribir múltiples líneas similares.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4: Promedio de notas (Nivel intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4: Promedio de notas </h3>
   <p><strong>Planteamiento del problema:</strong> Crear un algoritmo que permita ingresar una cantidad indefinida de notas y calcule el promedio. La lectura termina cuando el usuario ingresa un número negativo.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo PromedioNotas
     Definir nota, suma, contador Como Real
     suma <- 0
@@ -4154,10 +4124,10 @@ FinAlgoritmo
 
   <p><em>Nota:</em> Se usa el patrón de <strong>bucle controlado por centinela</strong>, útil para procesar entradas indefinidas.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5: Cálculo de factorial (Nivel intermedio-avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5: Cálculo de factorial </h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar un algoritmo que calcule el factorial de un número entero ingresado por el usuario.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo Factorial
     Definir n, i, fact Como Entero
     Escribir "Ingrese un número:"
@@ -4172,10 +4142,10 @@ FinAlgoritmo
 
   <p><em>Nota:</em> El factorial se obtiene multiplicando todos los números enteros positivos hasta N. Este algoritmo combina <strong>acumuladores</strong> y bucles <strong>Para</strong>.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6: Promedio y conteo de aprobados (Nivel avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6: Promedio y conteo de aprobados </h3>
   <p><strong>Planteamiento del problema:</strong> Crear un algoritmo que lea las calificaciones de varios estudiantes, calcule el promedio general y determine cuántos aprobaron (nota ≥ 11). Finaliza cuando el usuario ingrese 0 como número de estudiantes.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo AnalisisNotas
     Definir n, i, nota, aprobados, suma Como Real
     suma <- 0
@@ -4203,14 +4173,6 @@ FinAlgoritmo
 
 </section>
 
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -4816,7 +4778,7 @@ FinAlgoritmo
 
   <h3 style="color: #00ffff; font-size: 16px;">Estructura general</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo MenuInteractivo
     Definir opcion Como Entero
     Repetir
@@ -4844,7 +4806,7 @@ FinAlgoritmo
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejemplo general</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo MenuPrincipal
     Definir opcion, a, b Como Real
     Repetir
@@ -4875,11 +4837,11 @@ FinAlgoritmo
 
   <p>En este ejemplo se utiliza un bucle <strong>Repetir…Hasta Que</strong> para mantener activo el menú, y la estructura <strong>Segun</strong> para ejecutar la acción correspondiente según la opción seleccionada.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1: Menú básico de mensajes (Nivel básico)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1: Menú básico de mensajes </h3>
 
   <p><strong>Planteamiento del problema:</strong> Crear un programa que muestre un menú con tres opciones: mostrar un mensaje de bienvenida, de despedida o salir.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo MenuMensajes
     Definir opcion Como Entero
     Repetir
@@ -4905,9 +4867,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> repetición controlada, selección múltiple, salida condicional.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2: Calculadora básica (Nivel intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2: Calculadora básica </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo CalculadoraBasica
     Definir opcion Como Entero
     Definir a, b Como Real
@@ -4953,9 +4915,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> condicionales, operadores aritméticos, control de flujo.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3: Conversión de unidades (Nivel intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3: Conversión de unidades </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ConversionUnidades
     Definir opcion Como Entero
     Definir c, k, f, m Como Real
@@ -4988,9 +4950,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> operaciones aritméticas, uso de variables reales.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4: Menú con contador (Nivel intermedio-avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4: Menú con contador </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo MenuContador
     Definir opcion, num, suma, contador Como Entero
     suma <- 0
@@ -5023,9 +4985,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> acumuladores, contadores, repetición controlada.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5: Sistema de notas (Nivel avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5: Sistema de notas </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo SistemaNotas
     Definir opcion, contador, aprobados Como Entero
     Definir nota, suma, promedio Como Real
@@ -5069,9 +5031,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> cálculos promedios, contadores, condicionales anidados.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6: Sistema de inventario básico (Nivel avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6: Sistema de inventario básico </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo InventarioBasico
     Definir opcion, i, n Como Entero
     Definir nombre Como Cadena
@@ -5140,7 +5102,7 @@ FinAlgoritmo
   <p><strong>Problema:</strong> Calcular el monto total a pagar por artículos comprados.  
   Se debe ingresar la cantidad de artículos y el precio unitario, luego calcular el total = cantidad × precio.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo CalculoCompra
     Definir cantidad Como Entero
     Definir precio, total Como Real
@@ -5157,7 +5119,7 @@ FinAlgoritmo
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1. Cálculo de promedio de notas (Nivel básico)</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo PromedioNotas
     Definir n1, n2, n3, promedio Como Real
     Escribir "Ingrese tres notas:"
@@ -5176,7 +5138,7 @@ FinAlgoritmo
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2. Cálculo de descuento en una compra (Nivel básico-intermedio)</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo DescuentoCompra
     Definir monto, total Como Real
     Escribir "Ingrese el monto de la compra:"
@@ -5192,9 +5154,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> estructura condicional, operadores relacionales.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3. Cálculo del consumo eléctrico (Nivel intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3. Cálculo del consumo eléctrico </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ConsumoElectrico
     Definir consumo, monto Como Real
     Escribir "Ingrese consumo en kWh:"
@@ -5206,9 +5168,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> multiplicación directa, uso de constantes.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4. Cálculo del índice de masa corporal (IMC) (Nivel intermedio)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4. Cálculo del índice de masa corporal (IMC) </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo CalculoIMC
     Definir peso, altura, imc Como Real
     Escribir "Ingrese su peso (kg):"
@@ -5236,9 +5198,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> condicionales anidados, operadores de potencia, clasificación por rangos.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5. Control de inventario (Nivel avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5. Control de inventario </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ControlInventario
     Definir n, i Como Entero
     Definir nombre Como Cadena
@@ -5263,9 +5225,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> bucles, acumuladores, entrada múltiple de datos.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6. Sistema de facturación simple (Nivel avanzado)</h3>
+  <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6. Sistema de facturación simple </h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo FacturacionSimple
     Definir n, i Como Entero
     Definir precio, cantidad, subtotal, total, igv Como Real
@@ -5338,7 +5300,7 @@ FinPara
   <p><strong>Problema:</strong>  
   Se desea ingresar n calificaciones, calcular el promedio general y contar cuántas están aprobadas (nota mayor o igual a 11).</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo EstadisticaNotas
     Definir n, i, contador Como Entero
     Definir nota, suma Como Real
@@ -5365,9 +5327,9 @@ FinAlgoritmo
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicios prácticos resueltos</h3>
 
-  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 1. Contar números pares (Nivel básico)</h4>
+  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 1. Contar números pares </h4>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ContarPares
     Definir i, num, contador Como Entero
     contador <- 0
@@ -5384,9 +5346,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> bucle Para, operador módulo, condicional simple.</p>
 
-  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 2. Suma de números positivos (Nivel básico-intermedio)</h4>
+  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 2. Suma de números positivos </h4>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo SumaPositivos
     Definir i, num Como Entero
     Definir suma Como Real
@@ -5404,9 +5366,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> acumulador condicionado, selección dentro del bucle.</p>
 
-  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 3. Validación de entrada (Nivel intermedio)</h4>
+  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 3. Validación de entrada </h4>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ValidarNota
     Definir nota Como Real
     Repetir
@@ -5422,9 +5384,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> bucle Repetir...Hasta Que, condición de salida, validación.</p>
 
-  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 4. Contar aprobados y desaprobados (Nivel intermedio)</h4>
+  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 4. Contar aprobados y desaprobados /h4>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ContarResultados
     Definir n, i, aprobados, desaprobados Como Entero
     Definir nota Como Real
@@ -5448,9 +5410,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> bucle con bifurcación doble (Si–Sino), contadores múltiples.</p>
 
-  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 5. Número mayor y menor (Nivel intermedio-avanzado)</h4>
+  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 5. Número mayor y menor </h4>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo MayorYMenor
     Definir n, i, num, mayor, menor Como Entero
     Escribir "¿Cuántos números ingresará?"
@@ -5476,9 +5438,9 @@ FinAlgoritmo
 
   <p><em>Conceptos aplicados:</em> condicionales anidadas dentro del bucle, inicialización de variables con el primer dato.</p>
 
-  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 6. Control de ventas (Nivel avanzado)</h4>
+  <h4 style="color: #00ffff; font-size: 15px;">Ejercicio 6. Control de ventas </h4>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Algoritmo ControlVentas
     Definir n, i, cantidad Como Entero
     Definir precio, totalVenta, totalGeneral Como Real
@@ -5520,7 +5482,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejemplo 1: Cálculo de aprobados</h3>
   <p><strong>Problema:</strong> Leer 5 notas, calcular el promedio y contar cuántas son mayores o iguales a 11.</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ejemplo1_Aprobados
     Definir i, contador Como Entero
     Definir nota, suma Como Real
@@ -5542,7 +5504,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejemplo 2: Números positivos y negativos</h3>
   <p><strong>Problema:</strong> Ingresar 10 números y determinar cuántos son positivos, negativos o cero.</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ejemplo2_Signos
     Definir i, num, pos, neg, ceros Como Entero
     pos <- 0
@@ -5570,7 +5532,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejemplo 3: Control de ventas</h3>
   <p><strong>Problema:</strong> Registrar varias ventas y aplicar un 10% de descuento si el total supera S/100.</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ejemplo3_Ventas
     Definir n, i, cantidad Como Entero
     Definir precio, totalVenta, totalGeneral Como Real
@@ -5596,7 +5558,7 @@ FinAlgoritmo
   <h2 style="color: #00ffff; font-size: 16px;"> Ejercicios prácticos resueltos</h2>
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1 : Contar números pares</h3>
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej1_Pares
     Definir i, num, contador Como Entero
     contador <- 0
@@ -5612,7 +5574,7 @@ FinAlgoritmo
   </pre>
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2 : Sumar solo los números positivos</h3>
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej2_SumaPositivos
     Definir i, num, suma Como Entero
     suma <- 0
@@ -5630,7 +5592,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3 : Validar edades</h3>
   <p><strong>Objetivo:</strong> Pedir edades hasta que se ingrese una edad válida (entre 0 y 120).</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej3_ValidarEdad
     Definir edad Como Entero
     Repetir
@@ -5647,7 +5609,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4 : Promedio hasta ingresar -1</h3>
   <p><strong>Objetivo:</strong> Calcular promedio de notas hasta que el usuario ingrese -1.</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej4_PromedioIndeterminado
     Definir nota, suma Como Real
     Definir contador Como Entero
@@ -5670,7 +5632,7 @@ FinAlgoritmo
   </pre>
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5 : Contar múltiplos de 3</h3>
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej5_Multiplos3
     Definir i, num, contador Como Entero
     contador <- 0
@@ -5688,7 +5650,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6 : Control de temperaturas</h3>
   <p><strong>Objetivo:</strong> Leer 6 temperaturas y contar cuántas superan los 30 °C.</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej6_TemperaturasAltas
     Definir i, contador Como Entero
     Definir temp Como Real
@@ -5705,7 +5667,7 @@ FinAlgoritmo
   </pre>
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 7: Números mayores a un umbral</h3>
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej7_MayoresUmbral
     Definir n, i, num, contador Como Entero
     Definir umbral Como Real
@@ -5726,7 +5688,7 @@ FinAlgoritmo
   </pre>
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 8 : Control de inventario</h3>
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej8_Inventario
     Definir n, i, cantidad Como Entero
     Definir precio, total, totalGeneral Como Real
@@ -5750,7 +5712,7 @@ FinAlgoritmo
   </pre>
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 9 : Cálculo de salarios</h3>
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej9_Salarios
     Definir n, i Como Entero
     Definir salario, bono, totalPagar Como Real
@@ -5775,7 +5737,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 10 : Evaluación de estudiantes</h3>
   <p><strong>Objetivo:</strong> Calcular promedio general y cantidad de aprobados y desaprobados de varios alumnos.</p>
 
-  <pre style="background-color:#111; color:#00ffff; padding:12px; border-radius:10px; font-family:monospace;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:12px; border-radius:10px; font-family:monospace;">
 Algoritmo Ej10_Evaluacion
     Definir n, i, aprobados, desaprobados Como Entero
     Definir nota, suma, promedioGeneral Como Real
@@ -5967,7 +5929,7 @@ print("Hola, Python")
   El encabezado sirve para incluir información sobre el propósito del programa, el autor y la fecha. No afecta la ejecución, pero facilita la comprensión del código, especialmente cuando es revisado por otras personas o después de un tiempo.
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa: Calculadora básica
 # Autor: Ana Pérez
 # Fecha: 31/10/2025
@@ -5983,7 +5945,7 @@ print("Hola, Python")
   En algunos casos, es necesario usar funciones adicionales que no están incluidas en el núcleo de Python. Para eso se emplean las importaciones mediante la palabra clave <code>import</code>.
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 import math  # Importa el módulo matemático
 
 radio = 5
@@ -6004,7 +5966,7 @@ print("El área del círculo es:", area)
 
   <p><em>Ejemplo (función):</em></p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 def sumar(a, b):
     resultado = a + b
     return resultado
@@ -6014,7 +5976,7 @@ print("La suma es:", sumar(3, 5))
 
   <p><em>Ejemplo (clase básica):</em></p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 class Persona:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -6036,7 +5998,7 @@ persona1.saludar()
   Es la parte donde se colocan las instrucciones que se ejecutan directamente al correr el programa. En Python, se acostumbra usar la condición <code>if __name__ == "__main__":</code> para indicar el punto de inicio del programa.
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 def saludar():
     print("¡Bienvenido a Python!")
 
@@ -6048,14 +6010,14 @@ if __name__ == "__main__":
   Esto garantiza que el bloque principal solo se ejecute cuando el archivo se ejecuta directamente, y no cuando es importado como módulo en otro programa (<strong>Lutz, 2021</strong>).
   </p>
 
-  <h3 style="color: #00ffff; font-size: 15px;">3.5. Instrucciones de salida</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 15px;">3.5. Instrucciones de salida</h3>
 
   <p>
   Las instrucciones de salida son aquellas que muestran resultados al usuario o registran información.  
   La función más utilizada para ello es <code>print()</code>, que permite enviar texto o valores a la consola.
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nombre = input("Ingrese su nombre: ")
 print("Hola,", nombre, "¡bienvenido al curso de Python!")
   </pre>
@@ -6066,7 +6028,7 @@ print("Hola,", nombre, "¡bienvenido al curso de Python!")
 
   <h3 style="color: #00ffff; font-size: 15px;">Resumen gráfico de la estructura</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Comentarios o encabezado
 import módulos
 
@@ -6089,7 +6051,7 @@ if __name__ == "__main__":
 
   <h3 style="color: #00ffff; font-size: 15px;">Ejemplo simple</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 print("¡Hola, mundo!")
   </pre>
 
@@ -6099,7 +6061,7 @@ print("¡Hola, mundo!")
 
   <h3 style="color: #00ffff; font-size: 15px;">Ejemplo con entrada, procesamiento y salida</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nombre = input("Ingrese su nombre: ")
 edad = int(input("Ingrese su edad: "))
 edad_futura = edad + 5
@@ -6143,14 +6105,14 @@ print("Hola", nombre, ", dentro de 5 años tendrás", edad_futura, "años.")
   Comprender su funcionamiento es clave para desarrollar programas dinámicos, interactivos y fáciles de probar (<strong>Severance, 2016</strong>).
   </p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">La función <code>print()</code></h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;">La función <code>print()</code></h3>
 
   <p>
   La función <code>print()</code> es el mecanismo estándar de salida en Python. Su propósito es mostrar mensajes, resultados de operaciones, valores de variables o cualquier texto al usuario. 
   Por ejemplo:
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 print("¡Hola, mundo!")
 print("La suma de 2 + 3 es:", 2 + 3)
   </pre>
@@ -6172,7 +6134,7 @@ print("La suma de 2 + 3 es:", 2 + 3)
 
   <p><em>Ejemplo:</em></p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 print("Nombre:", "Ana", sep=" - ")
 print("Gracias por usar el programa", end=" :)")
   </pre>
@@ -6189,7 +6151,7 @@ print("Gracias por usar el programa", end=" :)")
 
   <p><em>Ejemplo básico:</em></p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nombre = input("Ingrese su nombre: ")
 print("Hola,", nombre)
   </pre>
@@ -6205,7 +6167,7 @@ print("Hola,", nombre)
 
   <p><em>Ejemplo con conversión:</em></p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 edad = int(input("Ingrese su edad: "))
 print("Tendrás", edad + 1, "años el próximo año.")
   </pre>
@@ -6221,7 +6183,7 @@ print("Tendrás", edad + 1, "años el próximo año.")
   <strong>Entrada → Procesamiento → Salida (E–P–S)</strong>:
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa: Cálculo del área de un rectángulo
 base = float(input("Ingrese la base del rectángulo: "))
 altura = float(input("Ingrese la altura del rectángulo: "))
@@ -6235,7 +6197,7 @@ print("El área del rectángulo es:", area)
   (<strong>Moreno, Robles, & Román, 2020</strong>).
   </p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">En resumen</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;">En resumen</h3>
 
   <ul style="margin-left: 40px;">
     <li><code>print()</code> muestra información al usuario.</li>
@@ -6263,7 +6225,7 @@ print("El área del rectángulo es:", area)
 
   <p>Por ejemplo:</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 x = 10      # entero
 y = 3.14    # flotante
 nombre = "Ana"  # cadena de texto
@@ -6287,7 +6249,7 @@ nombre = "Ana"  # cadena de texto
 
   <p>Ejemplo de operaciones numéricas:</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 a = 5
 b = 2
 print("Suma:", a + b)
@@ -6300,7 +6262,7 @@ print("Potencia:", a ** b)
   Los números son ampliamente utilizados en cálculos matemáticos, científicos y financieros. Python proporciona además el módulo <code>math</code>, que incluye funciones avanzadas como raíces, potencias, logaritmos y trigonometría (<strong>Python Software Foundation, 2024</strong>).
   </p>
 
-  <h3 style="color: #00ffff; font-size: 16px;">5.2. Cadenas de caracteres (str)</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;">5.2. Cadenas de caracteres (str)</h3>
 
   <p>
   Las cadenas representan texto y se escriben entre comillas simples o dobles. Python trata las cadenas como secuencias de caracteres, lo que permite acceder a cada posición o realizar transformaciones.
@@ -6308,7 +6270,7 @@ print("Potencia:", a ** b)
 
   <p>Ejemplo:</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 mensaje = "Hola, Python"
 nombre = "Ana"
 saludo = "Hola " + nombre       # concatenación
@@ -6319,7 +6281,7 @@ print(eco)                      # salida: AnaAnaAna
 
   <p>Métodos útiles de cadenas:</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 texto = "Aprendiendo Python"
 print(texto.upper())   # convierte a mayúsculas
 print(texto.lower())   # convierte a minúsculas
@@ -6332,7 +6294,7 @@ print(len(texto))      # devuelve la longitud
   El tipo booleano sólo tiene dos valores posibles: <code>True</code> y <code>False</code>. Se usan principalmente en estructuras de control como condicionales o bucles, donde las decisiones dependen del resultado de una evaluación lógica (<strong>GeeksforGeeks, 2023</strong>).
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 activo = True
 if activo:
     print("El sistema está activo")
@@ -6352,7 +6314,7 @@ print(edad < 0)    # False
 
   <h3 style="color: #00ffff; font-size: 16px;">Ejemplo integrador</h3>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nombre = input("Ingrese su nombre: ")
 edad = int(input("Ingrese su edad: "))
 mayor = edad >= 18
@@ -6379,7 +6341,7 @@ print("¿Eres mayor de edad?", mayor)
 
   <p><strong>Planteamiento del problema:</strong> Comprobar que el entorno de Python está correctamente instalado y puede ejecutar un programa simple que muestre un mensaje en pantalla.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 1: Primer mensaje en Python
 print("¡Hola, mundo!")
   </pre>
@@ -6390,7 +6352,7 @@ print("¡Hola, mundo!")
 
   <p><strong>Planteamiento del problema:</strong> Crear un programa que solicite el nombre del usuario y muestre un mensaje de saludo personalizado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 2: Saludo personalizado
 nombre = input("Ingrese su nombre: ")
 print("Hola,", nombre, "¡bienvenido a Python!")
@@ -6402,7 +6364,7 @@ print("Hola,", nombre, "¡bienvenido a Python!")
 
   <p><strong>Planteamiento del problema:</strong> Realizar operaciones básicas entre dos números ingresados por teclado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 3: Operaciones con números
 a = int(input("Ingrese el primer número: "))
 b = int(input("Ingrese el segundo número: "))
@@ -6419,7 +6381,7 @@ print("División:", a / b)
 
   <p><strong>Planteamiento del problema:</strong> Calcular el área de un triángulo a partir de su base y altura ingresadas por el usuario.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 4: Cálculo del área de un triángulo
 base = float(input("Ingrese la base del triángulo: "))
 altura = float(input("Ingrese la altura del triángulo: "))
@@ -6434,7 +6396,7 @@ print("El área del triángulo es:", area)
 
   <p><strong>Planteamiento del problema:</strong> Determinar si una persona es mayor o menor de edad según el valor ingresado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 5: Evaluar si el usuario es mayor de edad
 edad = int(input("Ingrese su edad: "))
 mayor = edad >= 18
@@ -6451,7 +6413,7 @@ else:
 
   <p><strong>Planteamiento del problema:</strong> Calcular el área de un círculo usando la constante π (<code>pi</code>). El radio será ingresado por el usuario.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 6: Cálculo del área de un círculo
 import math
 
@@ -6466,7 +6428,7 @@ print("El área del círculo es:", area)
 
   <p><strong>Planteamiento del problema:</strong> Calcular el promedio de tres notas ingresadas por el usuario, utilizando una función personalizada.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 7: Función para calcular el promedio de tres notas
 def calcular_promedio(n1, n2, n3):
     return (n1 + n2 + n3) / 3
@@ -6485,7 +6447,7 @@ print("El promedio es:", promedio)
 
   <p><strong>Planteamiento del problema:</strong> Evaluar si un estudiante ha aprobado o desaprobado según su nota final. Incluye funciones, entrada de datos y bloque principal.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 # Programa 8: Evaluación de rendimiento académico
 def evaluar_estudiante(nombre, nota):
     if nota >= 11:
@@ -6567,7 +6529,7 @@ style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; 
   En programación, una variable es un espacio en la memoria del computador donde se guarda un valor que puede cambiar durante la ejecución del programa. Las variables son fundamentales porque permiten almacenar información, manipularla y reutilizarla tantas veces como sea necesario sin tener que escribirla nuevamente. En Python, las variables se crean simplemente asignando un valor mediante el operador <code>=</code>. Por ejemplo:
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nombre = "Ana"
 edad = 20
 altura = 1.68
@@ -6581,7 +6543,7 @@ altura = 1.68
   El tipado dinámico ofrece gran flexibilidad, pues una misma variable puede cambiar de tipo en distintos momentos del programa. Por ejemplo:
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 x = 10        # x es un entero
 x = "diez"    # ahora x es una cadena
   </pre>
@@ -6594,7 +6556,7 @@ x = "diez"    # ahora x es una cadena
   Las variables también pueden almacenar resultados de operaciones o expresiones. Por ejemplo:
   </p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 suma = 4 + 5
 mensaje = "El resultado es " + str(suma)
 print(mensaje)
@@ -6676,7 +6638,7 @@ print("El total a pagar es:", total)
     <tr><td><=</td><td>Menor o igual</td><td>4 <= 2</td><td>False</td></tr>
   </table>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nota = 15
 if nota >= 11:
     print("Aprobado")
@@ -6706,7 +6668,7 @@ else:
     <tr><td>not</td><td>Invierte el valor lógico</td><td>not (5 > 2)</td><td>False</td></tr>
   </table>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #111; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 edad = 18
 if edad >= 18 and edad <= 65:
     print("Edad laboral activa")
@@ -6734,7 +6696,7 @@ if edad >= 18 and edad <= 65:
     A nivel conceptual, las condicionales permiten que un programa responda de manera dinámica ante distintas situaciones, como validar la edad de un usuario, calcular descuentos según el monto de compra o verificar contraseñas antes de conceder acceso. Sin ellas, los programas serían puramente secuenciales y no podrían adaptarse a condiciones cambiantes.
   </p>
 
-  <h4 style="color: #00ffff; font-size: 16px;">3.1. Sintaxis y funcionamiento básico</h4>
+  <h4 style="color: #b6d5d5ff; font-size: 16px;">3.1. Sintaxis y funcionamiento básico</h4>
 
   <p>La estructura general de una condicional en Python es la siguiente:</p>
 
@@ -6772,7 +6734,7 @@ else:
     Este flujo de evaluación de condiciones es lineal y exclusivo: solo uno de los bloques se ejecuta, incluso si varias condiciones fueran verdaderas.
   </p>
 
-  <h4 style="color: #00ffff; font-size: 16px;">3.2. Uso de operadores</h4>
+  <h4 style="color: #b6d5d5ff; font-size: 16px;">3.2. Uso de operadores</h4>
 
   <p>
     Las condiciones pueden combinar operadores relacionales y lógicos para construir expresiones más complejas:
@@ -6785,7 +6747,7 @@ else:
 
   <p><strong>Ejemplo de aplicación combinada:</strong></p>
 
-  <pre style="background-color: #1a1a1a; color: #00ffcc; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #1a1a1a; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nota = float(input("Ingrese su nota final: "))
 
 if nota >= 17:
@@ -6826,13 +6788,13 @@ else:
     Este tipo de estructura es común en sistemas de autenticación o control de acceso. No obstante, un exceso de anidamiento puede dificultar la lectura del código (<strong>Lutz, 2021</strong>).
   </p>
 
-  <h4 style="color: #00ffff; font-size: 16px;">3.4. Condicionales abreviadas</h4>
+  <h4 style="color: #b6d5d5ff; font-size: 16px;">3.4. Condicionales abreviadas</h4>
 
   <p>
     Python ofrece una sintaxis más compacta para condicionales simples, conocida como <strong>expresión condicional o ternaria</strong>:
   </p>
 
-  <pre style="background-color: #1a1a1a; color: #00ffcc; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #1a1a1a; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 edad = int(input("Ingrese su edad: "))
 mensaje = "Mayor de edad" if edad >= 18 else "Menor de edad"
 print(mensaje)
@@ -6844,7 +6806,7 @@ print(mensaje)
 
   <p><strong>Evaluación booleana implícita</strong></p>
 
-  <pre style="background-color: #1a1a1a; color: #00ffcc; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #1a1a1a; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 nombre = input("Ingrese su nombre: ")
 
 if nombre:
@@ -6878,7 +6840,7 @@ else:
 
   <p><strong>Ejemplo integrador: Clasificación de números</strong></p>
 
-  <pre style="background-color: #1a1a1a; color: #00ffcc; padding: 10px; border-radius: 8px;">
+  <pre style="background-color: #1a1a1a; color: #b6d5d5ff; padding: 10px; border-radius: 8px;">
 numero = float(input("Ingrese un número: "))
 
 if numero > 0:
@@ -6896,7 +6858,7 @@ else:
 </section>
 <section style="color: white; text-align: justify; margin: 30px; font-size: 15px; line-height: 1.8;">
 
-  <h3 style="color: #00ffff; font-size: 18px;">4. Bucles <em>for</em> y <em>while</em></h3>
+  <h3 style="color:#b6d5d5ff; font-size: 18px;">4. Bucles <em>for</em> y <em>while</em></h3>
 
   <p>
     En programación, muchas tareas requieren repetir un conjunto de instrucciones varias veces. 
@@ -6970,7 +6932,7 @@ for i in range(1, 6):
   </pre>
 
   <p><strong>Salida:</strong></p>
-  <pre style="background-color:#0d0d0d; color:#00ffaa; padding:10px; border-radius:8px;">
+  <pre style="background-color:#0d0d0d; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 Iteración número: 1
 Iteración número: 2
 Iteración número: 3
@@ -6984,7 +6946,7 @@ Iteración número: 5
 
   <h5 style="color:#00ffff; font-size:15px;">Recorrido de listas</h5>
 
-  <pre style="background-color:#1a1a1a; color:#00ffcc; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 frutas = ["manzana", "pera", "uva"]
 for fruta in frutas:
     print("Me gusta la", fruta)
@@ -6992,7 +6954,7 @@ for fruta in frutas:
 
   <h5 style="color:#00ffff; font-size:15px;">Iterar sobre cadenas de texto</h5>
 
-  <pre style="background-color:#1a1a1a; color:#00ffcc; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 palabra = "Python"
 for letra in palabra:
     print(letra)
@@ -7041,7 +7003,7 @@ while condición:
 
   <p><strong>Ejemplo básico:</strong></p>
 
-  <pre style="background-color:#1a1a1a; color:#00ffcc; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 contador = 1
 while contador <= 5:
     print("Contando:", contador)
@@ -7054,7 +7016,7 @@ while contador <= 5:
 
   <h5 style="color:#00ffff; font-size:15px;">Validación de entrada</h5>
 
-  <pre style="background-color:#1a1a1a; color:#00ffcc; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 clave = ""
 while clave != "python123":
     clave = input("Ingrese la clave: ")
@@ -7071,7 +7033,7 @@ print("Acceso concedido")
     Si la variable de control no cambia, el programa no termina.
   </p>
 
-  <pre style="background-color:#1a1a1a; color:#ff7777; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 contador = 1
 while contador <= 5:
     print(contador)
@@ -7086,7 +7048,7 @@ while contador <= 5:
 
   <p><strong>Ejemplo: clasificación de números pares e impares</strong></p>
 
-  <pre style="background-color:#1a1a1a; color:#00ffcc; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 for i in range(1, 11):
     if i % 2 == 0:
         print(i, "es par")
@@ -7096,7 +7058,7 @@ for i in range(1, 11):
 
   <h5 style="color:#00ffff; font-size:15px;">Ejemplo: suma de precios</h5>
 
-  <pre style="background-color:#1a1a1a; color:#00ffcc; padding:10px; border-radius:8px;">
+  <pre style="background-color:#1a1a1a; color:#b6d5d5ff; padding:10px; border-radius:8px;">
 precios = [10, 20, 30, 40]
 total = 0
 
@@ -7169,7 +7131,7 @@ print("El total de la compra es:", total)
   <!-- Ejemplo 1 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 1</h3>
   <p><strong>Enunciado:</strong> Pedir al usuario su nombre y saludarlo.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 nombre = input("Ingrese su nombre: ")
 print("Hola,", nombre, "- bienvenido al curso de Python.")
   </div>
@@ -7178,7 +7140,7 @@ print("Hola,", nombre, "- bienvenido al curso de Python.")
   <!-- Ejemplo 2 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 2</h3>
   <p><strong>Enunciado:</strong> Leer un número entero y determinar si es mayor, igual o menor que 10.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 n = int(input("Ingrese un número entero: "))
 if n > 10:
     print("El número es mayor que 10.")
@@ -7192,7 +7154,7 @@ else:
   <!-- Ejemplo 3 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 3</h3>
   <p><strong>Enunciado:</strong> Calcular la suma de los primeros n números positivos (donde n lo define el usuario).</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 n = int(input("¿Cuántos números sumaremos? "))
 suma = 0
 for i in range(1, n+1):
@@ -7204,7 +7166,7 @@ print("La suma de los primeros", n, "números es:", suma)
   <!-- Ejemplo 4 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 4</h3>
   <p><strong>Enunciado:</strong> Leer 5 calificaciones (0–20) y mostrar el promedio, el mayor y el menor valor ingresado.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 suma = 0.0
 mayor = -1
 menor = 100
@@ -7225,7 +7187,7 @@ print("Menor nota:", menor)
   <!-- Ejemplo 5 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 5</h3>
   <p><strong>Enunciado:</strong> Leer números hasta que el usuario ingrese 0; contar cuántos positivos hay, su suma y promedio.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 contador = 0
 suma = 0.0
 while True:
@@ -7248,7 +7210,7 @@ else:
   <!-- Ejemplo 6 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 6 – Nivel avanzado</h3>
   <p><strong>Enunciado:</strong> Leer edades hasta que se introduzca una negativa; contar cuántas personas están entre 18 y 65 años.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 contador_activa = 0
 while True:
     edad = int(input("Ingrese edad (negativo para terminar): "))
@@ -7263,7 +7225,7 @@ print("Cantidad de personas en edad laboral activa:", contador_activa)
   <!-- Ejemplo 7 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 7 – Nivel difícil</h3>
   <p><strong>Enunciado:</strong> Calcular el total a pagar considerando descuentos del 10% si el precio supera 1000.</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
 n = int(input("¿Cuántos precios ingresará? "))
 total = 0.0
 contador_desc = 0
@@ -8320,7 +8282,7 @@ style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; 
     la organización general del programa.
   </p>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 10px;">
+  <div style="background-color: #b6d5d5ff; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 10px;">
     <strong>Ejemplo básico:</strong>
     <pre style="margin-top: 5px;">
 def saludar():
@@ -8423,7 +8385,7 @@ def nombre_funcion(parámetros_opcionales):
 
   <h4 style="color: #00bfff;">Funciones con lógica interna</h4>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 10px;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff; margin-top: 10px;">
 <pre>
 def evaluar_edad():
     edad = int(input("Ingrese su edad: "))
@@ -8453,7 +8415,7 @@ def mostrar_saludo():
 
   <h4 style="color: #00bfff;">Ejemplo aplicado: menú de opciones</h4>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 10px;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff; margin-top: 10px;">
 <pre>
 def mostrar_menu():
     print("=== MENÚ PRINCIPAL ===")
@@ -8525,7 +8487,7 @@ while True:
     </tr>
   </table>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 15px;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff; margin-top: 15px;">
 <pre>
 def saludar(nombre):      # nombre es un parámetro
     print("Hola,", nombre, "¡bienvenido al curso!")
@@ -8564,7 +8526,7 @@ presentar_persona("Lucía", 22)
     El valor devuelto puede almacenarse o utilizarse en operaciones posteriores.
   </p>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff;">
 <pre>
 def sumar(a, b):
     resultado = a + b
@@ -8590,7 +8552,7 @@ print("La suma es:", total)
     </tr>
   </table>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc; margin-top: 10px;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff; margin-top: 10px;">
 <pre>
 def cuadrado_con_print(x):
     print(x * x)
@@ -8613,7 +8575,7 @@ print(resultado + 10)          # Se puede reutilizar (26)
     <li><strong>Parámetros con valor por defecto:</strong> Tienen un valor asignado si no se pasa argumento.</li>
   </ul>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff;">
 <pre>
 def restar(a, b):
     return a - b
@@ -8631,7 +8593,7 @@ saludar("Luis")    # Hola, Luis
 
   <h4 style="color: #00bfff;"> Ejemplo : cálculo de promedio</h4>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff;">
 <pre>
 def calcular_promedio(n1, n2, n3):
     promedio = (n1 + n2 + n3) / 3
@@ -8648,7 +8610,7 @@ print("El promedio es:", nota_final)
 
   <p>Python permite retornar varios valores usando tuplas.</p>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff;">
 <pre>
 def operaciones(a, b):
     suma = a + b
@@ -8678,7 +8640,7 @@ print("Resta:", resultado_resta)
 
   <h4 style="color: #00bfff;"> Ejemplo: </h4>
 
-  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #00ffcc;">
+  <div style="background-color: #001f33; padding: 10px; border-radius: 10px; color: #b6d5d5ff;">
 <pre>
 def calcular_area_rectangulo(base, altura):
     """Calcula y devuelve el área de un rectángulo."""
@@ -8749,7 +8711,7 @@ NameError: name 'mensaje' is not defined
   Pueden ser leídas desde cualquier parte del código.
   </p>
 
-  <pre style="background-color:#111; color:#0f0; padding:10px; border-radius:10px;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:10px; border-radius:10px;">
 mensaje = "Python"
 
 def mostrar():
@@ -8868,7 +8830,7 @@ Fuera de todo: global
 
   <h4 style="color: #00cccc;">➤ Ejemplo final integrador</h4>
 
-  <pre style="background-color:#111; color:#0f0; padding:10px; border-radius:10px;">
+  <pre style="background-color:#111; color:#b6d5d5ff; padding:10px; border-radius:10px;">
 # Variable global
 curso = "Python Básico"
 
@@ -8884,7 +8846,7 @@ mostrar_curso()
   </pre>
 
   <p><strong>Salida:</strong></p>
-  <pre style="background-color:#000; color:#0ff; padding:10px; border-radius:10px;">
+  <pre style="background-color:#000; color:#b6d5d5ff; padding:10px; border-radius:10px;">
 El estudiante Ana se ha inscrito en el curso Python Básico.
 Curso actual: Python Básico
   </pre>
@@ -8906,7 +8868,7 @@ Curso actual: Python Básico
 
   <h5 style="color: #00cccc;">➤ Importación básica</h5>
 
-  <pre style="background-color:#111; color:white; padding:10px; border-radius:10px;">
+  <pre style="background-color:#b6d5d5ff; color:white; padding:10px; border-radius:10px;">
 import nombre_del_modulo
 
 resultado = nombre_del_modulo.funcion(argumentos)
@@ -8918,7 +8880,7 @@ resultado = nombre_del_modulo.funcion(argumentos)
   El módulo <code>math</code> ofrece funciones matemáticas avanzadas y constantes como <code>π</code> y <code>e</code>.
   </p>
 
-  <pre style="background-color:#111; color:white; padding:10px; border-radius:10px;">
+  <pre style="background-color:#b6d5d5ff; color:white; padding:10px; border-radius:10px;">
 import math
 
 raiz = math.sqrt(25)
@@ -8931,7 +8893,7 @@ print("90 grados en radianes:", angulo)
   </pre>
 
   <p><strong>Salida:</strong></p>
-  <pre style="background-color:#000; color:#0ff; padding:10px; border-radius:10px;">
+  <pre style="background-color:#000; color:#b6d5d5ff; padding:10px; border-radius:10px;">
 Raíz cuadrada de 25: 5.0
 2 elevado a 3: 8.0
 90 grados en radianes: 1.5707963267948966
@@ -8971,7 +8933,7 @@ print("Número aleatorio:", numero)
   </pre>
 
   <p><strong>Salida posible:</strong></p>
-  <pre style="background-color:#000; color:#0ff; padding:10px; border-radius:10px;">
+  <pre style="background-color:#000; color:#b6d5d5ff; padding:10px; border-radius:10px;">
 Número aleatorio: 7
   </pre>
 
@@ -9036,7 +8998,7 @@ print("Lista mezclada:", numeros)
   Puedes importar funciones específicas o usar alias para simplificar el código.
   </p>
 
-  <pre style="background-color:#111; color:white; padding:10px; border-radius:10px;">
+  <pre style="background-color:#b6d5d5ff; color:white; padding:10px; border-radius:10px;">
 from math import sqrt, pi
 
 print("Raíz de 16:", sqrt(16))
@@ -9052,7 +9014,7 @@ print("PI =", m.pi)
 
   <h5 style="color: #00cccc;">➤ Ejemplo integrador: uso combinado</h5>
 
-  <pre style="background-color:#111; color:white; padding:10px; border-radius:10px;">
+  <pre style="background-color:#b6d5d5ff; color:white; padding:10px; border-radius:10px;">
 import math
 import random
 
@@ -9066,7 +9028,7 @@ print(f"Redondeo hacia arriba: {redondeado}")
   </pre>
 
   <p><strong>Salida posible:</strong></p>
-  <pre style="background-color:#000; color:#0ff; padding:10px; border-radius:10px;">
+  <pre style="background-color:#b6d5d5ff; color:#0ff; padding:10px; border-radius:10px;">
 Número aleatorio: 49
 Raíz cuadrada: 7.0
 Redondeo hacia arriba: 7
@@ -9100,7 +9062,7 @@ print(f"Seno del ángulo aleatorio: {seno:.3f}")
   </pre>
 
   <p><strong>Salida posible:</strong></p>
-  <pre style="background-color:#000; color:#0ff; padding:10px; border-radius:10px;">
+  <pre style="background-color:#000; color:#b6d5d5ff; padding:10px; border-radius:10px;">
 === Simulación matemática ===
 Número generado: 23.47
 Raíz cuadrada: 4.84
@@ -9132,7 +9094,7 @@ Seno del ángulo aleatorio: 0.866
     ejemplos: `<p><strong>Ejemplos:</strong></p>
     <section style="color: #ddd; text-align: left; margin-left: 20px; font-size: 15px; line-height: 1.8; font-family: 'Consolas', monospace;">
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 1: Función sin parámetros</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 1: Función sin parámetros</h3>
   <p><strong>Enunciado:</strong> Crear una función <code>saludar()</code> que imprima un mensaje de bienvenida al usuario, luego llamarla.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def saludar():
@@ -9142,7 +9104,7 @@ saludar()</code></pre>
   </div>
   <p><strong>Observaciones:</strong> Introducción a funciones sin parámetros ni retorno. Permite ver la modularidad básica.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 2: Función con parámetros</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 2: Función con parámetros</h3>
   <p><strong>Enunciado:</strong> Crear una función <code>presentar_persona(nombre, edad)</code> que reciba dos parámetros y los muestre.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def presentar_persona(nombre, edad):
@@ -9153,7 +9115,7 @@ presentar_persona("Lucía", 22)</code></pre>
   </div>
   <p><strong>Notas:</strong> Uso de parámetros posicionales. Ejemplo claro de entrada de datos en función.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 3: Función con retorno</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 3: Función con retorno</h3>
   <p><strong>Enunciado:</strong> Crear una función <code>sumar(a, b)</code> que devuelva la suma de dos números y luego usar el resultado.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def sumar(a, b):
@@ -9165,7 +9127,7 @@ print("La suma es:", total)</code></pre>
   </div>
   <p><strong>Observaciones:</strong> Introducción de <code>return</code>. Diferencia entre imprimir directamente y devolver valor.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 4: Promedio de tres notas</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 4: Promedio de tres notas</h3>
   <p><strong>Enunciado:</strong> Crear una función <code>calcular_promedio(n1, n2, n3)</code> que devuelva el promedio de tres notas.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def calcular_promedio(n1, n2, n3):
@@ -9177,7 +9139,7 @@ print("El promedio es:", round(nota_final, 2))</code></pre>
   </div>
   <p><strong>Notas:</strong> Uso de múltiples parámetros, retorno y formateo de resultado.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 5: Incrementar contador</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 5: Incrementar contador</h3>
   <p><strong>Enunciado:</strong> Crear una función <code>incrementar(valor)</code> que reciba un número y devuelva el valor incrementado en uno.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def incrementar(valor):
@@ -9191,7 +9153,7 @@ print("Valor final:", contador)</code></pre>
   </div>
   <p><strong>Observaciones:</strong> Ejemplo de retorno para modificar estado externo sin variables globales.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 6: Uso de variable global</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 6: Uso de variable global</h3>
   <p><strong>Enunciado:</strong> Crear una variable global y funciones que la usen para mostrar información.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>curso = "Python Básico"
@@ -9208,7 +9170,7 @@ mostrar_curso()</code></pre>
   </div>
   <p><strong>Notas:</strong> Ejemplo de uso seguro de variable global sin modificarla dentro de la función.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 7: Retornar múltiples valores</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 7: Retornar múltiples valores</h3>
   <p><strong>Enunciado:</strong> Crear una función <code>operaciones(a, b)</code> que devuelva la suma y la resta de dos números.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def operaciones(a, b):
@@ -9222,7 +9184,7 @@ print("Resta:", resultado_resta)</code></pre>
   </div>
   <p><strong>Observaciones:</strong> Retorno múltiple (tupla) y desempaquetado de resultados.</p>
 
-  <h3 style="color: #00ffff; font-size: 16px;"> Ejemplo 8: Programa modular con menú</h3>
+  <h3 style="color: #b6d5d5ff; font-size: 16px;"> Ejemplo 8: Programa modular con menú</h3>
   <p><strong>Enunciado:</strong> Crear un programa con funciones <code>mostrar_menu()</code>, <code>saludar()</code> y <code>motivar()</code>, y un bucle principal que permita elegir opciones.</p>
   <div style="background-color: #111; padding: 12px; border-radius: 8px;">
   <pre><code>def mostrar_menu():
