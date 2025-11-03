@@ -11240,33 +11240,39 @@ print("Lista actualizada:", numeros)
 
 </section>
 
-    <section style="font-family: Arial, sans-serif; color:#ffffff; line-height:1.7; text-align:left; padding:15px;">
+<section style="font-family: Arial, sans-serif; color:#ffffff; line-height:1.7; text-align:left; padding:15px;">
 
 <h4 style="font-size:14px; font-weight:bold;">🎥 Videos y materiales recomendados</h4>
 
 <ul>
 <li>
-<strong>Parámetros y funciones en Python – Píldoras Informáticas</strong><br>
-Explicación clara sobre cómo funcionan los parámetros y el paso por valor y referencia.<br>
-<a href="https://www.youtube.com/watch?v=_DLhUBWsRtw" style="color:#00ffff;">https://www.youtube.com/watch?v=_DLhUBWsRtw</a>
+<strong>Funciones en Python | Parámetros y Return (Ejemplos) – Code Hive</strong><br>
+Introducción breve y clara al uso de parámetros, argumentos y valores de retorno en Python.<br>
+<a href="https://www.youtube.com/watch?v=g78juF9pB_w" style="color:#00ffff;">https://www.youtube.com/watch?v=g78juF9pB_w</a>
 </li><br>
 
 <li>
-<strong>Subprocesos y funciones en PSeInt – Aprende Fácil</strong><br>
-Ejemplos prácticos paso a paso sobre cómo usar “Por Referencia” y “Por Valor” en PSeInt.<br>
-<a href="https://www.youtube.com/watch?v=Z7QWqE1xX2I" style="color:#00ffff;">https://www.youtube.com/watch?v=Z7QWqE1xX2I</a>
+<strong>[PYTHON] Parámetros y argumentos en las funciones – Programación Fácil</strong><br>
+Introducción breve y clara al uso de parámetros y argumentos dentro de funciones en Python.<br>
+<a href="https://www.youtube.com/watch?v=Cc_vkwwTK5U" style="color:#00ffff;">https://www.youtube.com/watch?v=Cc_vkwwTK5U</a>
 </li><br>
 
 <li>
-<strong>Paso por valor y paso por referencia explicado – Programación ATS</strong><br>
-Explicación general aplicable a PSeInt, C y Python, con ejemplos visuales.<br>
-<a href="https://www.youtube.com/watch?v=EvZ9fLhA9hQ" style="color:#00ffff;">https://www.youtube.com/watch?v=EvZ9fLhA9hQ</a>
+<strong>Funciones con varios parámetros y reutilización en Python – Charly Cimino</strong><br>
+Introducción breve y clara a la definición de funciones con múltiples parámetros y su reutilización en Python.<br>
+<a href="https://www.youtube.com/watch?v=tsgcc5E9zEg" style="color:#00ffff;">https://www.youtube.com/watch?v=tsgcc5E9zEg</a>
 </li><br>
 
 <li>
-<strong>Curso Python desde cero – CódigoFacilito (Módulo de funciones)</strong><br>
-Sección donde se muestra cómo manipular listas, tuplas y diccionarios por referencia.<br>
-<a href="https://www.youtube.com/watch?v=xWEOkz6TXmM" style="color:#00ffff;">https://www.youtube.com/watch?v=xWEOkz6TXmM</a>
+<strong>Parámetros y argumentos (Curso gratis de Python) – Arnau Camprubí</strong><br>
+Introducción breve y clara al uso de parámetros en funciones y ejemplos básicos para principiantes.<br>
+<a href="https://www.youtube.com/watch?v=7xTHov614ZA" style="color:#00ffff;">https://www.youtube.com/watch?v=7xTHov614ZA</a>
+</li><br>
+
+<li>
+<strong>Fundamentos de funciones en Python (Paso por valor y referencia) – La Geekipedia De Ernesto</strong><br>
+Introducción breve y clara al funcionamiento de las funciones y el paso por valor y referencia en Python.<br>
+<a href="https://www.youtube.com/watch?v=Db43XBXlk7c" style="color:#00ffff;">https://www.youtube.com/watch?v=Db43XBXlk7c</a>
 </li>
 </ul>
 
