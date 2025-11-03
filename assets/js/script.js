@@ -11495,8 +11495,42 @@ style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; 
     
     
     
+    `,
+
+
+
+  },
+
+   mod4: {
+    formulario_de_satisfaccion: `
+      <section style="text-align:center; background-color:transparent; color:#ffffff; padding:40px; border-radius:15px; margin:40px auto; width:80%; font-family:'Poppins', sans-serif;">
+        
+        <h2 style="color:#00ffff; font-size:22px; margin-bottom:20px; text-shadow:0 0 10px #00ffff;">
+          ENCUESTA DE SATISFACCIÓN FINAL
+        </h2>
+
+        <p style="font-size:16px; line-height:1.6; margin-bottom:20px; color:#e0e0e0;">
+          ¡Gracias por completar el <strong>Minicurso 4: Programación Modular</strong>!  
+          Tu aprendizaje impulsa nuestra misión de ofrecer experiencias cada vez mejores.
+        </p>
+
+        <p style="font-size:16px; line-height:1.6; margin-bottom:30px; color:#e0e0e0;">
+          💬 Completa la <strong>Encuesta de Satisfacción</strong> y ayúdanos a seguir mejorando juntos.
+        </p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdECeLcAfeeB0QXhLl8WU3XZrI_56fj2EfOArAs9ShgBe6rfQ/viewform?usp=publish-editor" 
+           target="_blank" 
+           style="display:inline-block; background-color:#00ffff; color:#0a0a0a; font-weight:bold; padding:12px 25px; border-radius:8px; text-decoration:none; font-size:16px; transition:0.3s;">
+           👉 Participar en la encuesta
+        </a>
+
+      </section>
     `
   }
+
+
+
+  
 };
 
 // === Datos de los cursos ===
@@ -11546,7 +11580,10 @@ const cursos = {
     modulos: [
       { nombre: "Tema 1 – Concepto de modularización", id: "mod1", recursos: ["Teoría", "Ejemplos", "Quiz de entrada"] },
       { nombre: "Tema 2 – Funciones en pseudocódigo", id: "mod2", recursos: ["Teoría", "Ejemplos", "quiz intermedio"] },
-      { nombre: "Tema 3 – Parámetros en funciones y subprocesos", id: "mod3", recursos: ["Teoría", "Ejemplos", "Quiz final"] }
+      { nombre: "Tema 3 – Parámetros en funciones y subprocesos", id: "mod3", recursos: ["Teoría", "Ejemplos", "Quiz final"] },
+      { nombre: "Encuesta de satisfacción final", id: "mod4", recursos: ["Formulario de satisfacción"] }
+
+    
     ]
   }
 };
