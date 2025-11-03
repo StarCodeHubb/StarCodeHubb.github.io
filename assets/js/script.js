@@ -656,8 +656,13 @@ En este caso, <strong>resultado</strong> será <em>True</em> porque ambas condic
 <p>Ejemplo en pseudocódigo:</p>
 <div style="background-color: #222; color: #f1f1f1; border-left: 4px solid #ffc107; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; width: fit-content; margin: 10px auto;">
   Definir edad Como Cadena <br>
-  edad ← ConvertirAEntero("25")
+  edad ← ConvertirAEntero("25") <br>
+  Escribir "Edad convertida: ", edad
 </div>
+
+<p><em>Nota:</em> La función <strong>ConvertirAEntero()</strong> está disponible en versiones recientes de PSeInt.  
+En versiones anteriores, puede simularse asignando el valor directamente como número (<code>edad ← 25</code>) solo con fines ilustrativos.</p>
+
 
 <p>Y en Python:</p>
 <div style="background-color: #222; color: #f1f1f1; border-left: 4px solid #ffc107; padding: 12px; border-radius: 8px; font-family: 'Courier New', monospace; width: fit-content; margin: 10px auto;">
@@ -678,7 +683,7 @@ En este caso, <strong>resultado</strong> será <em>True</em> porque ambas condic
 <p><strong>8. Constantes :  </strong></p>
 <p>
   Las <strong>constantes</strong> representan valores fijos que no cambian durante la ejecución del programa. 
-  Según <em>Gaddis (2022)</em>, “<em>constants improve program readability and reliability by preventing accidental modification</em>” (p. 72). 
+  Según <em>Gaddis (2022)</em>, “<em>Las constantes mejoran la legibilidad y la fiabilidad del programa al prevenir modificaciones accidentales.</em>” (p. 72). 
   Esto mejora la claridad y estabilidad del código.
 </p>
 
@@ -866,9 +871,13 @@ A continuación, se presentan ejemplos que integran los conceptos vistos sobre v
 <p><strong> - Pseudocódigo:</strong></p>
 <div style="text-align: center;">
   <div style="display: inline-block; background-color: #1e1e1e; color: #f5f5f5; border-left: 4px solid #007bff; padding: 10px; border-radius: 8px; font-family: 'Courier New', monospace;">
-    Leer nombre<br>
-    Leer edad<br>
-    Mostrar "Hola ", nombre, ", tienes ", edad, " años."
+Algoritmo saludo
+    Definir nombre Como Cadena
+    Definir edad Como Entero
+    Leer nombre
+    Leer edad
+    Escribir "Hola ", nombre, ", tienes ", edad, " años."
+FinAlgoritmo
   </div>
 </div>
 
@@ -1469,13 +1478,17 @@ Fin
   <p>Asimismo, fomenta la comprensión estructurada del flujo de información, lo que facilita la detección de errores lógicos, la optimización de procesos y la comunicación entre miembros de un equipo de desarrollo. Gracias a su lenguaje neutro, el pseudocódigo puede emplearse en diferentes contextos técnicos y educativos, siendo un recurso ideal para documentar procedimientos o diseñar prototipos de programas.</p>
 
   <pre style="background-color: #2a2a2a; padding: 10px; border-radius: 8px; color: #00ffcc; font-family: 'Courier New', monospace;">
-Inicio
-   Leer temperatura
-   Si temperatura > 37 Entonces
-        Mostrar "Tiene fiebre"
-   Sino
-        Mostrar "Temperatura normal"
-Fin
+Algoritmo saludo
+    Definir temperatura Como Real
+
+    Leer temperatura
+
+    Si temperatura > 37 Entonces
+        Escribir "Tiene fiebre"
+    Sino
+        Escribir "Temperatura normal"
+    FinSi
+FinAlgoritmo
   </pre>
 
   <h3 style="font-size: 1.0em; margin-bottom: 8px; margin-top: 20px;">3. Reglas de escritura del pseudocódigo</h3>
@@ -1872,13 +1885,13 @@ Fin
     La programación, en su sentido más amplio, implica el diseño y la ejecución de una serie de instrucciones que una máquina o un sistema informático puede llevar a cabo para transformar información, producir resultados o automatizar procesos. En este sentido, la programación se presenta como una herramienta fundamental para la resolución de problemas, ya que permite modelar situaciones, descomponerlas en pasos lógicos y generar soluciones sistemáticas. Por ejemplo, a través de algoritmos programados se puede optimizar la gestión de inventarios, automatizar cálculos o construir interfaces que interactúan con usuarios.
   </p>
   <p>
-    La importancia de la programación como habilidad cognitiva se ha incrementado en los últimos años: según Saa-Saltos (2024), la enseñanza de fundamentos de programación mostró una correlación positiva con la mejora del pensamiento abstracto, la creatividad y la resolución de problemas en estudiantes universitarios. 
+    La importancia de la programación como habilidad cognitiva se ha incrementado en los últimos años. Según Saa-Saltos (2024), la enseñanza de fundamentos de programación mostró una correlación positiva con la mejora del pensamiento abstracto, la creatividad y la resolución de problemas en estudiantes universitarios. 
   </p>
   <p>
     Esto evidencia que más allá de la mera escritura de código, la programación favorece competencias de orden superior. Además, Almaguer (2023) evidenció que muchas personas encuentran compleja la adquisición de conceptos básicos de programación, lo que resalta la necesidad de un enfoque pedagógico adecuado que vincule la programación con la resolución de problemas reales y concretos. 
   </p>
   <p>
-    En el contexto de PSeInt (y del curso de introducción al pseudocódigo), este sub-tema invita al estudiante a reconocer la programación como un mecanismo de transformación de la lógica humana en procesos automáticos: se aprende a plantear preguntas, analizar datos de entrada, definir salidas esperadas y construir pasos intermedios. Así, la programación se convierte en un puente entre la lógica del problema y la ejecución computacional. Por ejemplo, si se plantea el problema “¿cómo calcular el promedio de calificaciones?”, se deberá identificar datos (las calificaciones), pasos (sumar, dividir por cantidad) y resultado (promedio). La programación formaliza ese flujo.
+    En el contexto de PSeInt, este sub-tema invita al estudiante a reconocer la programación como un mecanismo de transformación de la lógica humana en procesos automáticos: se aprenderá a plantear preguntas, analizar datos de entrada, definir salidas esperadas y construir pasos intermedios. Así, la programación se convierte en un puente entre la lógica del problema y la ejecución computacional. Por ejemplo, si se plantea el problema “¿cómo calcular el promedio de calificaciones?”, se deberá identificar datos (las calificaciones), pasos (sumar, dividir por cantidad) y resultado (promedio). La programación formaliza ese flujo.
   </p>
 
   <p><strong>2. Algoritmos: definición, características y representación</strong></p>
@@ -1902,10 +1915,10 @@ Fin
     La lógica computacional se refiere al conjunto de principios de razonamiento lógico que permiten a una persona formular operaciones, decisiones y procedimientos de modo estructurado, para luego codificarlos o automatizarlos en un sistema informático. Aunque el término “lógica computacional” tiene usos técnicos en ciencias de la computación (véase la lógica booleana y formal), en el contexto educativo de programación se relaciona estrechamente con el desarrollo del pensamiento algorítmico. 
   </p>
   <p>
-    El pensamiento algorítmico consiste, en palabras de Osorio (2023), en la capacidad de construir modelos mentales de resolución de problemas mediante estructuras algorítmicas: «El presente artículo analiza la asociación entre la tipología de estructuras algorítmicas de programación y los modelos mentales construidos para su resolución». 
+    El pensamiento algorítmico consiste en la capacidad de construir modelos mentales de resolución de problemas mediante estructuras algorítmicas . 
   </p>
   <p>
-    Asimismo, el desarrollo del pensamiento computacional al que el pensamiento algorítmico contribuye significativamente es indispensable en la enseñanza de programación. Cervera-Manjarrez (2023) señala que mediante estrategias de pensamiento computacional las personas adquieren habilidades como la abstracción, la automatización y la identificación de patrones para resolver problemas complejos. 
+    Asimismo, el desarrollo del pensamiento computacional al que el pensamiento algorítmico contribuye significativamente es indispensable en la enseñanza de programación. Cervera, et al. (2023) señala que mediante estrategias de pensamiento computacional las personas adquieren habilidades como la abstracción, la automatización y la identificación de patrones para resolver problemas complejos. 
   </p>
   <p>
     Por ejemplo, al plantear un problema como “determinar cuántos números pares hay en una lista de diez”, el estudiante debe abstraer el conjunto de datos (lista), reconocer el patrón (paridad), diseñar un algoritmo (recorrer lista, contar pares) y aplicarlo. Esa secuencia de pensamiento algorítmico es lo que subyace a la programación. De este modo, en el uso de PSeInt, la lógica computacional se traduce en operaciones de flujo: lectura, decisión, repetición, acumulador, etc.
@@ -2065,7 +2078,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff;">Ejemplo 1: Suma de dos números</h3>
   <p><strong>Objetivo:</strong> practicar lectura de datos y operaciones básicas.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 12px; border-radius: 10px; font-family: monospace;">
+  <pre style="background-color: #111; color: #d1e0e0ff; padding: 12px; border-radius: 10px; font-family: monospace;">
 Algoritmo SumaDosNumeros
     Definir a, b, suma Como Entero
     Escribir "Ingrese el primer número:"
@@ -2082,7 +2095,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff;">Ejemplo 2: Cálculo de promedio</h3>
   <p><strong>Objetivo:</strong> practicar el uso de variables y operaciones aritméticas.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 12px; border-radius: 10px; font-family: monospace;">
+  <pre style="background-color: #111; color: #d1e0e0ff; padding: 12px; border-radius: 10px; font-family: monospace;">
 Algoritmo CalcularPromedio
     Definir n1, n2, n3, promedio Como Real
     Escribir "Ingrese tres notas:"
@@ -2097,7 +2110,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff;">Ejemplo 3: Determinar si un número es par o impar</h3>
   <p><strong>Objetivo:</strong> practicar condicionales.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 12px; border-radius: 10px; font-family: monospace;">
+  <pre style="background-color: #111; color: #d1e0e0ff; padding: 12px; border-radius: 10px; font-family: monospace;">
 Algoritmo ParOImpar
     Definir numero Como Entero
     Escribir "Ingrese un número:"
@@ -2115,7 +2128,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff;">Ejemplo 4: Contador con bucle Mientras</h3>
   <p><strong>Objetivo:</strong> aplicar estructuras repetitivas.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 12px; border-radius: 10px; font-family: monospace;">
+  <pre style="background-color: #111; color: #d1e0e0ff; padding: 12px; border-radius: 10px; font-family: monospace;">
 Algoritmo ContadorHastaCinco
     Definir i Como Entero
     i ← 1
@@ -2504,30 +2517,30 @@ Escribir "Menor nota: ", menor
   </h3>
   <p><strong>Enunciado:</strong> Leer números hasta que se ingrese 0; contar positivos, su suma y promedio.</p>
   <pre style="padding:25px; border-radius:10px; font-size:16px; font-family:'Consolas','Courier New',monospace; color:#ffffff; overflow-x:auto; width:100%; white-space: pre;">
-Definir n, contador Como Entero
-Definir suma Como Real
-contador <- 0
-suma <- 0
+Algoritmo CalculoSalario
+	Definir n, contador Como Entero
+	Definir suma Como Real
+	contador <- 0
+	suma <- 0
 
-Mientras Verdadero Hacer
-    Escribir "Ingrese un número (0 para terminar): "
-    Leer n
-    Si n = 0 Entonces
-        Salir
-    FinSi
-    Si n > 0 Entonces
-        contador <- contador + 1
-        suma <- suma + n
-    FinSi
-FinMientras
+	Repetir
+		Escribir "Ingrese un número (0 para terminar): "
+		Leer n
+		Si n > 0 Entonces
+			contador <- contador + 1
+			suma <- suma + n
+		FinSi
+	Hasta Que n = 0
 
-Si contador > 0 Entonces
-    Escribir "Cantidad de positivos: ", contador
-    Escribir "Suma de positivos: ", suma
-    Escribir "Promedio de positivos: ", suma/contador
-Sino
-    Escribir "No se ingresaron números positivos."
-FinSi
+	Si contador > 0 Entonces
+		Escribir "Cantidad de positivos: ", contador
+		Escribir "Suma de positivos: ", suma
+		Escribir "Promedio de positivos: ", suma/contador
+	Sino
+		Escribir "No se ingresaron números positivos."
+	FinSi
+FinAlgoritmo
+
   </pre>
 
 </section>
@@ -3742,15 +3755,19 @@ FinAlgoritmo
   <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; text-align: center; font-family: 'Courier New', monospace; overflow-x: auto;">
 Algoritmo LeerEdadValida
     Definir edad Como Entero
-    Mientras Verdadero Hacer
-        Escribir "Ingrese edad (0–120):"
+    Definir valido Como Logico
+    valido <- Falso
+    
+    Mientras valido = Falso Hacer
+        Escribir "Ingrese edad (0?120):"
         Leer edad
-        Si edad &gt;= 0 Y edad &lt;= 120 Entonces
-            SalirMientras
+        Si edad >= 0 Y edad <= 120 Entonces
+            valido <- Verdadero
         SiNo
             Escribir "Entrada inválida. Intente de nuevo."
         FinSi
     FinMientras
+    
     Escribir "Edad válida: ", edad
 FinAlgoritmo
   </pre>
@@ -3760,7 +3777,7 @@ FinAlgoritmo
     El uso de una instrucción de salida controlada (<strong>SalirMientras</strong>) o de una bandera lógica previene los bucles infinitos.
   </p>
 
-  <h4 style="color: #00ffff; font-size: 17px;"> Ejercicio integrador — Análisis de calificaciones</h4>
+  <h4 style="color: #00ffff; font-size: 17px;"> Ejercicio : Análisis de calificaciones</h4>
 
   <p><strong>Enunciado:</strong><br>
   Dado un conjunto de <strong>n</strong> calificaciones (0–100), calcular:
@@ -3821,7 +3838,7 @@ FinAlgoritmo
     Según Ramos y López (2024), los ejercicios que combinan estructuras son clave para el desarrollo del pensamiento algorítmico avanzado, ya que exigen una planificación mental más profunda del proceso de ejecución.
   </p>
 
-  <h4 style="color: #00ffff; font-size: 17px;"> Análisis pedagógico y buenas prácticas</h4>
+  <h4 style="color: #a8babaff; font-size: 17px;"> Análisis pedagógico y buenas prácticas</h4>
 
   <table style="width: 100%; border-collapse: collapse; background-color: #1f1f1f; margin-top: 10px; margin-bottom: 15px;">
     <thead>
@@ -3867,9 +3884,9 @@ FinAlgoritmo
 
     <section style="color: white; text-align: left; margin-left: 40px; margin-right: 40px; font-size: 16px; line-height: 1.6;">
 
-  <h3 style="color: #00ffff; font-size: 18px;">10. Errores comunes, consejos de depuración y estrategias didácticas</h3>
+  <h3 style="color: #9fdfdfff; font-size: 18px;">10. Errores comunes, consejos de depuración y estrategias didácticas</h3>
 
-  <h4 style="color: #00ffff; font-size: 17px;">1. Errores típicos (descripción y efectos)</h4>
+  <h4 style="color: #a8eaeaff; font-size: 17px;">1. Errores típicos (descripción y efectos)</h4>
 
   <table style="width: 100%; border-collapse: collapse; background-color: #1f1f1f; margin-top: 10px; margin-bottom: 15px;">
     <thead>
@@ -3912,7 +3929,7 @@ FinAlgoritmo
     <strong>Comentario pedagógico:</strong> estos errores son frecuentes en cursos introductorios; explicarlos con ejemplos intencionalmente defectuosos produce aprendizaje más profundo (Gómez & Paredes, 2023).
   </p>
 
-  <h4 style="color: #00ffff; font-size: 17px;">2. Demostraciones de errores en PSeInt (ejemplos y correcciones)</h4>
+  <h4 style="color: #bbe7e7ff; font-size: 17px;">2. Demostraciones de errores en PSeInt (ejemplos y correcciones)</h4>
 
   <p><strong>A. Bucle infinito (error): olvido de la actualización</strong></p>
   <pre style="background-color: #1a1a1a; padding: 12px; border-radius: 6px; text-align: center; font-family: 'Courier New', monospace; overflow-x: auto;">
@@ -4247,7 +4264,7 @@ Algoritmo Principal
     Escribir "Ingrese altura:"
     Leer h
     resultado <- CalcularArea(b, h)
-    Llamar MostrarResultado(resultado)
+    MostrarResultado(resultado)  
 FinAlgoritmo
   </div>
 
@@ -4467,19 +4484,22 @@ FinAlgoritmo
   <p><strong>Solución en PSeInt:</strong></p>
 
   <div style="background-color: #111; border: 1px solid #333; border-radius: 8px; padding: 12px; font-family: monospace; white-space: pre-wrap;">
-Funcion prom &lt;- CalcularPromedio(n)
-    Definir i, suma, nota Como Real
-    suma &lt;- 0
-    Para i &lt;- 1 Hasta n Hacer
+Funcion prom <- CalcularPromedio(n)
+    Definir i Como Entero
+    Definir suma, nota, prom Como Real   
+    suma <- 0
+	
+    Para i <- 1 Hasta n Hacer
         Escribir "Ingrese nota ", i, ":"
         Leer nota
-        suma &lt;- suma + nota
+        suma <- suma + nota
     FinPara
-    prom &lt;- suma / n
+	
+    prom <- suma / n
 FinFuncion
 
 SubProceso Evaluar(prom)
-    Si prom &gt;= 60 Entonces
+    Si prom >= 60 Entonces
         Escribir "Aprobado con promedio: ", prom
     SiNo
         Escribir "Desaprobado con promedio: ", prom
@@ -4491,9 +4511,10 @@ Algoritmo Evaluacion
     Definir promedio Como Real
     Escribir "¿Cuántas notas ingresará?"
     Leer n
-    promedio &lt;- CalcularPromedio(n)
-    Llamar Evaluar(promedio)
+    promedio <- CalcularPromedio(n)
+    Evaluar(promedio)
 FinAlgoritmo
+
   </div>
 
   <h4 style="color: #00ffff;">Explicación paso a paso</h4>
@@ -4591,7 +4612,7 @@ Aprobado con promedio: 66.67
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 1: Mostrar saludo personalizado </h3>
   <p><strong>Planteamiento del problema:</strong> Crear un procedimiento que reciba el nombre de un usuario y muestre un saludo personalizado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #ffffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 SubProceso Saludar(nombre)
     Escribir "¡Hola, ", nombre, "! Bienvenido al sistema."
 FinSubProceso
@@ -4609,7 +4630,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 2: Calcular el cuadrado de un número </h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar una función que reciba un número y devuelva su cuadrado. El programa principal debe mostrar el resultado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #ffffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Funcion resultado <- Cuadrado(num)
     resultado <- num * num
 FinFuncion
@@ -4628,8 +4649,9 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 3: Suma de dos números usando subprogramas </h3>
   <p><strong>Planteamiento del problema:</strong> Crear una función que sume dos números y un procedimiento que muestre el resultado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #ffffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Funcion suma <- Sumar(a, b)
+    Definir suma Como Real
     suma <- a + b
 FinFuncion
 
@@ -4642,7 +4664,7 @@ Algoritmo Principal
     Escribir "Ingrese dos números:"
     Leer n1, n2
     res <- Sumar(n1, n2)
-    Llamar MostrarResultado(res)
+    MostrarResultado(res)  
 FinAlgoritmo
   </pre>
 
@@ -4651,8 +4673,9 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 4: Determinar si un número es par o impar </h3>
   <p><strong>Planteamiento del problema:</strong> Diseñar una función que verifique si un número es par y un procedimiento que muestre el resultado.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #ffffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Funcion esPar <- VerificarPar(num)
+    Definir esPar Como Logico
     Si num MOD 2 = 0 Entonces
         esPar <- Verdadero
     Sino
@@ -4674,8 +4697,9 @@ Algoritmo Principal
     Escribir "Ingrese un número:"
     Leer n
     resultado <- VerificarPar(n)
-    Llamar MostrarResultado(n, resultado)
+    MostrarResultado(n, resultado)  
 FinAlgoritmo
+
   </pre>
 
   <p><em>Nota:</em> Combina retorno booleano con un procedimiento para la salida, aplicando lógica condicional y modularidad.</p>
@@ -4683,7 +4707,7 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 5: Intercambio de valores con parámetros por referencia </h3>
   <p><strong>Planteamiento del problema:</strong> Crear un procedimiento que intercambie los valores de dos variables usando el paso por referencia.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #ffffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 SubProceso Intercambiar(Ref a, Ref b)
     Definir temp Como Real
     temp <- a
@@ -4706,9 +4730,9 @@ FinAlgoritmo
   <h3 style="color: #00ffff; font-size: 16px;">Ejercicio 6: Cálculo de promedio y evaluación de notas </h3>
   <p><strong>Planteamiento del problema:</strong> Implementar una función que calcule el promedio de N notas y un procedimiento que determine si el estudiante aprueba (≥11) o desaprueba.</p>
 
-  <pre style="background-color: #111; color: #00ffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
+  <pre style="background-color: #111; color: #ffffff; padding: 10px; border-radius: 10px; font-family: monospace; font-size: 14px;">
 Funcion prom <- CalcularPromedio(n)
-    Definir i, nota, suma Como Real
+    Definir i, nota, suma, prom Como Real
     suma <- 0
     Para i <- 1 Hasta n Hacer
         Escribir "Ingrese nota ", i, ":"
@@ -4732,8 +4756,9 @@ Algoritmo Evaluacion
     Escribir "¿Cuántas notas ingresará?"
     Leer n
     promedio <- CalcularPromedio(n)
-    Llamar Evaluar(promedio)
+    Evaluar(promedio)  
 FinAlgoritmo
+
   </pre>
 
   <p><em>Nota:</em> Se combinan funciones, procedimientos, bucles y condiciones, consolidando el uso modular y la interacción entre subprogramas.</p>
@@ -7124,72 +7149,76 @@ print("El total de la compra es:", total)
     
     `,
     ejemplos: `
-<section style="background-color:#0a0a0a; color:#e6e6e6; font-family: Arial, sans-serif; line-height:1.7; padding:25px; border-radius:12px;">
 
-  <h2 style="color:#00bfff; font-size:26px; text-align:left; margin-bottom:25px;">💡 Ejemplos prácticos en Python (niveles progresivos)</h2>
+    <section style="color:#ffffff; font-family: Arial, sans-serif; line-height:1.8; padding:20px; text-align:left;">
+
+  <h2 style="color:#00bfff; font-size:18px; margin-bottom:25px;"> Ejemplos prácticos en Python </h2>
 
   <!-- Ejemplo 1 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 1</h3>
   <p><strong>Enunciado:</strong> Pedir al usuario su nombre y saludarlo.</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 nombre = input("Ingrese su nombre: ")
 print("Hola,", nombre, "- bienvenido al curso de Python.")
-  </div>
-  <p><em>Nota:</em> Uso de variable tipo cadena, función <code>input()</code>, y <code>print()</code>. No incluye condicionales ni bucles. Ideal para principiantes.</p>
+  </pre>
 
   <!-- Ejemplo 2 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 2</h3>
   <p><strong>Enunciado:</strong> Leer un número entero y determinar si es mayor, igual o menor que 10.</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 n = int(input("Ingrese un número entero: "))
+
 if n > 10:
     print("El número es mayor que 10.")
 elif n == 10:
     print("El número es igual a 10.")
 else:
     print("El número es menor que 10.")
-  </div>
-  <p><em>Nota:</em> Introduce condicionales <code>if-elif-else</code> y operadores relacionales. No incluye bucles.</p>
+  </pre>
 
   <!-- Ejemplo 3 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 3</h3>
-  <p><strong>Enunciado:</strong> Calcular la suma de los primeros n números positivos (donde n lo define el usuario).</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <p><strong>Enunciado:</strong> Calcular la suma de los primeros n números positivos.</p>
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 n = int(input("¿Cuántos números sumaremos? "))
 suma = 0
-for i in range(1, n+1):
+
+for i in range(1, n + 1):
     suma += i
+
 print("La suma de los primeros", n, "números es:", suma)
-  </div>
-  <p><em>Nota:</em> Introduce bucle <code>for</code>, acumulador (<code>suma</code>), uso de <code>range()</code>. Buen puente hacia estructuras repetitivas.</p>
+  </pre>
 
   <!-- Ejemplo 4 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 4</h3>
-  <p><strong>Enunciado:</strong> Leer 5 calificaciones (0–20) y mostrar el promedio, el mayor y el menor valor ingresado.</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <p><strong>Enunciado:</strong> Leer 5 calificaciones (0–20) y mostrar promedio, mayor y menor.</p>
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 suma = 0.0
 mayor = -1
 menor = 100
+
 for i in range(5):
-    nota = float(input(f"Ingrese la nota {i+1} (0-20): "))
+    nota = float(input(f"Ingrese la nota {i + 1} (0–20): "))
     suma += nota
     if nota > mayor:
         mayor = nota
     if nota < menor:
         menor = nota
+
 promedio = suma / 5
+
 print("Promedio:", promedio)
 print("Mayor nota:", mayor)
 print("Menor nota:", menor)
-  </div>
-  <p><em>Nota:</em> Combina bucle y condicionales dentro del bucle. Introduce inicialización cuidadosa de variables límite.</p>
+  </pre>
 
   <!-- Ejemplo 5 -->
   <h3 style="color:#00bfff; font-size:20px;">Ejemplo 5</h3>
-  <p><strong>Enunciado:</strong> Leer números hasta que el usuario ingrese 0; contar cuántos positivos hay, su suma y promedio.</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <p><strong>Enunciado:</strong> Leer números hasta que el usuario ingrese 0; contar cuántos positivos hay y su promedio.</p>
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 contador = 0
 suma = 0.0
+
 while True:
     n = float(input("Ingrese un número (0 para terminar): "))
     if n == 0:
@@ -7197,6 +7226,7 @@ while True:
     if n > 0:
         contador += 1
         suma += n
+
 if contador > 0:
     promedio = suma / contador
     print("Cantidad de positivos:", contador)
@@ -7204,50 +7234,53 @@ if contador > 0:
     print("Promedio de positivos:", promedio)
 else:
     print("No se ingresaron números positivos.")
-  </div>
-  <p><em>Nota:</em> Usa bucle <code>while</code> infinito con <code>break</code> y condicional dentro del bucle. Ejercicio ideal de razonamiento algorítmico.</p>
+  </pre>
 
   <!-- Ejemplo 6 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 6 – Nivel avanzado</h3>
-  <p><strong>Enunciado:</strong> Leer edades hasta que se introduzca una negativa; contar cuántas personas están entre 18 y 65 años.</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 6 – </h3>
+  <p><strong>Enunciado:</strong> Leer edades hasta que se introduzca una negativa; contar cuántas están entre 18 y 65 años.</p>
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 contador_activa = 0
+
 while True:
     edad = int(input("Ingrese edad (negativo para terminar): "))
     if edad < 0:
         break
     if edad >= 18 and edad <= 65:
         contador_activa += 1
+
 print("Cantidad de personas en edad laboral activa:", contador_activa)
-  </div>
-  <p><em>Nota:</em> Incluye operadores lógicos <code>and</code>, bucle con condición de paro y conteo selectivo.</p>
+  </pre>
 
   <!-- Ejemplo 7 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 7 – Nivel difícil</h3>
-  <p><strong>Enunciado:</strong> Calcular el total a pagar considerando descuentos del 10% si el precio supera 1000.</p>
-  <div style="background-color:#161b22; color:#b6d5d5ff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 7 – </h3>
+  <p><strong>Enunciado:</strong> Calcular el total a pagar considerando descuento del 10% si el precio supera 1000.</p>
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 n = int(input("¿Cuántos precios ingresará? "))
 total = 0.0
 contador_desc = 0
+
 for i in range(n):
-    precio = float(input(f"Ingrese precio del producto {i+1}: "))
+    precio = float(input(f"Ingrese precio del producto {i + 1}: "))
     if precio > 1000:
-        precio = precio * 0.9
+        precio *= 0.9
         contador_desc += 1
     total += precio
+
 print("Total a pagar:", total)
-print("Cantidad de productos con descuento:", contador_desc)
-  </div>
-  <p><em>Nota:</em> Requiere bucle, condicional, acumuladores y conteo. Muy útil para escenarios comerciales.</p>
+print("Productos con descuento:", contador_desc)
+  </pre>
 
   <!-- Ejemplo 8 -->
-  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 8 – Nivel muy difícil (Integrador)</h3>
+  <h3 style="color:#00bfff; font-size:20px;">Ejemplo 8 – </h3>
   <p><strong>Enunciado:</strong> Juego donde el usuario intenta adivinar un número entre 1 y 50 (máximo 7 intentos).</p>
-  <div style="background-color:#161b22; color:#e0e0e0; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace;">
+  <pre style="background-color:#001f3f; color:#ffffff; padding:14px; border-radius:8px; font-family:'Consolas','Courier New',monospace; white-space:pre-wrap;">
 import random
+
 secreto = random.randint(1, 50)
 intentos = 0
 max_intentos = 7
+
 while intentos < max_intentos:
     intentos += 1
     n = int(input(f"Intento {intentos} de {max_intentos}. Ingrese número (1-50): "))
@@ -7260,11 +7293,13 @@ while intentos < max_intentos:
         print("El número secreto es menor.")
 else:
     print("Lo siento, agotaste los intentos. El número era:", secreto)
+
 print("Usaste", intentos, "intentos.")
-  </div>
-  <p><em>Nota:</em> Incluye módulo <code>random</code>, bucle condicionado, condicionales anidados y control de flujo (<code>break</code>, <code>else</code> del <code>while</code>). Excelente para evaluación final.</p>
+  </pre>
 
 </section>
+
+
 
     
     `,
@@ -7287,7 +7322,7 @@ print("Usaste", intentos, "intentos.")
     
     <section style="color: white; text-align: justify; margin: 30px; font-size: 16px; line-height: 1.8;">
 
-  <h4 style="color: #00ffff; font-size: 18px;">1. Estructuras de datos básicas en Python</h4>
+  <h4 style="color: #ffffff; font-size: 18px;">1. Estructuras de datos básicas en Python</h4>
 
   <p>
     Hasta este punto, los programas escritos en <strong>Python</strong> trabajaban con variables individuales, como 
@@ -7372,7 +7407,7 @@ print("Usaste", intentos, "intentos.")
     Cada elemento puede ser de cualquier tipo de dato: números, cadenas, valores booleanos o incluso otras listas.
   </p>
 
-  <pre style="background-color: #111; padding: 10px; border-radius: 8px; color: #b0ffff;">
+  <pre style="background-color: #ffffff; padding: 10px; border-radius: 8px; color: #b0ffff;">
 frutas = ["manzana", "pera", "uva"]
 edades = [18, 25, 30, 45]
 mixta = ["Python", 3, True, 4.5]
@@ -7382,7 +7417,7 @@ mixta = ["Python", 3, True, 4.5]
     Además, se puede crear una lista vacía e ir agregando elementos después:
   </p>
 
-  <pre style="background-color: #111; padding: 10px; border-radius: 8px; color: #b0ffff;">
+  <pre style="background-color: #ffffff; padding: 10px; border-radius: 8px; color: #b0ffff;">
 numeros = []
 numeros.append(10)
 numeros.append(20)
@@ -7396,7 +7431,7 @@ print(numeros)  # [10, 20, 30]
     Cada elemento dentro de una lista tiene un <strong>índice</strong> (posición) que comienza desde <code>0</code>.
   </p>
 
-  <pre style="background-color: #111; padding: 10px; border-radius: 8px; color: #b0ffff;">
+  <pre style="background-color: #ffffff; padding: 10px; border-radius: 8px; color: #b0ffff;">
 frutas = ["manzana", "pera", "uva"]
 print(frutas[0])   # manzana
 print(frutas[2])   # uva
@@ -7410,13 +7445,13 @@ print(frutas[0:2]) # ['manzana', 'pera']
     El recorrido o iteración permite acceder a cada elemento de una lista, una operación muy común al analizar datos o generar reportes.
   </p>
 
-  <pre style="background-color: #111; padding: 10px; border-radius: 8px; color: #b0ffff;">
+  <pre style="background-color: #ffffff; padding: 10px; border-radius: 8px; color: #b0ffff;">
 for fruta in frutas:
     print("Me gusta la", fruta)
   </pre>
 
   <p><strong>Salida:</strong></p>
-  <pre style="background-color: #111; padding: 10px; border-radius: 8px;">Me gusta la manzana
+  <pre style="background-color: #ffffff; padding: 10px; border-radius: 8px;">Me gusta la manzana
 Me gusta la pera
 Me gusta la uva</pre>
 
