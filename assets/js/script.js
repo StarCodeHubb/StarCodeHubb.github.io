@@ -231,13 +231,13 @@ const contenidoModulos = {
       <p><strong>Prueba diagnóstica:</strong> </p>
       <p><strong>👋 ¡Bienvenido(a) a la Evaluación Diagnóstica del Tema 1: Pensamiento Computacional y Algoritmos!</strong></p>
         <p>Esta evaluación tiene como propósito conocer tu comprensión sobre los temas abordados: pensamiento computacional, sus pilares (descomposición, reconocimiento de patrones, abstracción y diseño de algoritmos), así como el concepto, la estructura y las características de un algoritmo. <p>
-        <p> 📊 Importante:
+        <p>  Importante:
         Esta evaluación forma parte de la entrada del minicurso y equivale al 25 % de la nota total de este primer minicurso<p>
         <p>🕒 Instrucciones:<p>
         <p> - Lee cuidadosamente cada pregunta antes de responder.<p>
         <p> - Marca la alternativa correcta o desarrolla tu respuesta según se indique.<p>
         <p> - Solo se permite una respuesta por pregunta.<p>
-        <p> - La nota mínima para aprobar este cuestionario es 11.<p>
+        <p> - La nota mínima para aprobar este minicurso es 11.<p>
         <p>✨ ¡Éxitos! Recuerda que esta es una oportunidad para reflexionar sobre tu forma de pensar, analizar y resolver problemas.<p>
         <div style="text-align: center; margin: 30px 0;">
             <a href="https://form-timer.com/start/92fc7bfb" target="_blank" 
@@ -955,7 +955,7 @@ FinAlgoritmo
   <p><strong>🧩 Planteamiento:</strong> Este cuestionario tiene como finalidad reforzar tu comprensión sobre el uso de variables, tipos de datos y errores comunes al programar. A través de preguntas prácticas, podrás identificar conceptos clave y evaluar tu progreso en el manejo de la lógica computacional.</p>
 
   <p><strong></strong> <br>
-  <strong> Condición de aprobación:</strong> Nota mínima 11.<br>
+  <strong> Condición de aprobación por minicurso:</strong> Nota mínima 11.<br>
   <strong> Peso en la evaluación:</strong> 25% de la nota final.</p>
 
    <p><strong> Indicaciones:</strong></p>
@@ -1819,8 +1819,8 @@ Fin
 
   <p><strong>📚 Indicaciones generales:</strong><br>
   Esta evaluación corresponde al cierre del módulo y representa el <strong>50% de la nota total.</strong><br>
-  <strong>Preguntas:</strong> 30 en total (parte teórica + caso práctico)<br>
-  <strong>Nota máxima:</strong> Para aporbar el minicurso 1 se requiere minimo una nota de 11 <br>
+  <strong>Preguntas:</strong> parte teórica + caso práctico<br>
+  <strong>Nota máxima:</strong> Para aprobar el minicurso 1 se requiere minimo una nota de 11 <br>
   Solo se permite <strong>un envío por estudiante.</strong></p>
 
   <p><strong>Instrucciones del caso práctico:</strong><br>
