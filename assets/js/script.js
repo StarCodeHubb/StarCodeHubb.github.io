@@ -2182,14 +2182,13 @@ style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; 
 
   <p>
     <strong style="color:#22c1dc;"> Condición de aprobación:</strong> Nota mínima 11.<br>
-    <strong style="color:#22c1dc;"> Peso en la evaluación:</strong> No calificable, sirve como diagnóstico inicial.
   </p>
 
   <p><strong style="color:#22c1dc;">📝 Indicaciones:</strong></p>
   <ul style="margin:12px 0 18px 20px; line-height:1.7; text-align:left; color:#fff; font-family:'Segoe UI', Tahoma, sans-serif;">
     <li>Lee cada pregunta cuidadosamente antes de responder.</li>
     <li>Selecciona la alternativa que consideres correcta de acuerdo con tu conocimiento previo sobre PSeInt.</li>
-    <li>Este Examen pesará un 25% de la nota final; Asimismo, para aprobrar este minicurso 1 deberas tener minimo un 11 de nota </li>
+    <li>Este Examen pesará un 25% de la nota final; Asimismo, para aprobrar este minicurso 2 deberas tener minimo un 11 de nota </li>
   </ul>
 
   <p><strong style="color:#22c1dc;"> Objetivo:</strong> 
