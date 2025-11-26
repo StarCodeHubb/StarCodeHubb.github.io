@@ -1819,8 +1819,9 @@ Fin
 
   <p><strong>📚 Indicaciones generales:</strong><br>
   Esta evaluación corresponde al cierre del módulo y representa el <strong>50% de la nota total.</strong><br>
-  <strong>Preguntas:</strong> parte teórica + caso práctico<br>
-  <strong>Nota máxima:</strong> Para aprobar el minicurso 1 se requiere minimo una nota de 11 <br>
+  <strong>Preguntas:</strong> parte teórica (Solo para este primer cuestionario final se realizará un examen teórico con el fin de reforzar y consolidar la base inicial del curso.)<br>
+ <strong>Nota máxima:</strong> Para aprobar el minicurso 1 se necesita obtener al menos 11 puntos.
+El examen incluye 15 preguntas y la nota final se calculará en una escala de 0 a 20.
   Solo se permite <strong>un envío por estudiante.</strong></p>
 
 
@@ -11962,3 +11963,4 @@ document.addEventListener("DOMContentLoaded", () => {
   agregarReferencias(cursoSeleccionado);
 
 });
+
