@@ -1823,15 +1823,6 @@ Fin
   <strong>Nota máxima:</strong> Para aprobar el minicurso 1 se requiere minimo una nota de 11 <br>
   Solo se permite <strong>un envío por estudiante.</strong></p>
 
-  <p><strong>Instrucciones del caso práctico:</strong><br>
-  Lee la situación del problema y redacta el pseudocódigo completo con entradas, procesos y salidas.<br>
-  Considera condiciones de nota, asistencia y bonificación.<br>
-  Sube tu archivo en formato <strong>PDF o Word (.docx)</strong> con tu nombre y sección.<br>
-  Se evaluará la claridad, estructura y lógica del pseudocódigo.</p>
-
-  <p><strong>Formato de archivo:</strong><br>
-  <code style="background-color: #222; padding: 5px 8px; border-radius: 5px; color: #aef;">Apellido_Nombre_CasosFinales</code><br>
-  Ejemplo: <code style="background-color: #222; padding: 5px 8px; border-radius: 5px; color: #aef;">Pérez_Luisa_CasosFinales.pdf</code></p>
 
   <p><strong>⚠️ Reglas:</strong><br>
 
@@ -11969,4 +11960,5 @@ function agregarReferencias(cursoId) {
 document.addEventListener("DOMContentLoaded", () => {
   cargarCurso();
   agregarReferencias(cursoSeleccionado);
+
 });
