@@ -5794,7 +5794,7 @@ FinAlgoritmo
     quiz_final: `<section id="quiz_final_pseint" class="quiz-section" 
 style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; margin-top:30px; text-align:left;">
 
-  <p><strong style="color:#22c1dc;">Examen Final – Minicurso 1:</strong></p>
+  <p><strong style="color:#22c1dc;">Examen Final – Minicurso 2:</strong></p>
 
   <p><strong style="color:#22c1dc;">📊 Planteamiento:</strong> 
   Este examen tiene como propósito evaluar tu dominio de los conceptos fundamentales de <strong>PSeInt</strong>, incluyendo el uso de variables, estructuras condicionales, ciclos y el diseño lógico de algoritmos. Es la etapa final para demostrar tu progreso en este minicurso.</p>
@@ -11963,5 +11963,6 @@ document.addEventListener("DOMContentLoaded", () => {
   agregarReferencias(cursoSeleccionado);
 
 });
+
 
 
