@@ -5816,7 +5816,7 @@ style="font-family:'Segoe UI', Tahoma, sans-serif; color:#fff; line-height:1.6; 
   Evaluar de forma integral tu comprensión sobre el desarrollo de algoritmos en <strong>PSeInt</strong> y tu capacidad para resolver problemas aplicando lógica computacional.</p>
 
   <div style="text-align:center; margin-top:25px;">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScA8M-pgIldv7ShwdaCPvy1tvTZgFN4fXPT5FClvExfNmUBXA/viewform?usp=dialog" 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrDC83gHpHXzDoMckDhN6XYSKGgsT5-KkwHwRmwj1W3zslLw/viewform" 
        target="_blank" 
        style="display:inline-block; background-color:#22c1dc; color:white; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:bold; 
               box-shadow:0 3px 6px rgba(0,0,0,0.15); transition:background-color 0.3s;">
@@ -11963,4 +11963,5 @@ document.addEventListener("DOMContentLoaded", () => {
   agregarReferencias(cursoSeleccionado);
 
 });
+
 
